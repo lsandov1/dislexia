@@ -9,7 +9,7 @@ d# Project: Dislexia/Instituto de Neurociencias/UdG
 BEGIN {
     FS = "\t"
     regex = gensub(/\s+/, "|", "g", AOIS)
-#    printf regex
+    OFS = ":"
 }
 $0 ~ regex {
 	# Fixation values
@@ -19,7 +19,5 @@ $0 ~ regex {
 	fix_mapped_point_y = $34
 	fix_duration = $35
 	aoi = $37
-	print aoi,
-		fix_mapped_point_x, fix_mapped_point_y,
-		fix_index, fix_duration
+	print aoi, fix_mapped_point_x, fix_mapped_point_y, fix_index, fix_duration
 }

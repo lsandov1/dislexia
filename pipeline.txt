@@ -1,7 +1,4 @@
 
 
 $ aois=`awk -f criterio.awk C3=9 aoi.txt | awk -f remueve_criterio.awk`
-
-$ aois = `awk -f criterio.awk C1=A aoi.txt | awk -f remueve_criterio.awk`
-$ for aoi in aois; do
-      awk -f filtro.awk -v AOI=$aoi REG=0 SAC=0 user.db
+$ awk -f filtro.awk -v AOIS=$aois REG=0 SAC=0 user.db
