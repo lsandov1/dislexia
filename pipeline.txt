@@ -1,4 +1,14 @@
 
 
+# From the AOI list, filter those depending on criteria Cx
 $ aois=`awk -f criterio.awk C3=9 aoi.txt | awk -f remueve_criterio.awk`
-$ awk -f filtro.awk -v AOIS=$aois REG=0 SAC=0 user.db
+
+# From user data, filter those AOIS passed and output fixation values
+$ fixs=`awk -f filtro.awk -v AOIS="$aois" REG=0 SAC=0 user.db`
+
+# from fixation values (aoi:fix_x:fix y:fix_index:fix_duration), filter
+# those inside a certain AOI rectangle
+
+for fix in $fixs; do
+  awk -f insideAOI.awk -v FIXS="$fix" -c coordenadas.txt
+
