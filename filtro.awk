@@ -1,7 +1,7 @@
 #!/usr/bin/env awk
 #
 # Leonardo Sandoval
-d# Project: Dislexia/Instituto de Neurociencias/UdG
+# Project: Dislexia/Instituto de Neurociencias/UdG
 #
 # Example:
 # $ awk -f filtro.awk -v AOIS="001princesa ..." REG=0 SAC=0 userdata.tsv
