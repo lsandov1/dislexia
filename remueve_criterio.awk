@@ -1,4 +1,4 @@
-#!/usr/bin/env awk
+#!/usr/bin/awk -f
 #
 # Leonardo Sandoval
 d# Project: Dislexia/Instituto de Neurociencias/UdG

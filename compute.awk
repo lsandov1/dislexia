@@ -1,4 +1,4 @@
-#!/usr/bin/env awk
+#!/usr/bin/awk -f
 #
 # Computes the total fixation duration and total number of fixations
 # Leonardo Sandoval

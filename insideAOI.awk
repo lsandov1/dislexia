@@ -1,4 +1,4 @@
-#!/usr/bin/env awk
+#!/usr/bin/awk -f
 #
 # Leonardo Sandoval
 # Project: Dislexia/Instituto de Neurociencias/UdG
@@ -27,7 +27,6 @@ $0 ~ aoi {
 	# print A[2], y, C[2]
 	if ( (A[1] <= x) && (x <= C[1]) )
 		if ( (A[2] <= y) && (y <= C[2]) ) {
-			# print $0
-			print FIX
+			print aoi, x, y, ind, dur
 		}
 }

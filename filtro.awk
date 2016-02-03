@@ -1,4 +1,4 @@
-#!/usr/bin/env awk
+#!/usr/bin/awk -f
 #
 # Leonardo Sandoval
 # Project: Dislexia/Instituto de Neurociencias/UdG
@@ -19,5 +19,6 @@ $0 ~ regex {
 	fix_mapped_point_y = $34
 	fix_duration = $35
 	aoi = $37
+	#      1          2                   3               4          5
 	print aoi, fix_mapped_point_x, fix_mapped_point_y, fix_index, fix_duration
 }

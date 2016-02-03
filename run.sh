@@ -1,49 +1,56 @@
 #!/usr/bin/env bash
+#
+# Leonardo Sandoval
+# Project: Dislexia/Instituto de Neurociencias/UdG
+#
+# Description: Using $INPUT_DIR folder as input data files
+# create an output $OUTPUT_DIR with the following structure:
+#
+#   USER1 <AOI1> <X> <Y> <INDEX> <DURATION>
+#   USER1 <AOI2> <X> <Y> <INDEX> <DURATION>
+#   USER1 <AOI3> <X> <Y> <INDEX> <DURATION>
+#   USER1 <AOI4> <X> <Y> <INDEX> <DURATION>
+#
+#
 
+# include local folder inside PATH
+PATH=".:$PATH"
 
+# global variables
 CRITERIA=3
 VALUE=9
 AOI_FILE='aoi.txt'
-
-
-
 INPUT_DIR='data'
-OUTPUT_DIR='out'
 FIRST_SLIDE=9
-LAST_SLIDE=35
+LAST_SLIDE=9
 COORDINATE_FILE='coordinates.txt'
 
-if [ -e $OUTPUT_DIR ]; then
-    rm -rf $OUTPUT_DIR
-fi
-
-mkdir $OUTPUT_DIR
-
-
-for USER_DATA_FILE in $INPUT_DIR/*.tsv; do
+# loop all user data
+for USER_DATA_FILE in $INPUT_DIR/ABA.tsv; do
     BN=`basename $USER_DATA_FILE`
+    
+    # loop all slides
     for slide in `seq $FIRST_SLIDE 2 $LAST_SLIDE`; do
-	USER_OUTPUT_FILE=$OUTPUT_DIR/$BN.$slide.fix
-	> $USER_OUTPUT_FILE
-        AOIS=`awk -f criterio.awk C$CRITERIA=$slide $AOI_FILE | awk -f remueve_criterio.awk`
+
+	# get all AOIs from a specific slide
+        AOIS=`criterio.awk C$CRITERIA=$slide $AOI_FILE | remueve_criterio.awk`
+
         if [ -n "$AOIS" ]; then
-    	    # echo "SLIDE $slide"
-    	    # echo $AOIS
-    	    FIXATIONS=`awk -f filtro.awk -v AOIS="$AOIS" $USER_DATA_FILE | uniq`
-    	    IFS=$'\n'; for fix in $FIXATIONS; do
-    		#echo $fix
-    		awk -f insideAOI.awk -v FIX="$fix" $COORDINATE_FILE >> ${USER_OUTPUT_FILE}
-    	    done
-	    r=`awk -f compute.awk ${USER_OUTPUT_FILE}`
-	    # print per slice
-	    echo "$USER_DATA_FILE $USER_OUTPUT_FILE $r"
+
+	    # get those fixations belonging to the AOIs
+    	    F=`filtro.awk -v AOIS="$AOIS" $USER_DATA_FILE | uniq`
+	    R=`echo "$F" | datamash -t':' -g1 count 1 sum 5`
+            IFS=$'\n'
+            for r in $R; do
+	    	rr=`echo $r | awk 'BEGIN { FS=":" } { print $1,$2,$3 }'`
+	    	echo "$BN C$CRITERIA=$slide $AOI $rr"
+	    done
+
+
         fi
+
     done
-    # total count per user
-    USER_OUTPUT_FILE=$OUTPUT_DIR/$BN.fix
-    cat $OUTPUT_DIR/$BN.*.fix > $USER_OUTPUT_FILE
-    r=`awk -f compute.awk $USER_OUTPUT_FILE`
-    echo "$USER_DATA_FILE $USER_OUTPUT_FILE $r"
+
 done
 
 
