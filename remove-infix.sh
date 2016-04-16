@@ -4,8 +4,9 @@
 d# Project: Dislexia/Instituto de Neurociencias/UdG
 #
 # Example:
-# $ echo 001Ap9s5d3L8c7t0princesa | awk -f remueve_criterio.awk
+# $ echo 001Ap9s5d3L8c7t0princesa | awk -f $0.awk
 # 001princesa
+
 @include "globales"
 {
 	#   DC1         DC9

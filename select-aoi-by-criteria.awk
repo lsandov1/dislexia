@@ -4,7 +4,7 @@
 # Project: Dislexia/Instituto de Neurociencias/UdG
 #
 # Example:
-# $ awk -f criterio.awk  \
+# $ awk -f $0.awk  \
 #       C1=A C2=p C3= ......\
 #       aoi.txt
 
@@ -56,9 +56,4 @@ BEGIN{
 		    PRE,
 		    DC1, DC2, DC3, DC4, DC5, DC6, DC7, DC8, DC9,
 		    POST)
-	# printf("%s%s%s%s%s%s%s%s%s%s%s\n",
-	# 	    PRE,
-	# 	    DC1, DC2, DC3, DC4, DC5, DC6, DC7, DC8, DC9,
-	# 	    POST)
-
 } $0 ~ RE
