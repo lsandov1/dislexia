@@ -8,7 +8,7 @@
 #       C1=A C2=p C3= ......\
 #       aoi.txt
 
-@include "globales"
+@include "globals"
 BEGIN{
 	# Overwrite matches by user
 	for (i = 0; i < ARGC; i++) {

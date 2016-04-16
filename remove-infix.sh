@@ -7,7 +7,7 @@ d# Project: Dislexia/Instituto de Neurociencias/UdG
 # $ echo 001Ap9s5d3L8c7t0princesa | awk -f $0.awk
 # 001princesa
 
-@include "globales"
+@include "globals"
 {
 	#   DC1         DC9
 	#    |           |

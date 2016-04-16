@@ -6,7 +6,7 @@
 # Example:
 # $ awk -f $0.awk -v AOIS="001princesa ..." REG=0 SAC=0 userdata.tsv
 #
-@include "globales"
+@include "globals"
 BEGIN {
     FS = "\t"
     regex = gensub(/\s+/, "|", "g", AOIS)
