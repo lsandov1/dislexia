@@ -13,4 +13,13 @@ BEGIN {
 	DC8="(t|b)"         # Criterio: Número de sílabas que tiene la palabra en
 	                    #           la que está la AOI
 	DC9="[0-3]"         #Criterio: Lugar que ocupa la sílaba meta en la palabra
+
+	# Relevant TOBBI fields names
+	TIMESTAMP=1
+	FIXATION_INDEX=19
+	FIXATION_MAPPED_POINT_X=33
+	FIXATION_MAPPED_POINT_Y=34
+	FIXATION_DURATION=35
+	AOI=37
+
 }
