@@ -9,13 +9,6 @@
 @include "globals"
 BEGIN {
     FS = "\t"
-    regex = gensub(/\s+/, "|", "g", AOIS)
+    regex = sprintf("^%s", gensub(/\s+/, "|^", "g", AOIS))
     OFS = ":"
-}
-$0 ~ regex {
-	print $AOI,			  \
-		$FIXATION_MAPPED_POINT_X, \
-		$FIXATION_MAPPED_POINT_Y, \
-		$FIXATION_INDEX, \
-		$FIXATION_DURATION
-}
+} $FIX_AOI ~ regex
