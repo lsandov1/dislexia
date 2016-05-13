@@ -18,54 +18,65 @@ PATH=".:$PATH"
 # Constants
 AOI_FILE="AOI.txt"
 DEBUG=echo
-USERDATA="data/ABA.tsv"
 C1="C1=A"
+DATADIR="data"
+#USERDATAFILES=$(find "$DATADIR" -name "$USERDATA_REGEX")
 
-if [ ! -e $USERDATA ]; then
-    echo "userdata file does not exist"
-    exit 1
-fi
+header() {
+    cat << EOF
+# USER AOI SLIDE LINE NFIX SUMFIXLAT
+#
+#     USER: userdata
+#     AOI: Area of Interested
+#     SLIDE: Slide number where AOI appears
+#     LINE: Line number where AOI appears
+#     NFIX: Number of fixations
+#     SUMFIXLAT: Sum of fixations latencies
+#     MEANSUMFIXLAT: Mean of SUMFIXLAT
+#
+EOF
+}
 
+OUTDIR="out2"
+[ ! -d $OUTDIR ] && { mkdir $OUTDIR; }
 
-echo "# USER:CRITERIA:AOI:SLIDE:LINE:NFIX:SUMFIXLAT"
-echo "#"
-echo "# where (fields are separated by colons)"
-echo "#"
-echo "#     USER: userdata"
-echo "#     CRITERIA: Criteria parameters"
-echo "#     AOI: Area of Interested"
-echo "#     SLIDE: Slide number where AOI appears"
-echo "#     LINE: Line number where AOI appears"
-echo "#     NFIX: Number of fixations"
-echo "#     SUMFIXLAT: Sum of fixations latencies"
-echo "#     MEANSUMFIXLAT: Mean of SUMFIXLAT"
-echo "#"
-for c3 in `seq 9 2 25`; do
+USERDATA_REGEX="*.tsv"
 
-    C3="C3=$c3"
+for USERDATA in $DATADIR/$USERDATA_REGEX; do
 
-    # From the AOI list, filter those depending a certain criteria
-    AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk $C1 $C3 $AOI_FILE)
+    # define output file and remove it if present
+    OUTFILE="$OUTDIR/$(basename "$USERDATA").out"
+    [ -e "$OUTFILE" ] && { rm "$OUTFILE"; }
 
-    # The AOIs have full name, so remove the infix
-    AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
+    header > "$OUTFILE"
 
-    # Remove certain AOI's
-    AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
+    for SLIDE in $(seq 9 2 27); do
 
-    # Filter rows matching the AOIS
-    ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA)
+        C3="C3=$SLIDE"
 
-    # extract relevant data and use colon as field separator
-    FIELDS=$(echo "$ROWS" | \
-        awk -F '\t' -i globals.awk 'BEGIN { OFS=":" } { print $FIX_AOI, $FIX_INDEX, $FIX_DURATION }' )
+        # From the AOI list, filter those depending a certain criteria
+        AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk $C1 $C3 $AOI_FILE)
 
-    # remove duplicates and sort
-    UNIQUE_FIELDS=$(echo "$FIELDS" | uniq | sort -n)
+        # The AOIs have full name, so remove the infix
+        AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
 
-    # get and append the slide and line number for each AOI
-    STAT=$(echo "$UNIQUE_FIELDS" | \
-datamash -t : -g 1 count 2 sum 3 mean 3 | awk -f slide-line-numbers.awk -v USERDATA=$USERDATA -v CRITERIA="$C1 $C3")
+        # Remove certain AOI's
+        #AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
 
-    echo "$STAT"
+        # Filter rows matching the AOIS
+        ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA)
+
+        # remove duplicates and sort
+        UNIQUE_FIELDS=$(echo "$ROWS" | uniq | sort -n)
+
+        # pathnames just waste chars, so remote the dirname of userdata filename
+        USERDATA_BASENAME=$(basename "$USERDATA")
+
+        # get and append the slide and line number for each AOI
+        STAT=$(echo "$UNIQUE_FIELDS" | \
+    datamash -t : -g 1 count 2 sum 3 mean 3 | \
+    awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME")
+	
+        echo "$STAT" >> "$OUTFILE"
+    done
 done

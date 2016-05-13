@@ -9,6 +9,22 @@
 @include "globals"
 BEGIN {
     FS = "\t"
-    regex = sprintf("^%s", gensub(/\s+/, "|^", "g", AOIS))
+    regex = gensub(/\s+/, "|", "g", AOIS)
     OFS = ":"
-} $FIX_AOI ~ regex
+}
+
+$FIX_AOI ~ regex {
+	if (index($FIX_AOI, "\"") == 1) {
+		split($FIX_AOI, aois, ",")
+		 for (i in aois) {
+			 sub(/\"/, "", aois[i])
+			 sub(/ +/, "", aois[i])
+			 if (aois[i] ~ regex) {
+			 	 print aois[i], $FIX_INDEX, $FIX_DURATION
+			 	 break
+			 }
+		 }
+	} else {
+		print $FIX_AOI, $FIX_INDEX, $FIX_DURATION
+	}
+}
