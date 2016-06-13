@@ -3,13 +3,7 @@
 # Leonardo Sandoval
 # Project: Dislexia/Instituto de Neurociencias/UdG
 #
-# Input:
-#
-# ./$0.sh $CRITERIA $USERDATA 
 
-# avoid the './' prefix for local scripts
-
-#set -x
 set -o nounset
 set -o errexit
 
@@ -18,7 +12,6 @@ PATH=".:$PATH"
 # Constants
 AOI_FILE="AOI.txt"
 DEBUG=echo
-C1="C1=A"
 DATADIR="data"
 #USERDATAFILES=$(find "$DATADIR" -name "$USERDATA_REGEX")
 
@@ -37,7 +30,7 @@ header() {
 EOF
 }
 
-OUTDIR="out2"
+OUTDIR="out3"
 [ ! -d $OUTDIR ] && { mkdir $OUTDIR; }
 
 USERDATA_REGEX="*.tsv"
@@ -49,34 +42,35 @@ for USERDATA in $DATADIR/$USERDATA_REGEX; do
     [ -e "$OUTFILE" ] && { rm "$OUTFILE"; }
 
     header > "$OUTFILE"
+    for C3 in $(seq 9 2 27); do
+        C3="C3=$C3"
+	for C1 in 'A' 'B' 'C'; do
+	    C1="C1=$C1"
+	    for C4 in $(seq 1 6); do
+	    	C4="C4=s$C4"
+            	# From the AOI list, filter those depending a certain criteria
+            	AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk $C3 $C1 $C4 $AOI_FILE)
 
-    for SLIDE in $(seq 9 2 27); do
+            	# The AOIs have full name, so remove the infix
+            	AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
 
-        C3="C3=$SLIDE"
+            	# Remove certain AOI's
+            	AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
 
-        # From the AOI list, filter those depending a certain criteria
-        AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk $C1 $C3 $AOI_FILE)
+            	# Filter rows matching the AOIS
+            	ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA)
 
-        # The AOIs have full name, so remove the infix
-        AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
+            	# remove duplicates and sort
+            	UNIQUE_FIELDS=$(echo "$ROWS" | uniq | sort -n)
 
-        # Remove certain AOI's
-        #AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
+            	# pathnames just waste chars, so remote the dirname of userdata filename
+            	USERDATA_BASENAME=$(basename "$USERDATA")
 
-        # Filter rows matching the AOIS
-        ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA)
-
-        # remove duplicates and sort
-        UNIQUE_FIELDS=$(echo "$ROWS" | uniq | sort -n)
-
-        # pathnames just waste chars, so remote the dirname of userdata filename
-        USERDATA_BASENAME=$(basename "$USERDATA")
-
-        # get and append the slide and line number for each AOI
-        STAT=$(echo "$UNIQUE_FIELDS" | \
-    datamash -t : -g 1 count 2 sum 3 mean 3 | \
-    awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME")
-	
-        echo "$STAT" >> "$OUTFILE"
+            	# get and append the slide and line number for each AOI
+            	STAT=$(echo "$UNIQUE_FIELDS" | datamash -t : -g 1 count 2 sum 3 mean 3 | \
+		    awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME")
+            	echo "$STAT" >> "$OUTFILE"
+	    done
+	done
     done
 done
