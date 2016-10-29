@@ -14,21 +14,22 @@ AOI_FILE="AOI.txt"
 DEBUG=echo
 DATADIR="data"
 OUTDIR="out"
+F_ALL_USERS_OUTPUT="$OUTDIR/output.txt"
 
 output_header() {
     cat << EOF
-# USER C3 C1 C4 AOI SLIDE LINE NFIX SUMFIXLAT
+# USER C4 C2 C1 AOI NFIX SUMFIXLAT MEANSUMFIXLAT SLIDE LINE
 #
 #     USER: userdata
-#     C3: criteria slide number
-#     C1: criteria AOI area
 #     C4: criteria sylabic structure
+#     C2: criteria stimulus type
+#     C1: criteria AOI area
 #     AOI: Area of Interested
-#     SLIDE: Slide number where AOI appears
-#     LINE: Line number where AOI appears
 #     NFIX: Number of fixations
 #     SUMFIXLAT: Sum of fixations latencies
 #     MEANSUMFIXLAT: Mean of SUMFIXLAT
+#     SLIDE: Slide number where AOI appears
+#     LINE: Line number where AOI appears
 #
 EOF
 }
@@ -51,7 +52,9 @@ EOF
 
 [ ! -d $OUTDIR ] && { mkdir $OUTDIR; }
 
+# Default files in OUTDIR
 cp $AOI_FILE $OUTDIR
+output_header > $OUTDIR/header.txt
 
 USERDATA_REGEX="*.tsv"
 
@@ -68,45 +71,46 @@ for USERDATA in $DATADIR/$USERDATA_REGEX; do
     # define the user output files
     F_INPUT="$OUTUSERDIR/input.txt"
     F_OUTPUT="$OUTUSERDIR/output.txt"
-
     # Include headers
     input_header  > $F_INPUT
-    output_header > $F_OUTPUT
 
-    # Loop: slides, criteria 1 then criteria 4
+    # Main Loop
     for C3 in $(seq 9 2 27); do
-    	for C1 in 'A' 'B' 'C'; do
-    	    for C4 in $(seq 1 6); do
+    	for C4 in $(seq 1 6); do
+    	    for C2 in 'p' 'n'; do
+    		for C1 in 'A' 'B' 'C'; do
+            	    # From the AOI list, filter those depending a certain criteria
+            	    AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk C3=$C3 C1=$C1 C4=s$C4 $AOI_FILE)
+    		    echo "awk -f select-aoi-by-criteria.awk C3=$C3 C4=s$C4 C2=$C2 C1=$C1 $AOI_FILE" >> $F_INPUT
+    		    echo "$AOIS_FULLNAME" >> $F_INPUT
 
-            	# From the AOI list, filter those depending a certain criteria
-            	AOIS_FULLNAME=$(awk -f select-aoi-by-criteria.awk C3=$C3 C1=$C1 C4=s$C4 $AOI_FILE)
-    		echo "awk -f select-aoi-by-criteria.awk C3=$C3 C1=$C1 C4=s$C4 $AOI_FILE" >> $F_INPUT
-    		echo "$AOIS_FULLNAME" >> $F_INPUT
+    		    # make sure there are AOIS before continuing
+    		    [ -z "$AOIS_FULLNAME" ] && { continue; }
 
-    		# make sure there are AOIS before continuing
-    		[ -z "$AOIS_FULLNAME" ] && { continue; }
+            	    # The AOIs have full name, so remove the infix
+            	    AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
 
-            	# The AOIs have full name, so remove the infix
-            	AOIS=$(echo "$AOIS_FULLNAME" | awk -f remove-infix.awk)
+            	    # Remove certain AOI's
+            	    AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
 
-            	# Remove certain AOI's
-            	AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
+            	    # Filter rows matching the AOIS
+		    ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n)
+		    echo "awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n" >> $F_INPUT
+		    echo "$ROWS" >> $F_INPUT
 
-            	# Filter rows matching the AOIS
-		ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n)
-		echo "awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n" >> $F_INPUT
-		echo "$ROWS" >> $F_INPUT
+    		    # Make sure there is user data based on the selected AOIS
+    		    [ -z "$ROWS" ] && { continue; }
 
-    		# Make sure there is user data based on the selected AOIS
-    		[ -z "$ROWS" ] && { continue; }
-
-            	# get and append the slide and line number for each AOI
-            	STAT=$(echo "$ROWS" | datamash -t : -g 1 count 2 sum 3 mean 3)
-		OUT=$(echo "$STAT" | awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME" -v CRITERIA="$C3 $C1 s$C4")
-		echo "datamash -t : -g 1 count 2 sum 3 mean 3" >> $F_INPUT
-            	echo "$STAT" >> $F_INPUT
-            	echo "$OUT" >> $F_OUTPUT
+            	    # get and append the slide and line number for each AOI
+            	    STAT=$(echo "$ROWS" | datamash -t : -g 1 count 2 sum 3 mean 3)
+		    OUT=$(echo "$STAT" | awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME" -v CRITERIA="s$C4 $C2 $C1")
+		    echo "datamash -t : -g 1 count 2 sum 3 mean 3" >> $F_INPUT
+            	    echo "$STAT" >> $F_INPUT
+            	    echo "$OUT" >> $F_OUTPUT
+		done
     	    done
     	done
     done
+    # place users results in a single line
+    echo "$(tr '\n' ' ' < $F_OUTPUT)" >> $F_ALL_USERS_OUTPUT
 done
