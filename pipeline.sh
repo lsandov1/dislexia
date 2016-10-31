@@ -55,6 +55,7 @@ EOF
 # Default files in OUTDIR
 cp $AOI_FILE $OUTDIR
 output_header > $OUTDIR/header.txt
+> $F_ALL_USERS_OUTPUT
 
 USERDATA_REGEX="*.tsv"
 
@@ -71,8 +72,10 @@ for USERDATA in $DATADIR/$USERDATA_REGEX; do
     # define the user output files
     F_INPUT="$OUTUSERDIR/input.txt"
     F_OUTPUT="$OUTUSERDIR/output.txt"
-    # Include headers
+
+    # Setup user output files
     input_header  > $F_INPUT
+    > $F_OUTPUT
 
     # Main Loop
     for C3 in $(seq 9 2 27); do
