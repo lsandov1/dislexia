@@ -9,7 +9,7 @@
 #     rows from user data
 #
 #     datamash: use first row to count second column, sum the third and mean the third
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=p C1=A AOI.txt
 009Ap9s1d8L4c4b0luna
 011Ap9s1d8L4c4b0cena
 026Ap9s1d8L6c4t0cabeza
@@ -26,7 +26,50 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 009luna:1:459:459
 011cena:3:1554:518
 026cabeza:4:2293:573.25
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=p C1=B AOI.txt
+010Bp9s1d8L4c4b2luna
+012Bp9s1d8L4c4b1cena
+027Bp9s1d8L6c4t3cabeza
+awk -f select-user-aoi-rows.awk -v AOIS=010luna 012cena 027cabeza data/ACH.tsv | uniq | sort -n
+012cena:361:498
+027cabeza:372:638
+027cabeza:374:299
+datamash -t : -g 1 count 2 sum 3 mean 3
+012cena:1:498:498
+027cabeza:2:937:468.5
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=n C1=A AOI.txt
+009Ap9s1d8L4c4b0luna
+011Ap9s1d8L4c4b0cena
+026Ap9s1d8L6c4t0cabeza
+awk -f select-user-aoi-rows.awk -v AOIS=009luna 011cena 026cabeza data/ACH.tsv | uniq | sort -n
+009luna:357:459
+011cena:358:179
+011cena:359:877
+011cena:361:498
+026cabeza:372:638
+026cabeza:374:299
+026cabeza:383:259
+026cabeza:384:1097
+datamash -t : -g 1 count 2 sum 3 mean 3
+009luna:1:459:459
+011cena:3:1554:518
+026cabeza:4:2293:573.25
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=n C1=B AOI.txt
+010Bp9s1d8L4c4b2luna
+012Bp9s1d8L4c4b1cena
+027Bp9s1d8L6c4t3cabeza
+awk -f select-user-aoi-rows.awk -v AOIS=010luna 012cena 027cabeza data/ACH.tsv | uniq | sort -n
+012cena:361:498
+027cabeza:372:638
+027cabeza:374:299
+datamash -t : -g 1 count 2 sum 3 mean 3
+012cena:1:498:498
+027cabeza:2:937:468.5
+awk -f select-aoi-by-criteria.awk C3=9 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=p C1=A AOI.txt
 004Ap9s2d5L6c6t0escoba
 017Ap9s2d8L4c5b0maiz
 021Ap9s2d3L4c6b0arte
@@ -42,11 +85,81 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 004escoba:1:2353:2353
 017maiz:4:1415:353.75
 021arte:2:2492:1246
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=p C1=B AOI.txt
+005Bp9s2d5L6c6t3escoba
+018Bp9s2d8L4c5b1maiz
+022Bp9s2d3L4c6b2arte
+awk -f select-user-aoi-rows.awk -v AOIS=005escoba 018maiz 022arte data/ACH.tsv | uniq | sort -n
+005escoba:354:2353
+022arte:370:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+005escoba:1:2353:2353
+022arte:1:1216:1216
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=p C1=C AOI.txt
+006Cp9s2d5L6c6t0escoba
+023Cp9s2d3L4c6b0arte
+awk -f select-user-aoi-rows.awk -v AOIS=006escoba 023arte data/ACH.tsv | uniq | sort -n
+006escoba:354:2353
+023arte:377:1276
+datamash -t : -g 1 count 2 sum 3 mean 3
+006escoba:1:2353:2353
+023arte:1:1276:1276
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=n C1=A AOI.txt
+004Ap9s2d5L6c6t0escoba
+017Ap9s2d8L4c5b0maiz
+021Ap9s2d3L4c6b0arte
+awk -f select-user-aoi-rows.awk -v AOIS=004escoba 017maiz 021arte data/ACH.tsv | uniq | sort -n
+004escoba:354:2353
+017maiz:365:279
+017maiz:366:538
+017maiz:368:319
+017maiz:387:279
+021arte:370:1216
+021arte:377:1276
+datamash -t : -g 1 count 2 sum 3 mean 3
+004escoba:1:2353:2353
+017maiz:4:1415:353.75
+021arte:2:2492:1246
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=n C1=B AOI.txt
+005Bp9s2d5L6c6t3escoba
+018Bp9s2d8L4c5b1maiz
+022Bp9s2d3L4c6b2arte
+awk -f select-user-aoi-rows.awk -v AOIS=005escoba 018maiz 022arte data/ACH.tsv | uniq | sort -n
+005escoba:354:2353
+022arte:370:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+005escoba:1:2353:2353
+022arte:1:1216:1216
+awk -f select-aoi-by-criteria.awk C3=9 C4=s2 C2=n C1=C AOI.txt
+006Cp9s2d5L6c6t0escoba
+023Cp9s2d3L4c6b0arte
+awk -f select-user-aoi-rows.awk -v AOIS=006escoba 023arte data/ACH.tsv | uniq | sort -n
+006escoba:354:2353
+023arte:377:1276
+datamash -t : -g 1 count 2 sum 3 mean 3
+006escoba:1:2353:2353
+023arte:1:1276:1276
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=p C1=A AOI.txt
 035Ap9s3d8L7c4t0pepinos
 awk -f select-user-aoi-rows.awk -v AOIS=035pepinos data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=p C1=B AOI.txt
+036Bp9s3d8L7c4t1pepinos
+awk -f select-user-aoi-rows.awk -v AOIS=036pepinos data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=n C1=A AOI.txt
+035Ap9s3d8L7c4t0pepinos
+awk -f select-user-aoi-rows.awk -v AOIS=035pepinos data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=n C1=B AOI.txt
+036Bp9s3d8L7c4t1pepinos
+awk -f select-user-aoi-rows.awk -v AOIS=036pepinos data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s3 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=p C1=A AOI.txt
 007Ap9s4d6L7c1t0primero
 015Ap9s4d4L5c1b0pobre
 019Ap9s4d4L5c1b0bruja
@@ -61,7 +174,44 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 007primero:2:1017:508.5
 015pobre:1:638:638
 019bruja:2:1256:628
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=p C1=B AOI.txt
+008Bp9s4d6L7c1t3primero
+016Bp9s4d4L5c1b1pobre
+020Bp9s4d4L5c1b2bruja
+034Bp9s4d6L7c1t3planeta
+awk -f select-user-aoi-rows.awk -v AOIS=008primero 016pobre 020bruja 034planeta data/ACH.tsv | uniq | sort -n
+008primero:355:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+008primero:1:339:339
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=n C1=A AOI.txt
+007Ap9s4d6L7c1t0primero
+015Ap9s4d4L5c1b0pobre
+019Ap9s4d4L5c1b0bruja
+033Ap9s4d6L7c1t0planeta
+awk -f select-user-aoi-rows.awk -v AOIS=007primero 015pobre 019bruja 033planeta data/ACH.tsv | uniq | sort -n
+007primero:355:339
+007primero:356:678
+015pobre:364:638
+019bruja:367:419
+019bruja:369:837
+datamash -t : -g 1 count 2 sum 3 mean 3
+007primero:2:1017:508.5
+015pobre:1:638:638
+019bruja:2:1256:628
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=n C1=B AOI.txt
+008Bp9s4d6L7c1t3primero
+016Bp9s4d4L5c1b1pobre
+020Bp9s4d4L5c1b2bruja
+034Bp9s4d6L7c1t3planeta
+awk -f select-user-aoi-rows.awk -v AOIS=008primero 016pobre 020bruja 034planeta data/ACH.tsv | uniq | sort -n
+008primero:355:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+008primero:1:339:339
+awk -f select-aoi-by-criteria.awk C3=9 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=p C1=A AOI.txt
 001Ap9s5d3L8c7t0princesa
 028Ap9s5d3L8c7t0plastico
 037Ap9s5d5L6c2b0sufrir
@@ -76,7 +226,72 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 001princesa:1:1535:1535
 028plastico:4:3847:961.75
 037sufrir:1:139:139
-awk -f select-aoi-by-criteria.awk C3=9 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=p C1=B AOI.txt
+002Bp9s5d3L8c7t3princesa
+029Bp9s5d3L8c7t3plastico
+038Bp9s5d5L6c2b1sufrir
+awk -f select-user-aoi-rows.awk -v AOIS=002princesa 029plastico 038sufrir data/ACH.tsv | uniq | sort -n
+002princesa:353:1535
+029plastico:373:239
+029plastico:375:618
+029plastico:376:997
+029plastico:385:1993
+038sufrir:386:139
+datamash -t : -g 1 count 2 sum 3 mean 3
+002princesa:1:1535:1535
+029plastico:4:3847:961.75
+038sufrir:1:139:139
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=p C1=C AOI.txt
+003Cp9s5d3L8c7t0princesa
+030Cp9s5d3L8c7t0plastico
+awk -f select-user-aoi-rows.awk -v AOIS=003princesa 030plastico data/ACH.tsv | uniq | sort -n
+003princesa:353:1535
+030plastico:376:997
+030plastico:385:1993
+datamash -t : -g 1 count 2 sum 3 mean 3
+003princesa:1:1535:1535
+030plastico:2:2990:1495
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=n C1=A AOI.txt
+001Ap9s5d3L8c7t0princesa
+028Ap9s5d3L8c7t0plastico
+037Ap9s5d5L6c2b0sufrir
+awk -f select-user-aoi-rows.awk -v AOIS=001princesa 028plastico 037sufrir data/ACH.tsv | uniq | sort -n
+001princesa:353:1535
+028plastico:373:239
+028plastico:375:618
+028plastico:376:997
+028plastico:385:1993
+037sufrir:386:139
+datamash -t : -g 1 count 2 sum 3 mean 3
+001princesa:1:1535:1535
+028plastico:4:3847:961.75
+037sufrir:1:139:139
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=n C1=B AOI.txt
+002Bp9s5d3L8c7t3princesa
+029Bp9s5d3L8c7t3plastico
+038Bp9s5d5L6c2b1sufrir
+awk -f select-user-aoi-rows.awk -v AOIS=002princesa 029plastico 038sufrir data/ACH.tsv | uniq | sort -n
+002princesa:353:1535
+029plastico:373:239
+029plastico:375:618
+029plastico:376:997
+029plastico:385:1993
+038sufrir:386:139
+datamash -t : -g 1 count 2 sum 3 mean 3
+002princesa:1:1535:1535
+029plastico:4:3847:961.75
+038sufrir:1:139:139
+awk -f select-aoi-by-criteria.awk C3=9 C4=s5 C2=n C1=C AOI.txt
+003Cp9s5d3L8c7t0princesa
+030Cp9s5d3L8c7t0plastico
+awk -f select-user-aoi-rows.awk -v AOIS=003princesa 030plastico data/ACH.tsv | uniq | sort -n
+003princesa:353:1535
+030plastico:376:997
+030plastico:385:1993
+datamash -t : -g 1 count 2 sum 3 mean 3
+003princesa:1:1535:1535
+030plastico:2:2990:1495
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=p C1=A AOI.txt
 013Ap9s6dxL5c4b0fecha
 024Ap9s6dxL7c4t0botella
 031Ap9s6dxL5c4b0queso
@@ -93,56 +308,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=013fecha 024botella 031queso data/ACH.ts
 datamash -t : -g 1 count 2 sum 3 mean 3
 013fecha:2:1176:588
 024botella:7:3848:549.71428571429
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s1 AOI.txt
-010Bp9s1d8L4c4b2luna
-012Bp9s1d8L4c4b1cena
-027Bp9s1d8L6c4t3cabeza
-awk -f select-user-aoi-rows.awk -v AOIS=010luna 012cena 027cabeza data/ACH.tsv | uniq | sort -n
-012cena:361:498
-027cabeza:372:638
-027cabeza:374:299
-datamash -t : -g 1 count 2 sum 3 mean 3
-012cena:1:498:498
-027cabeza:2:937:468.5
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s2 AOI.txt
-005Bp9s2d5L6c6t3escoba
-018Bp9s2d8L4c5b1maiz
-022Bp9s2d3L4c6b2arte
-awk -f select-user-aoi-rows.awk -v AOIS=005escoba 018maiz 022arte data/ACH.tsv | uniq | sort -n
-005escoba:354:2353
-022arte:370:1216
-datamash -t : -g 1 count 2 sum 3 mean 3
-005escoba:1:2353:2353
-022arte:1:1216:1216
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s3 AOI.txt
-036Bp9s3d8L7c4t1pepinos
-awk -f select-user-aoi-rows.awk -v AOIS=036pepinos data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s4 AOI.txt
-008Bp9s4d6L7c1t3primero
-016Bp9s4d4L5c1b1pobre
-020Bp9s4d4L5c1b2bruja
-034Bp9s4d6L7c1t3planeta
-awk -f select-user-aoi-rows.awk -v AOIS=008primero 016pobre 020bruja 034planeta data/ACH.tsv | uniq | sort -n
-008primero:355:339
-datamash -t : -g 1 count 2 sum 3 mean 3
-008primero:1:339:339
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s5 AOI.txt
-002Bp9s5d3L8c7t3princesa
-029Bp9s5d3L8c7t3plastico
-038Bp9s5d5L6c2b1sufrir
-awk -f select-user-aoi-rows.awk -v AOIS=002princesa 029plastico 038sufrir data/ACH.tsv | uniq | sort -n
-002princesa:353:1535
-029plastico:373:239
-029plastico:375:618
-029plastico:376:997
-029plastico:385:1993
-038sufrir:386:139
-datamash -t : -g 1 count 2 sum 3 mean 3
-002princesa:1:1535:1535
-029plastico:4:3847:961.75
-038sufrir:1:139:139
-awk -f select-aoi-by-criteria.awk C3=9 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=p C1=B AOI.txt
 014Bp9s6dxL5c4b1fecha
 025Bp9s6dxL7c4t1botella
 032Bp9s6dxL5c4b2queso
@@ -151,34 +317,37 @@ awk -f select-user-aoi-rows.awk -v AOIS=014fecha 025botella 032queso data/ACH.ts
 025botella:381:299
 datamash -t : -g 1 count 2 sum 3 mean 3
 025botella:2:957:478.5
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s2 AOI.txt
-006Cp9s2d5L6c6t0escoba
-023Cp9s2d3L4c6b0arte
-awk -f select-user-aoi-rows.awk -v AOIS=006escoba 023arte data/ACH.tsv | uniq | sort -n
-006escoba:354:2353
-023arte:377:1276
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=n C1=A AOI.txt
+013Ap9s6dxL5c4b0fecha
+024Ap9s6dxL7c4t0botella
+031Ap9s6dxL5c4b0queso
+awk -f select-user-aoi-rows.awk -v AOIS=013fecha 024botella 031queso data/ACH.tsv | uniq | sort -n
+013fecha:360:877
+013fecha:363:299
+024botella:362:179
+024botella:371:1376
+024botella:378:977
+024botella:379:658
+024botella:380:179
+024botella:381:299
+024botella:382:180
 datamash -t : -g 1 count 2 sum 3 mean 3
-006escoba:1:2353:2353
-023arte:1:1276:1276
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s3 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s5 AOI.txt
-003Cp9s5d3L8c7t0princesa
-030Cp9s5d3L8c7t0plastico
-awk -f select-user-aoi-rows.awk -v AOIS=003princesa 030plastico data/ACH.tsv | uniq | sort -n
-003princesa:353:1535
-030plastico:376:997
-030plastico:385:1993
+013fecha:2:1176:588
+024botella:7:3848:549.71428571429
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=n C1=B AOI.txt
+014Bp9s6dxL5c4b1fecha
+025Bp9s6dxL7c4t1botella
+032Bp9s6dxL5c4b2queso
+awk -f select-user-aoi-rows.awk -v AOIS=014fecha 025botella 032queso data/ACH.tsv | uniq | sort -n
+025botella:379:658
+025botella:381:299
 datamash -t : -g 1 count 2 sum 3 mean 3
-003princesa:1:1535:1535
-030plastico:2:2990:1495
-awk -f select-aoi-by-criteria.awk C3=9 C1=C C4=s6 AOI.txt
+025botella:2:957:478.5
+awk -f select-aoi-by-criteria.awk C3=9 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=p C1=A AOI.txt
 041Ap11s1d8L6c4t0musica
 050Ap11s1dxL7c4t0belleza
 063Ap11s1d8L6c4t0bonita
@@ -197,7 +366,52 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 050belleza:4:2113:528.25
 063bonita:1:439:439
 074numero:2:1396:698
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=p C1=B AOI.txt
+042Bp11s1d8L6c4t2musica
+051Bp11s1dxL7c4t2belleza
+064Bp11s1d8L6c4t1bonita
+075Bp11s1d8L6c4t3numero
+awk -f select-user-aoi-rows.awk -v AOIS=042musica 051belleza 064bonita 075numero data/ACH.tsv | uniq | sort -n
+051belleza:398:479
+075numero:429:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+051belleza:1:479:479
+075numero:1:1216:1216
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=n C1=A AOI.txt
+041Ap11s1d8L6c4t0musica
+050Ap11s1dxL7c4t0belleza
+063Ap11s1d8L6c4t0bonita
+074Ap11s1d8L6c4t0numero
+awk -f select-user-aoi-rows.awk -v AOIS=041musica 050belleza 063bonita 074numero data/ACH.tsv | uniq | sort -n
+041musica:392:1535
+050belleza:397:917
+050belleza:398:479
+050belleza:399:179
+050belleza:407:538
+063bonita:415:439
+074numero:429:1216
+074numero:430:180
+datamash -t : -g 1 count 2 sum 3 mean 3
+041musica:1:1535:1535
+050belleza:4:2113:528.25
+063bonita:1:439:439
+074numero:2:1396:698
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=n C1=B AOI.txt
+042Bp11s1d8L6c4t2musica
+051Bp11s1dxL7c4t2belleza
+064Bp11s1d8L6c4t1bonita
+075Bp11s1d8L6c4t3numero
+awk -f select-user-aoi-rows.awk -v AOIS=042musica 051belleza 064bonita 075numero data/ACH.tsv | uniq | sort -n
+051belleza:398:479
+075numero:429:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+051belleza:1:479:479
+075numero:1:1216:1216
+awk -f select-aoi-by-criteria.awk C3=11 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=p C1=A AOI.txt
 039Ap11s2d8L4c5b0leer
 057Ap11s2d3L4c6b0esto
 070Ap11s2d8L4c5b0pais
@@ -212,7 +426,42 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 039leer:2:2612:1306
 057esto:2:638:319
 070pais:2:2093:1046.5
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=p C1=B AOI.txt
+040Bp11s2d8L4c5b1leer
+058Bp11s2d3L4c6b2esto
+071Bp11s2d8L4c5b1pais
+awk -f select-user-aoi-rows.awk -v AOIS=040leer 058esto 071pais data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=p C1=C AOI.txt
+059Cp11s2d3L4c6b0esto
+awk -f select-user-aoi-rows.awk -v AOIS=059esto data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=n C1=A AOI.txt
+039Ap11s2d8L4c5b0leer
+057Ap11s2d3L4c6b0esto
+070Ap11s2d8L4c5b0pais
+awk -f select-user-aoi-rows.awk -v AOIS=039leer 057esto 070pais data/ACH.tsv | uniq | sort -n
+039leer:390:1675
+039leer:391:937
+057esto:405:339
+057esto:410:299
+070pais:422:259
+070pais:425:1834
+datamash -t : -g 1 count 2 sum 3 mean 3
+039leer:2:2612:1306
+057esto:2:638:319
+070pais:2:2093:1046.5
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=n C1=B AOI.txt
+040Bp11s2d8L4c5b1leer
+058Bp11s2d3L4c6b2esto
+071Bp11s2d8L4c5b1pais
+awk -f select-user-aoi-rows.awk -v AOIS=040leer 058esto 071pais data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s2 C2=n C1=C AOI.txt
+059Cp11s2d3L4c6b0esto
+awk -f select-user-aoi-rows.awk -v AOIS=059esto data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=p C1=A AOI.txt
 043Ap11s3d8L5c3b0jugar
 047Ap11s3d6L7c6t0volante
 060Ap11s3d6L7c6t0toronja
@@ -229,7 +478,64 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 043jugar:1:578:578
 047volante:1:1575:1575
 060toronja:6:2491:415.16666666667
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=p C1=B AOI.txt
+044Bp11s3d8L5c3b1jugar
+048Bp11s3d6L7c6t2volante
+061Bp11s3d6L7c6t2toronja
+awk -f select-user-aoi-rows.awk -v AOIS=044jugar 048volante 061toronja data/ACH.tsv | uniq | sort -n
+061toronja:406:179
+061toronja:411:199
+061toronja:413:1076
+061toronja:426:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+061toronja:4:1853:463.25
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=p C1=C AOI.txt
+049Cp11s3d6L7c6t0volante
+062Cp11s3d6L7c6t0toronja
+awk -f select-user-aoi-rows.awk -v AOIS=049volante 062toronja data/ACH.tsv | uniq | sort -n
+062toronja:406:179
+062toronja:414:259
+062toronja:426:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+062toronja:3:837:279
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=n C1=A AOI.txt
+043Ap11s3d8L5c3b0jugar
+047Ap11s3d6L7c6t0volante
+060Ap11s3d6L7c6t0toronja
+awk -f select-user-aoi-rows.awk -v AOIS=043jugar 047volante 060toronja data/ACH.tsv | uniq | sort -n
+043jugar:393:578
+047volante:396:1575
+060toronja:406:179
+060toronja:411:199
+060toronja:413:1076
+060toronja:414:259
+060toronja:426:399
+060toronja:427:379
+datamash -t : -g 1 count 2 sum 3 mean 3
+043jugar:1:578:578
+047volante:1:1575:1575
+060toronja:6:2491:415.16666666667
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=n C1=B AOI.txt
+044Bp11s3d8L5c3b1jugar
+048Bp11s3d6L7c6t2volante
+061Bp11s3d6L7c6t2toronja
+awk -f select-user-aoi-rows.awk -v AOIS=044jugar 048volante 061toronja data/ACH.tsv | uniq | sort -n
+061toronja:406:179
+061toronja:411:199
+061toronja:413:1076
+061toronja:426:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+061toronja:4:1853:463.25
+awk -f select-aoi-by-criteria.awk C3=11 C4=s3 C2=n C1=C AOI.txt
+049Cp11s3d6L7c6t0volante
+062Cp11s3d6L7c6t0toronja
+awk -f select-user-aoi-rows.awk -v AOIS=049volante 062toronja data/ACH.tsv | uniq | sort -n
+062toronja:406:179
+062toronja:414:259
+062toronja:426:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+062toronja:3:837:279
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=p C1=A AOI.txt
 055Ap11s4d6L7c1t0fabrica
 068Ap11s4d4L5c1b0madre
 078Ap11s4d6L7c1t0palabra
@@ -249,7 +555,53 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 055fabrica:5:1894:378.8
 068madre:3:956:318.66666666667
 078palabra:3:1555:518.33333333333
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=p C1=B AOI.txt
+056Bp11s4d6L7c1t2fabrica
+069Bp11s4d4L5c1b1madre
+079Bp11s4d6L7c1t1palabra
+awk -f select-user-aoi-rows.awk -v AOIS=056fabrica 069madre 079palabra data/ACH.tsv | uniq | sort -n
+056fabrica:404:439
+056fabrica:418:160
+069madre:424:219
+datamash -t : -g 1 count 2 sum 3 mean 3
+056fabrica:2:599:299.5
+069madre:1:219:219
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=n C1=A AOI.txt
+055Ap11s4d6L7c1t0fabrica
+068Ap11s4d4L5c1b0madre
+078Ap11s4d6L7c1t0palabra
+awk -f select-user-aoi-rows.awk -v AOIS=055fabrica 068madre 078palabra data/ACH.tsv | uniq | sort -n
+055fabrica:403:997
+055fabrica:404:439
+055fabrica:409:179
+055fabrica:418:160
+055fabrica:419:119
+068madre:421:518
+068madre:423:219
+068madre:424:219
+078palabra:435:658
+078palabra:436:359
+078palabra:439:538
+datamash -t : -g 1 count 2 sum 3 mean 3
+055fabrica:5:1894:378.8
+068madre:3:956:318.66666666667
+078palabra:3:1555:518.33333333333
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=n C1=B AOI.txt
+056Bp11s4d6L7c1t2fabrica
+069Bp11s4d4L5c1b1madre
+079Bp11s4d6L7c1t1palabra
+awk -f select-user-aoi-rows.awk -v AOIS=056fabrica 069madre 079palabra data/ACH.tsv | uniq | sort -n
+056fabrica:404:439
+056fabrica:418:160
+069madre:424:219
+datamash -t : -g 1 count 2 sum 3 mean 3
+056fabrica:2:599:299.5
+069madre:1:219:219
+awk -f select-aoi-by-criteria.awk C3=11 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=p C1=A AOI.txt
 052Ap11s5d3L8c7t0cobrando
 065Ap11s5d2L6c7b0planta
 076Ap11s5d7L8c2t0cicatriz
@@ -265,7 +617,55 @@ awk -f select-user-aoi-rows.awk -v AOIS=052cobrando 065planta 076cicatriz data/A
 datamash -t : -g 1 count 2 sum 3 mean 3
 052cobrando:5:1835:367
 076cicatriz:3:2531:843.66666666667
-awk -f select-aoi-by-criteria.awk C3=11 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=p C1=B AOI.txt
+053Bp11s5d3L8c7t2cobrando
+066Bp11s5d2L6c7b2planta
+077Bp11s5d7L8c2t1cicatriz
+awk -f select-user-aoi-rows.awk -v AOIS=053cobrando 066planta 077cicatriz data/ACH.tsv | uniq | sort -n
+053cobrando:400:140
+053cobrando:401:877
+datamash -t : -g 1 count 2 sum 3 mean 3
+053cobrando:2:1017:508.5
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=p C1=C AOI.txt
+054Cp11s5d3L8c7t0cobrando
+067Cp11s5d2L6c7b0planta
+awk -f select-user-aoi-rows.awk -v AOIS=054cobrando 067planta data/ACH.tsv | uniq | sort -n
+054cobrando:402:160
+datamash -t : -g 1 count 2 sum 3 mean 3
+054cobrando:1:160:160
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=n C1=A AOI.txt
+052Ap11s5d3L8c7t0cobrando
+065Ap11s5d2L6c7b0planta
+076Ap11s5d7L8c2t0cicatriz
+awk -f select-user-aoi-rows.awk -v AOIS=052cobrando 065planta 076cicatriz data/ACH.tsv | uniq | sort -n
+052cobrando:400:140
+052cobrando:401:877
+052cobrando:402:160
+052cobrando:416:219
+052cobrando:417:439
+076cicatriz:431:219
+076cicatriz:433:837
+076cicatriz:434:1475
+datamash -t : -g 1 count 2 sum 3 mean 3
+052cobrando:5:1835:367
+076cicatriz:3:2531:843.66666666667
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=n C1=B AOI.txt
+053Bp11s5d3L8c7t2cobrando
+066Bp11s5d2L6c7b2planta
+077Bp11s5d7L8c2t1cicatriz
+awk -f select-user-aoi-rows.awk -v AOIS=053cobrando 066planta 077cicatriz data/ACH.tsv | uniq | sort -n
+053cobrando:400:140
+053cobrando:401:877
+datamash -t : -g 1 count 2 sum 3 mean 3
+053cobrando:2:1017:508.5
+awk -f select-aoi-by-criteria.awk C3=11 C4=s5 C2=n C1=C AOI.txt
+054Cp11s5d3L8c7t0cobrando
+067Cp11s5d2L6c7b0planta
+awk -f select-user-aoi-rows.awk -v AOIS=054cobrando 067planta data/ACH.tsv | uniq | sort -n
+054cobrando:402:160
+datamash -t : -g 1 count 2 sum 3 mean 3
+054cobrando:1:160:160
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=p C1=A AOI.txt
 045Ap11s6dxL5c4b0chile
 072Ap11s6dxL7c4t0llorona
 awk -f select-user-aoi-rows.awk -v AOIS=045chile 072llorona data/ACH.tsv | uniq | sort -n
@@ -275,88 +675,35 @@ awk -f select-user-aoi-rows.awk -v AOIS=045chile 072llorona data/ACH.tsv | uniq 
 datamash -t : -g 1 count 2 sum 3 mean 3
 045chile:2:817:408.5
 072llorona:1:678:678
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s1 AOI.txt
-042Bp11s1d8L6c4t2musica
-051Bp11s1dxL7c4t2belleza
-064Bp11s1d8L6c4t1bonita
-075Bp11s1d8L6c4t3numero
-awk -f select-user-aoi-rows.awk -v AOIS=042musica 051belleza 064bonita 075numero data/ACH.tsv | uniq | sort -n
-051belleza:398:479
-075numero:429:1216
-datamash -t : -g 1 count 2 sum 3 mean 3
-051belleza:1:479:479
-075numero:1:1216:1216
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s2 AOI.txt
-040Bp11s2d8L4c5b1leer
-058Bp11s2d3L4c6b2esto
-071Bp11s2d8L4c5b1pais
-awk -f select-user-aoi-rows.awk -v AOIS=040leer 058esto 071pais data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s3 AOI.txt
-044Bp11s3d8L5c3b1jugar
-048Bp11s3d6L7c6t2volante
-061Bp11s3d6L7c6t2toronja
-awk -f select-user-aoi-rows.awk -v AOIS=044jugar 048volante 061toronja data/ACH.tsv | uniq | sort -n
-061toronja:406:179
-061toronja:411:199
-061toronja:413:1076
-061toronja:426:399
-datamash -t : -g 1 count 2 sum 3 mean 3
-061toronja:4:1853:463.25
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s4 AOI.txt
-056Bp11s4d6L7c1t2fabrica
-069Bp11s4d4L5c1b1madre
-079Bp11s4d6L7c1t1palabra
-awk -f select-user-aoi-rows.awk -v AOIS=056fabrica 069madre 079palabra data/ACH.tsv | uniq | sort -n
-056fabrica:404:439
-056fabrica:418:160
-069madre:424:219
-datamash -t : -g 1 count 2 sum 3 mean 3
-056fabrica:2:599:299.5
-069madre:1:219:219
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s5 AOI.txt
-053Bp11s5d3L8c7t2cobrando
-066Bp11s5d2L6c7b2planta
-077Bp11s5d7L8c2t1cicatriz
-awk -f select-user-aoi-rows.awk -v AOIS=053cobrando 066planta 077cicatriz data/ACH.tsv | uniq | sort -n
-053cobrando:400:140
-053cobrando:401:877
-datamash -t : -g 1 count 2 sum 3 mean 3
-053cobrando:2:1017:508.5
-awk -f select-aoi-by-criteria.awk C3=11 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=p C1=B AOI.txt
 046Bp11s6dxL5c4b2chile
 073Bp11s6dxL7c4t3llorona
 awk -f select-user-aoi-rows.awk -v AOIS=046chile 073llorona data/ACH.tsv | uniq | sort -n
 046chile:394:658
 datamash -t : -g 1 count 2 sum 3 mean 3
 046chile:1:658:658
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s2 AOI.txt
-059Cp11s2d3L4c6b0esto
-awk -f select-user-aoi-rows.awk -v AOIS=059esto data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s3 AOI.txt
-049Cp11s3d6L7c6t0volante
-062Cp11s3d6L7c6t0toronja
-awk -f select-user-aoi-rows.awk -v AOIS=049volante 062toronja data/ACH.tsv | uniq | sort -n
-062toronja:406:179
-062toronja:414:259
-062toronja:426:399
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=n C1=A AOI.txt
+045Ap11s6dxL5c4b0chile
+072Ap11s6dxL7c4t0llorona
+awk -f select-user-aoi-rows.awk -v AOIS=045chile 072llorona data/ACH.tsv | uniq | sort -n
+045chile:394:658
+045chile:395:159
+072llorona:428:678
 datamash -t : -g 1 count 2 sum 3 mean 3
-062toronja:3:837:279
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s5 AOI.txt
-054Cp11s5d3L8c7t0cobrando
-067Cp11s5d2L6c7b0planta
-awk -f select-user-aoi-rows.awk -v AOIS=054cobrando 067planta data/ACH.tsv | uniq | sort -n
-054cobrando:402:160
+045chile:2:817:408.5
+072llorona:1:678:678
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=n C1=B AOI.txt
+046Bp11s6dxL5c4b2chile
+073Bp11s6dxL7c4t3llorona
+awk -f select-user-aoi-rows.awk -v AOIS=046chile 073llorona data/ACH.tsv | uniq | sort -n
+046chile:394:658
 datamash -t : -g 1 count 2 sum 3 mean 3
-054cobrando:1:160:160
-awk -f select-aoi-by-criteria.awk C3=11 C1=C C4=s6 AOI.txt
+046chile:1:658:658
+awk -f select-aoi-by-criteria.awk C3=11 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=p C1=A AOI.txt
 093Ap13s1d8L4c4b0papa
 110Ap13s1d8L6c4t0rapido
 116Ap13s1d8L6c4t0conejo
@@ -369,9 +716,52 @@ awk -f select-user-aoi-rows.awk -v AOIS=093papa 110rapido 116conejo data/ACH.tsv
 datamash -t : -g 1 count 2 sum 3 mean 3
 093papa:1:1017:1017
 110rapido:4:2811:702.75
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=p C1=B AOI.txt
+094Bp13s1d8L4c4b2papa
+111Bp13s1d8L6c4t2rapido
+117Bp13s1d8L6c4t1conejo
+awk -f select-user-aoi-rows.awk -v AOIS=094papa 111rapido 117conejo data/ACH.tsv | uniq | sort -n
+111rapido:462:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+111rapido:1:359:359
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=n C1=A AOI.txt
+093Ap13s1d8L4c4b0papa
+110Ap13s1d8L6c4t0rapido
+116Ap13s1d8L6c4t0conejo
+awk -f select-user-aoi-rows.awk -v AOIS=093papa 110rapido 116conejo data/ACH.tsv | uniq | sort -n
+093papa:452:1017
+110rapido:461:1575
+110rapido:462:359
+110rapido:481:139
+110rapido:483:738
+datamash -t : -g 1 count 2 sum 3 mean 3
+093papa:1:1017:1017
+110rapido:4:2811:702.75
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=n C1=B AOI.txt
+094Bp13s1d8L4c4b2papa
+111Bp13s1d8L6c4t2rapido
+117Bp13s1d8L6c4t1conejo
+awk -f select-user-aoi-rows.awk -v AOIS=094papa 111rapido 117conejo data/ACH.tsv | uniq | sort -n
+111rapido:462:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+111rapido:1:359:359
+awk -f select-aoi-by-criteria.awk C3=13 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=p C1=A AOI.txt
 080Ap13s3d8L5c6b0danza
 084Ap13s3d8L7c3t0señalar
 099Ap13s3d6L7c6t0manzana
@@ -398,7 +788,80 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 099manzana:5:1456:291.2
 104carta:4:1236:309
 107vestido:4:3727:931.75
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=p C1=B AOI.txt
+081Bp13s3d8L5c6b2danza
+085Bp13s3d8L7c3t1señalar
+100Bp13s3d6L7c6t3manzana
+105Bp13s3d4L5c6b2carta
+108Bp13s3d6L7c6t3vestido
+113Bp13s3d8L5c3b1facil
+awk -f select-user-aoi-rows.awk -v AOIS=081danza 085señalar 100manzana 105carta 108vestido 113facil data/ACH.tsv | uniq | sort -n
+081danza:443:598
+100manzana:457:359
+105carta:459:598
+108vestido:460:857
+datamash -t : -g 1 count 2 sum 3 mean 3
+081danza:1:598:598
+100manzana:1:359:359
+105carta:1:598:598
+108vestido:1:857:857
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=p C1=C AOI.txt
+101Cp13s3d6L7c6t0manzana
+106Cp13s3d4L5c6b0carta
+109Cp13s3d6L7c6t0vestido
+awk -f select-user-aoi-rows.awk -v AOIS=101manzana 106carta 109vestido data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=n C1=A AOI.txt
+080Ap13s3d8L5c6b0danza
+084Ap13s3d8L7c3t0señalar
+099Ap13s3d6L7c6t0manzana
+104Ap13s3d4L5c6b0carta
+107Ap13s3d6L7c6t0vestido
+112Ap13s3d8L5c3b0facil
+awk -f select-user-aoi-rows.awk -v AOIS=080danza 084señalar 099manzana 104carta 107vestido 112facil data/ACH.tsv | uniq | sort -n
+080danza:443:598
+099manzana:457:359
+099manzana:464:359
+099manzana:466:339
+099manzana:467:279
+099manzana:468:120
+104carta:459:598
+104carta:475:339
+104carta:476:179
+104carta:477:120
+107vestido:460:857
+107vestido:478:199
+107vestido:479:937
+107vestido:480:1734
+datamash -t : -g 1 count 2 sum 3 mean 3
+080danza:1:598:598
+099manzana:5:1456:291.2
+104carta:4:1236:309
+107vestido:4:3727:931.75
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=n C1=B AOI.txt
+081Bp13s3d8L5c6b2danza
+085Bp13s3d8L7c3t1señalar
+100Bp13s3d6L7c6t3manzana
+105Bp13s3d4L5c6b2carta
+108Bp13s3d6L7c6t3vestido
+113Bp13s3d8L5c3b1facil
+awk -f select-user-aoi-rows.awk -v AOIS=081danza 085señalar 100manzana 105carta 108vestido 113facil data/ACH.tsv | uniq | sort -n
+081danza:443:598
+100manzana:457:359
+105carta:459:598
+108vestido:460:857
+datamash -t : -g 1 count 2 sum 3 mean 3
+081danza:1:598:598
+100manzana:1:359:359
+105carta:1:598:598
+108vestido:1:857:857
+awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=n C1=C AOI.txt
+101Cp13s3d6L7c6t0manzana
+106Cp13s3d4L5c6b0carta
+109Cp13s3d6L7c6t0vestido
+awk -f select-user-aoi-rows.awk -v AOIS=101manzana 106carta 109vestido data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=p C1=A AOI.txt
 095Ap13s4d6L7c1t0posible
 118Ap13s4d6L7c1t0padrino
 awk -f select-user-aoi-rows.awk -v AOIS=095posible 118padrino data/ACH.tsv | uniq | sort -n
@@ -406,7 +869,29 @@ awk -f select-user-aoi-rows.awk -v AOIS=095posible 118padrino data/ACH.tsv | uni
 095posible:454:837
 datamash -t : -g 1 count 2 sum 3 mean 3
 095posible:2:1395:697.5
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=p C1=B AOI.txt
+096Bp13s4d6L7c1t1posible
+119Bp13s4d6L7c1t2padrino
+awk -f select-user-aoi-rows.awk -v AOIS=096posible 119padrino data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=n C1=A AOI.txt
+095Ap13s4d6L7c1t0posible
+118Ap13s4d6L7c1t0padrino
+awk -f select-user-aoi-rows.awk -v AOIS=095posible 118padrino data/ACH.tsv | uniq | sort -n
+095posible:453:558
+095posible:454:837
+datamash -t : -g 1 count 2 sum 3 mean 3
+095posible:2:1395:697.5
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=n C1=B AOI.txt
+096Bp13s4d6L7c1t1posible
+119Bp13s4d6L7c1t2padrino
+awk -f select-user-aoi-rows.awk -v AOIS=096posible 119padrino data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=p C1=A AOI.txt
 086Ap13s5d3L8c7t0transito
 091Ap13s5d7L8c2t0palabras
 awk -f select-user-aoi-rows.awk -v AOIS=086transito 091palabras data/ACH.tsv | uniq | sort -n
@@ -416,7 +901,45 @@ awk -f select-user-aoi-rows.awk -v AOIS=086transito 091palabras data/ACH.tsv | u
 datamash -t : -g 1 count 2 sum 3 mean 3
 086transito:2:858:429
 091palabras:1:1017:1017
-awk -f select-aoi-by-criteria.awk C3=13 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=p C1=B AOI.txt
+087Bp13s5d3L8c7t3transito
+092Bp13s5d7L8c2t1palabras
+awk -f select-user-aoi-rows.awk -v AOIS=087transito 092palabras data/ACH.tsv | uniq | sort -n
+087transito:447:459
+087transito:448:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+087transito:2:858:429
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=p C1=C AOI.txt
+088Cp13s5d3L8c7t0transito
+awk -f select-user-aoi-rows.awk -v AOIS=088transito data/ACH.tsv | uniq | sort -n
+088transito:448:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+088transito:1:399:399
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=n C1=A AOI.txt
+086Ap13s5d3L8c7t0transito
+091Ap13s5d7L8c2t0palabras
+awk -f select-user-aoi-rows.awk -v AOIS=086transito 091palabras data/ACH.tsv | uniq | sort -n
+086transito:447:459
+086transito:448:399
+091palabras:451:1017
+datamash -t : -g 1 count 2 sum 3 mean 3
+086transito:2:858:429
+091palabras:1:1017:1017
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=n C1=B AOI.txt
+087Bp13s5d3L8c7t3transito
+092Bp13s5d7L8c2t1palabras
+awk -f select-user-aoi-rows.awk -v AOIS=087transito 092palabras data/ACH.tsv | uniq | sort -n
+087transito:447:459
+087transito:448:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+087transito:2:858:429
+awk -f select-aoi-by-criteria.awk C3=13 C4=s5 C2=n C1=C AOI.txt
+088Cp13s5d3L8c7t0transito
+awk -f select-user-aoi-rows.awk -v AOIS=088transito data/ACH.tsv | uniq | sort -n
+088transito:448:399
+datamash -t : -g 1 count 2 sum 3 mean 3
+088transito:1:399:399
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=p C1=A AOI.txt
 082Ap13s6dxL4c4b0sigue
 089Ap13s6dxL6c4b0guerra
 097Ap13s6d8L5c4b0calle
@@ -435,47 +958,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 082sigue:1:1515:1515
 097calle:1:419:419
 102derecho:6:2652:442
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s1 AOI.txt
-094Bp13s1d8L4c4b2papa
-111Bp13s1d8L6c4t2rapido
-117Bp13s1d8L6c4t1conejo
-awk -f select-user-aoi-rows.awk -v AOIS=094papa 111rapido 117conejo data/ACH.tsv | uniq | sort -n
-111rapido:462:359
-datamash -t : -g 1 count 2 sum 3 mean 3
-111rapido:1:359:359
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s2 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s3 AOI.txt
-081Bp13s3d8L5c6b2danza
-085Bp13s3d8L7c3t1señalar
-100Bp13s3d6L7c6t3manzana
-105Bp13s3d4L5c6b2carta
-108Bp13s3d6L7c6t3vestido
-113Bp13s3d8L5c3b1facil
-awk -f select-user-aoi-rows.awk -v AOIS=081danza 085señalar 100manzana 105carta 108vestido 113facil data/ACH.tsv | uniq | sort -n
-081danza:443:598
-100manzana:457:359
-105carta:459:598
-108vestido:460:857
-datamash -t : -g 1 count 2 sum 3 mean 3
-081danza:1:598:598
-100manzana:1:359:359
-105carta:1:598:598
-108vestido:1:857:857
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s4 AOI.txt
-096Bp13s4d6L7c1t1posible
-119Bp13s4d6L7c1t2padrino
-awk -f select-user-aoi-rows.awk -v AOIS=096posible 119padrino data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s5 AOI.txt
-087Bp13s5d3L8c7t3transito
-092Bp13s5d7L8c2t1palabras
-awk -f select-user-aoi-rows.awk -v AOIS=087transito 092palabras data/ACH.tsv | uniq | sort -n
-087transito:447:459
-087transito:448:399
-datamash -t : -g 1 count 2 sum 3 mean 3
-087transito:2:858:429
-awk -f select-aoi-by-criteria.awk C3=13 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=p C1=B AOI.txt
 083Bp13s6dxL4c4b1sigue
 090Bp13s6dxL6c4b2guerra
 098Bp13s6d8L5c4b1calle
@@ -490,27 +973,45 @@ awk -f select-user-aoi-rows.awk -v AOIS=083sigue 090guerra 098calle 103derecho 1
 datamash -t : -g 1 count 2 sum 3 mean 3
 090guerra:2:1057:528.5
 103derecho:3:678:226
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s2 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s3 AOI.txt
-101Cp13s3d6L7c6t0manzana
-106Cp13s3d4L5c6b0carta
-109Cp13s3d6L7c6t0vestido
-awk -f select-user-aoi-rows.awk -v AOIS=101manzana 106carta 109vestido data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s5 AOI.txt
-088Cp13s5d3L8c7t0transito
-awk -f select-user-aoi-rows.awk -v AOIS=088transito data/ACH.tsv | uniq | sort -n
-088transito:448:399
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=n C1=A AOI.txt
+082Ap13s6dxL4c4b0sigue
+089Ap13s6dxL6c4b0guerra
+097Ap13s6d8L5c4b0calle
+102Ap13s6dxL7c4t0derecho
+114Ap13s6dxL7c4t0terreno
+awk -f select-user-aoi-rows.awk -v AOIS=082sigue 089guerra 097calle 102derecho 114terreno data/ACH.tsv | uniq | sort -n
+082sigue:444:1515
+097calle:455:419
+102derecho:458:1575
+102derecho:470:180
+102derecho:471:239
+102derecho:472:180
+102derecho:473:259
+102derecho:474:219
 datamash -t : -g 1 count 2 sum 3 mean 3
-088transito:1:399:399
-awk -f select-aoi-by-criteria.awk C3=13 C1=C C4=s6 AOI.txt
+082sigue:1:1515:1515
+097calle:1:419:419
+102derecho:6:2652:442
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=n C1=B AOI.txt
+083Bp13s6dxL4c4b1sigue
+090Bp13s6dxL6c4b2guerra
+098Bp13s6d8L5c4b1calle
+103Bp13s6dxL7c4t1derecho
+115Bp13s6dxL7c4t2terreno
+awk -f select-user-aoi-rows.awk -v AOIS=083sigue 090guerra 098calle 103derecho 115terreno data/ACH.tsv | uniq | sort -n
+090guerra:450:678
+090guerra:465:379
+103derecho:471:239
+103derecho:472:180
+103derecho:473:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+090guerra:2:1057:528.5
+103derecho:3:678:226
+awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=p C1=A AOI.txt
 136Ap15s1d8L4c4b0poco
 145Ap15s1d8L6c4t0dinero
 awk -f select-user-aoi-rows.awk -v AOIS=136poco 145dinero data/ACH.tsv | uniq | sort -n
@@ -525,7 +1026,46 @@ awk -f select-user-aoi-rows.awk -v AOIS=136poco 145dinero data/ACH.tsv | uniq | 
 datamash -t : -g 1 count 2 sum 3 mean 3
 136poco:3:1176:392
 145dinero:5:3609:721.8
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=p C1=B AOI.txt
+137Bp15s1d8L4c4b1poco
+146Bp15s1d8L6c4t3dinero
+awk -f select-user-aoi-rows.awk -v AOIS=137poco 146dinero data/ACH.tsv | uniq | sort -n
+137poco:508:279
+146dinero:526:1376
+146dinero:530:578
+datamash -t : -g 1 count 2 sum 3 mean 3
+137poco:1:279:279
+146dinero:2:1954:977
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=n C1=A AOI.txt
+136Ap15s1d8L4c4b0poco
+145Ap15s1d8L6c4t0dinero
+awk -f select-user-aoi-rows.awk -v AOIS=136poco 145dinero data/ACH.tsv | uniq | sort -n
+136poco:506:678
+136poco:508:279
+136poco:509:219
+145dinero:526:1376
+145dinero:527:319
+145dinero:529:459
+145dinero:530:578
+145dinero:531:877
+datamash -t : -g 1 count 2 sum 3 mean 3
+136poco:3:1176:392
+145dinero:5:3609:721.8
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=n C1=B AOI.txt
+137Bp15s1d8L4c4b1poco
+146Bp15s1d8L6c4t3dinero
+awk -f select-user-aoi-rows.awk -v AOIS=137poco 146dinero data/ACH.tsv | uniq | sort -n
+137poco:508:279
+146dinero:526:1376
+146dinero:530:578
+datamash -t : -g 1 count 2 sum 3 mean 3
+137poco:1:279:279
+146dinero:2:1954:977
+awk -f select-aoi-by-criteria.awk C3=15 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=p C1=A AOI.txt
 123Ap15s2d8L6c5t0vivian
 140Ap15s2d3L4c6b0alto
 150Ap15s2d8L4c4b0vivo
@@ -538,7 +1078,52 @@ awk -f select-user-aoi-rows.awk -v AOIS=123vivian 140alto 150vivo data/ACH.tsv |
 datamash -t : -g 1 count 2 sum 3 mean 3
 123vivian:2:1455:727.5
 140alto:3:2113:704.33333333333
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=p C1=B AOI.txt
+124Bp15s2d8L6c5t1vivian
+141Bp15s2d3L4c6b2alto
+151Bp15s2d8L4c4b2vivo
+awk -f select-user-aoi-rows.awk -v AOIS=124vivian 141alto 151vivo data/ACH.tsv | uniq | sort -n
+141alto:512:478
+141alto:520:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+141alto:2:1694:847
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=p C1=C AOI.txt
+142Cp15s2d3L4c6b0alto
+awk -f select-user-aoi-rows.awk -v AOIS=142alto data/ACH.tsv | uniq | sort -n
+142alto:512:478
+142alto:520:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+142alto:2:1694:847
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=n C1=A AOI.txt
+123Ap15s2d8L6c5t0vivian
+140Ap15s2d3L4c6b0alto
+150Ap15s2d8L4c4b0vivo
+awk -f select-user-aoi-rows.awk -v AOIS=123vivian 140alto 150vivo data/ACH.tsv | uniq | sort -n
+123vivian:491:219
+123vivian:493:1236
+140alto:512:478
+140alto:520:1216
+140alto:522:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+123vivian:2:1455:727.5
+140alto:3:2113:704.33333333333
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=n C1=B AOI.txt
+124Bp15s2d8L6c5t1vivian
+141Bp15s2d3L4c6b2alto
+151Bp15s2d8L4c4b2vivo
+awk -f select-user-aoi-rows.awk -v AOIS=124vivian 141alto 151vivo data/ACH.tsv | uniq | sort -n
+141alto:512:478
+141alto:520:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+141alto:2:1694:847
+awk -f select-aoi-by-criteria.awk C3=15 C4=s2 C2=n C1=C AOI.txt
+142Cp15s2d3L4c6b0alto
+awk -f select-user-aoi-rows.awk -v AOIS=142alto data/ACH.tsv | uniq | sort -n
+142alto:512:478
+142alto:520:1216
+datamash -t : -g 1 count 2 sum 3 mean 3
+142alto:2:1694:847
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=p C1=A AOI.txt
 120Ap15s3d4L5c6b0pesca
 134Ap15s3d8L5c3b0papel
 152Ap15s3d8L7c3t0camaron
@@ -552,7 +1137,51 @@ awk -f select-user-aoi-rows.awk -v AOIS=120pesca 134papel 152camaron data/ACH.ts
 datamash -t : -g 1 count 2 sum 3 mean 3
 120pesca:3:1096:365.33333333333
 134papel:3:1655:551.66666666667
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=p C1=B AOI.txt
+121Bp15s3d4L5c6b2pesca
+135Bp15s3d8L5c3b1papel
+153Bp15s3d8L7c3t1camaron
+awk -f select-user-aoi-rows.awk -v AOIS=121pesca 135papel 153camaron data/ACH.tsv | uniq | sort -n
+121pesca:490:578
+121pesca:492:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+121pesca:2:917:458.5
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=p C1=C AOI.txt
+122Cp15s3d4L5c6b0pesca
+awk -f select-user-aoi-rows.awk -v AOIS=122pesca data/ACH.tsv | uniq | sort -n
+122pesca:492:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+122pesca:1:339:339
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=n C1=A AOI.txt
+120Ap15s3d4L5c6b0pesca
+134Ap15s3d8L5c3b0papel
+152Ap15s3d8L7c3t0camaron
+awk -f select-user-aoi-rows.awk -v AOIS=120pesca 134papel 152camaron data/ACH.tsv | uniq | sort -n
+120pesca:489:179
+120pesca:490:578
+120pesca:492:339
+134papel:505:1256
+134papel:518:279
+134papel:524:120
+datamash -t : -g 1 count 2 sum 3 mean 3
+120pesca:3:1096:365.33333333333
+134papel:3:1655:551.66666666667
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=n C1=B AOI.txt
+121Bp15s3d4L5c6b2pesca
+135Bp15s3d8L5c3b1papel
+153Bp15s3d8L7c3t1camaron
+awk -f select-user-aoi-rows.awk -v AOIS=121pesca 135papel 153camaron data/ACH.tsv | uniq | sort -n
+121pesca:490:578
+121pesca:492:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+121pesca:2:917:458.5
+awk -f select-aoi-by-criteria.awk C3=15 C4=s3 C2=n C1=C AOI.txt
+122Cp15s3d4L5c6b0pesca
+awk -f select-user-aoi-rows.awk -v AOIS=122pesca data/ACH.tsv | uniq | sort -n
+122pesca:492:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+122pesca:1:339:339
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=p C1=A AOI.txt
 130Ap15s4d6L7c1t0peligro
 143Ap15s4d6L7c1t0trabajo
 awk -f select-user-aoi-rows.awk -v AOIS=130peligro 143trabajo data/ACH.tsv | uniq | sort -n
@@ -569,7 +1198,52 @@ awk -f select-user-aoi-rows.awk -v AOIS=130peligro 143trabajo data/ACH.tsv | uni
 datamash -t : -g 1 count 2 sum 3 mean 3
 130peligro:3:917:305.66666666667
 143trabajo:7:4386:626.57142857143
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=p C1=B AOI.txt
+131Bp15s4d6L7c1t1peligro
+144Bp15s4d6L7c1t3trabajo
+awk -f select-user-aoi-rows.awk -v AOIS=131peligro 144trabajo data/ACH.tsv | uniq | sort -n
+131peligro:499:179
+144trabajo:513:558
+144trabajo:515:1176
+144trabajo:521:279
+144trabajo:523:618
+datamash -t : -g 1 count 2 sum 3 mean 3
+131peligro:1:179:179
+144trabajo:4:2631:657.75
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=n C1=A AOI.txt
+130Ap15s4d6L7c1t0peligro
+143Ap15s4d6L7c1t0trabajo
+awk -f select-user-aoi-rows.awk -v AOIS=130peligro 143trabajo data/ACH.tsv | uniq | sort -n
+130peligro:499:179
+130peligro:500:379
+130peligro:501:359
+143trabajo:511:160
+143trabajo:513:558
+143trabajo:515:1176
+143trabajo:516:319
+143trabajo:521:279
+143trabajo:523:618
+143trabajo:525:1276
+datamash -t : -g 1 count 2 sum 3 mean 3
+130peligro:3:917:305.66666666667
+143trabajo:7:4386:626.57142857143
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=n C1=B AOI.txt
+131Bp15s4d6L7c1t1peligro
+144Bp15s4d6L7c1t3trabajo
+awk -f select-user-aoi-rows.awk -v AOIS=131peligro 144trabajo data/ACH.tsv | uniq | sort -n
+131peligro:499:179
+144trabajo:513:558
+144trabajo:515:1176
+144trabajo:521:279
+144trabajo:523:618
+datamash -t : -g 1 count 2 sum 3 mean 3
+131peligro:1:179:179
+144trabajo:4:2631:657.75
+awk -f select-aoi-by-criteria.awk C3=15 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=p C1=A AOI.txt
 127Ap15s5d3L8c7t0cubrirse
 147Ap15s5d2L6c7b0fresca
 156Ap15s5d5L6c2b0padres
@@ -582,7 +1256,52 @@ awk -f select-user-aoi-rows.awk -v AOIS=127cubrirse 147fresca 156padres data/ACH
 datamash -t : -g 1 count 2 sum 3 mean 3
 127cubrirse:3:2114:704.66666666667
 147fresca:2:1515:757.5
-awk -f select-aoi-by-criteria.awk C3=15 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=p C1=B AOI.txt
+128Bp15s5d3L8c7t2cubrirse
+148Bp15s5d2L6c7b2fresca
+157Bp15s5d5L6c2b1padres
+awk -f select-user-aoi-rows.awk -v AOIS=128cubrirse 148fresca 157padres data/ACH.tsv | uniq | sort -n
+128cubrirse:498:937
+148fresca:528:199
+148fresca:532:1316
+datamash -t : -g 1 count 2 sum 3 mean 3
+128cubrirse:1:937:937
+148fresca:2:1515:757.5
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=p C1=C AOI.txt
+129Cp15s5d3L8c7t0cubrirse
+149Cp15s5d2L6c7b0fresca
+awk -f select-user-aoi-rows.awk -v AOIS=129cubrirse 149fresca data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=n C1=A AOI.txt
+127Ap15s5d3L8c7t0cubrirse
+147Ap15s5d2L6c7b0fresca
+156Ap15s5d5L6c2b0padres
+awk -f select-user-aoi-rows.awk -v AOIS=127cubrirse 147fresca 156padres data/ACH.tsv | uniq | sort -n
+127cubrirse:495:459
+127cubrirse:496:718
+127cubrirse:498:937
+147fresca:528:199
+147fresca:532:1316
+datamash -t : -g 1 count 2 sum 3 mean 3
+127cubrirse:3:2114:704.66666666667
+147fresca:2:1515:757.5
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=n C1=B AOI.txt
+128Bp15s5d3L8c7t2cubrirse
+148Bp15s5d2L6c7b2fresca
+157Bp15s5d5L6c2b1padres
+awk -f select-user-aoi-rows.awk -v AOIS=128cubrirse 148fresca 157padres data/ACH.tsv | uniq | sort -n
+128cubrirse:498:937
+148fresca:528:199
+148fresca:532:1316
+datamash -t : -g 1 count 2 sum 3 mean 3
+128cubrirse:1:937:937
+148fresca:2:1515:757.5
+awk -f select-aoi-by-criteria.awk C3=15 C4=s5 C2=n C1=C AOI.txt
+129Cp15s5d3L8c7t0cubrirse
+149Cp15s5d2L6c7b0fresca
+awk -f select-user-aoi-rows.awk -v AOIS=129cubrirse 149fresca data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=p C1=A AOI.txt
 125Ap15s6dxL8c4t0chaparro
 132Ap15s6dxL7c4t0riqueza
 138Ap15s6dxL7c4t0chaleco
@@ -598,58 +1317,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 125chaparro:1:1037:1037
 132riqueza:3:1216:405.33333333333
 138chaleco:2:1276:638
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s1 AOI.txt
-137Bp15s1d8L4c4b1poco
-146Bp15s1d8L6c4t3dinero
-awk -f select-user-aoi-rows.awk -v AOIS=137poco 146dinero data/ACH.tsv | uniq | sort -n
-137poco:508:279
-146dinero:526:1376
-146dinero:530:578
-datamash -t : -g 1 count 2 sum 3 mean 3
-137poco:1:279:279
-146dinero:2:1954:977
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s2 AOI.txt
-124Bp15s2d8L6c5t1vivian
-141Bp15s2d3L4c6b2alto
-151Bp15s2d8L4c4b2vivo
-awk -f select-user-aoi-rows.awk -v AOIS=124vivian 141alto 151vivo data/ACH.tsv | uniq | sort -n
-141alto:512:478
-141alto:520:1216
-datamash -t : -g 1 count 2 sum 3 mean 3
-141alto:2:1694:847
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s3 AOI.txt
-121Bp15s3d4L5c6b2pesca
-135Bp15s3d8L5c3b1papel
-153Bp15s3d8L7c3t1camaron
-awk -f select-user-aoi-rows.awk -v AOIS=121pesca 135papel 153camaron data/ACH.tsv | uniq | sort -n
-121pesca:490:578
-121pesca:492:339
-datamash -t : -g 1 count 2 sum 3 mean 3
-121pesca:2:917:458.5
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s4 AOI.txt
-131Bp15s4d6L7c1t1peligro
-144Bp15s4d6L7c1t3trabajo
-awk -f select-user-aoi-rows.awk -v AOIS=131peligro 144trabajo data/ACH.tsv | uniq | sort -n
-131peligro:499:179
-144trabajo:513:558
-144trabajo:515:1176
-144trabajo:521:279
-144trabajo:523:618
-datamash -t : -g 1 count 2 sum 3 mean 3
-131peligro:1:179:179
-144trabajo:4:2631:657.75
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s5 AOI.txt
-128Bp15s5d3L8c7t2cubrirse
-148Bp15s5d2L6c7b2fresca
-157Bp15s5d5L6c2b1padres
-awk -f select-user-aoi-rows.awk -v AOIS=128cubrirse 148fresca 157padres data/ACH.tsv | uniq | sort -n
-128cubrirse:498:937
-148fresca:528:199
-148fresca:532:1316
-datamash -t : -g 1 count 2 sum 3 mean 3
-128cubrirse:1:937:937
-148fresca:2:1515:757.5
-awk -f select-aoi-by-criteria.awk C3=15 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=p C1=B AOI.txt
 126Bp15s6dxL8c4t1chaparro
 133Bp15s6dxL7c4t2riqueza
 139Bp15s6dxL7c4t3chaleco
@@ -661,31 +1329,39 @@ awk -f select-user-aoi-rows.awk -v AOIS=126chaparro 133riqueza 139chaleco 155mac
 datamash -t : -g 1 count 2 sum 3 mean 3
 133riqueza:1:578:578
 139chaleco:2:1276:638
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s2 AOI.txt
-142Cp15s2d3L4c6b0alto
-awk -f select-user-aoi-rows.awk -v AOIS=142alto data/ACH.tsv | uniq | sort -n
-142alto:512:478
-142alto:520:1216
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=n C1=A AOI.txt
+125Ap15s6dxL8c4t0chaparro
+132Ap15s6dxL7c4t0riqueza
+138Ap15s6dxL7c4t0chaleco
+154Ap15s6dxL7c4t0machete
+awk -f select-user-aoi-rows.awk -v AOIS=125chaparro 132riqueza 138chaleco 154machete data/ACH.tsv | uniq | sort -n
+125chaparro:494:1037
+132riqueza:502:439
+132riqueza:503:578
+132riqueza:504:199
+138chaleco:507:199
+138chaleco:510:1077
 datamash -t : -g 1 count 2 sum 3 mean 3
-142alto:2:1694:847
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s3 AOI.txt
-122Cp15s3d4L5c6b0pesca
-awk -f select-user-aoi-rows.awk -v AOIS=122pesca data/ACH.tsv | uniq | sort -n
-122pesca:492:339
+125chaparro:1:1037:1037
+132riqueza:3:1216:405.33333333333
+138chaleco:2:1276:638
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=n C1=B AOI.txt
+126Bp15s6dxL8c4t1chaparro
+133Bp15s6dxL7c4t2riqueza
+139Bp15s6dxL7c4t3chaleco
+155Bp15s6dxL7c4t2machete
+awk -f select-user-aoi-rows.awk -v AOIS=126chaparro 133riqueza 139chaleco 155machete data/ACH.tsv | uniq | sort -n
+133riqueza:503:578
+139chaleco:507:199
+139chaleco:510:1077
 datamash -t : -g 1 count 2 sum 3 mean 3
-122pesca:1:339:339
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s4 AOI.txt
+133riqueza:1:578:578
+139chaleco:2:1276:638
+awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s5 AOI.txt
-129Cp15s5d3L8c7t0cubrirse
-149Cp15s5d2L6c7b0fresca
-awk -f select-user-aoi-rows.awk -v AOIS=129cubrirse 149fresca data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=15 C1=C C4=s6 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=A AOI.txt
 165Ap17s1d8L6c4t0comida
 183Ap17s1d8L4c4b0boca
 187Ap17s1d8L6c4t0mañana
@@ -696,7 +1372,34 @@ awk -f select-user-aoi-rows.awk -v AOIS=165comida 183boca 187mañana data/ACH.ts
 datamash -t : -g 1 count 2 sum 3 mean 3
 165comida:1:1057:1057
 183boca:2:877:438.5
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=B AOI.txt
+166Bp17s1d8L6c4t2comida
+184Bp17s1d8L4c4b1boca
+188Bp17s1d8L6c4t1mañana
+awk -f select-user-aoi-rows.awk -v AOIS=166comida 184boca 188mañana data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=A AOI.txt
+165Ap17s1d8L6c4t0comida
+183Ap17s1d8L4c4b0boca
+187Ap17s1d8L6c4t0mañana
+awk -f select-user-aoi-rows.awk -v AOIS=165comida 183boca 187mañana data/ACH.tsv | uniq | sort -n
+165comida:543:1057
+183boca:569:658
+183boca:570:219
+datamash -t : -g 1 count 2 sum 3 mean 3
+165comida:1:1057:1057
+183boca:2:877:438.5
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=B AOI.txt
+166Bp17s1d8L6c4t2comida
+184Bp17s1d8L4c4b1boca
+188Bp17s1d8L6c4t1mañana
+awk -f select-user-aoi-rows.awk -v AOIS=166comida 184boca 188mañana data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=p C1=A AOI.txt
 158Ap17s2d5L6c6t0estado
 172Ap17s2d5L6c6t0oscuro
 awk -f select-user-aoi-rows.awk -v AOIS=158estado 172oscuro data/ACH.tsv | uniq | sort -n
@@ -706,12 +1409,79 @@ awk -f select-user-aoi-rows.awk -v AOIS=158estado 172oscuro data/ACH.tsv | uniq 
 datamash -t : -g 1 count 2 sum 3 mean 3
 158estado:1:877:877
 172oscuro:2:2114:1057
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=p C1=B AOI.txt
+159Bp17s2d5L6c6t3estado
+173Bp17s2d5L6c6t3oscuro
+awk -f select-user-aoi-rows.awk -v AOIS=159estado 173oscuro data/ACH.tsv | uniq | sort -n
+173oscuro:546:1376
+datamash -t : -g 1 count 2 sum 3 mean 3
+173oscuro:1:1376:1376
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=p C1=C AOI.txt
+160Cp17s2d5L6c6t0estado
+174Cp17s2d5L6c6t0oscuro
+awk -f select-user-aoi-rows.awk -v AOIS=160estado 174oscuro data/ACH.tsv | uniq | sort -n
+160estado:540:877
+174oscuro:546:1376
+datamash -t : -g 1 count 2 sum 3 mean 3
+160estado:1:877:877
+174oscuro:1:1376:1376
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=n C1=A AOI.txt
+158Ap17s2d5L6c6t0estado
+172Ap17s2d5L6c6t0oscuro
+awk -f select-user-aoi-rows.awk -v AOIS=158estado 172oscuro data/ACH.tsv | uniq | sort -n
+158estado:540:877
+172oscuro:546:1376
+172oscuro:554:738
+datamash -t : -g 1 count 2 sum 3 mean 3
+158estado:1:877:877
+172oscuro:2:2114:1057
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=n C1=B AOI.txt
+159Bp17s2d5L6c6t3estado
+173Bp17s2d5L6c6t3oscuro
+awk -f select-user-aoi-rows.awk -v AOIS=159estado 173oscuro data/ACH.tsv | uniq | sort -n
+173oscuro:546:1376
+datamash -t : -g 1 count 2 sum 3 mean 3
+173oscuro:1:1376:1376
+awk -f select-aoi-by-criteria.awk C3=17 C4=s2 C2=n C1=C AOI.txt
+160Cp17s2d5L6c6t0estado
+174Cp17s2d5L6c6t0oscuro
+awk -f select-user-aoi-rows.awk -v AOIS=160estado 174oscuro data/ACH.tsv | uniq | sort -n
+160estado:540:877
+174oscuro:546:1376
+datamash -t : -g 1 count 2 sum 3 mean 3
+160estado:1:877:877
+174oscuro:1:1376:1376
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=A AOI.txt
 189Ap17s3d6L7c6t0soñando
 192Ap17s3d6L7c6t0fortuna
 awk -f select-user-aoi-rows.awk -v AOIS=189soñando 192fortuna data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=B AOI.txt
+190Bp17s3d6L7c6t2soñando
+193Bp17s3d6L7c6t3fortuna
+awk -f select-user-aoi-rows.awk -v AOIS=190soñando 193fortuna data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=C AOI.txt
+191Cp17s3d6L7c6t0soñando
+194Cp17s3d6L7c6t0fortuna
+awk -f select-user-aoi-rows.awk -v AOIS=191soñando 194fortuna data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=A AOI.txt
+189Ap17s3d6L7c6t0soñando
+192Ap17s3d6L7c6t0fortuna
+awk -f select-user-aoi-rows.awk -v AOIS=189soñando 192fortuna data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=B AOI.txt
+190Bp17s3d6L7c6t2soñando
+193Bp17s3d6L7c6t3fortuna
+awk -f select-user-aoi-rows.awk -v AOIS=190soñando 193fortuna data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=C AOI.txt
+191Cp17s3d6L7c6t0soñando
+194Cp17s3d6L7c6t0fortuna
+awk -f select-user-aoi-rows.awk -v AOIS=191soñando 194fortuna data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=p C1=A AOI.txt
 161Ap17s4d6L7c1t0febrero
 167Ap17s4d4L5c1b0fruta
 177Ap17s4d4L5c1b0siglo
@@ -731,7 +1501,57 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 161febrero:1:1555:1555
 167fruta:2:1715:857.5
 185clase:7:3609:515.57142857143
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=p C1=B AOI.txt
+162Bp17s4d6L7c1t2febrero
+168Bp17s4d4L5c1b2fruta
+178Bp17s4d4L5c1b1siglo
+186Bp17s4d4L5c1b2clase
+awk -f select-user-aoi-rows.awk -v AOIS=162febrero 168fruta 178siglo 186clase data/ACH.tsv | uniq | sort -n
+162febrero:541:1555
+168fruta:544:718
+186clase:560:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+162febrero:1:1555:1555
+168fruta:1:718:718
+186clase:1:359:359
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=n C1=A AOI.txt
+161Ap17s4d6L7c1t0febrero
+167Ap17s4d4L5c1b0fruta
+177Ap17s4d4L5c1b0siglo
+185Ap17s4d4L5c1b0clase
+awk -f select-user-aoi-rows.awk -v AOIS=161febrero 167fruta 177siglo 185clase data/ACH.tsv | uniq | sort -n
+161febrero:541:1555
+167fruta:544:718
+167fruta:549:997
+185clase:557:219
+185clase:558:199
+185clase:560:359
+185clase:571:1117
+185clase:572:339
+185clase:573:658
+185clase:574:718
+datamash -t : -g 1 count 2 sum 3 mean 3
+161febrero:1:1555:1555
+167fruta:2:1715:857.5
+185clase:7:3609:515.57142857143
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=n C1=B AOI.txt
+162Bp17s4d6L7c1t2febrero
+168Bp17s4d4L5c1b2fruta
+178Bp17s4d4L5c1b1siglo
+186Bp17s4d4L5c1b2clase
+awk -f select-user-aoi-rows.awk -v AOIS=162febrero 168fruta 178siglo 186clase data/ACH.tsv | uniq | sort -n
+162febrero:541:1555
+168fruta:544:718
+186clase:560:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+162febrero:1:1555:1555
+168fruta:1:718:718
+186clase:1:359:359
+awk -f select-aoi-by-criteria.awk C3=17 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=p C1=A AOI.txt
 163Ap17s5d5L6c2b0libros
 169Ap17s5d2L6c7b0blanco
 181Ap17s5d7L8c2t0celebrar
@@ -748,7 +1568,56 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 163libros:2:1355:677.5
 169blanco:1:718:718
 181celebrar:5:1655:331
-awk -f select-aoi-by-criteria.awk C3=17 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=p C1=B AOI.txt
+164Bp17s5d5L6c2b1libros
+170Bp17s5d2L6c7b2blanco
+182Bp17s5d7L8c2t1celebrar
+awk -f select-user-aoi-rows.awk -v AOIS=164libros 170blanco 182celebrar data/ACH.tsv | uniq | sort -n
+164libros:564:538
+170blanco:545:718
+182celebrar:567:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+164libros:1:538:538
+170blanco:1:718:718
+182celebrar:1:419:419
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=p C1=C AOI.txt
+171Cp17s5d2L6c7b0blanco
+awk -f select-user-aoi-rows.awk -v AOIS=171blanco data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=n C1=A AOI.txt
+163Ap17s5d5L6c2b0libros
+169Ap17s5d2L6c7b0blanco
+181Ap17s5d7L8c2t0celebrar
+awk -f select-user-aoi-rows.awk -v AOIS=163libros 169blanco 181celebrar data/ACH.tsv | uniq | sort -n
+163libros:542:817
+163libros:564:538
+169blanco:545:718
+181celebrar:551:120
+181celebrar:553:120
+181celebrar:565:817
+181celebrar:566:179
+181celebrar:567:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+163libros:2:1355:677.5
+169blanco:1:718:718
+181celebrar:5:1655:331
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=n C1=B AOI.txt
+164Bp17s5d5L6c2b1libros
+170Bp17s5d2L6c7b2blanco
+182Bp17s5d7L8c2t1celebrar
+awk -f select-user-aoi-rows.awk -v AOIS=164libros 170blanco 182celebrar data/ACH.tsv | uniq | sort -n
+164libros:564:538
+170blanco:545:718
+182celebrar:567:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+164libros:1:538:538
+170blanco:1:718:718
+182celebrar:1:419:419
+awk -f select-aoi-by-criteria.awk C3=17 C4=s5 C2=n C1=C AOI.txt
+171Cp17s5d2L6c7b0blanco
+awk -f select-user-aoi-rows.awk -v AOIS=171blanco data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=p C1=A AOI.txt
 175Ap17s6dxL7c4t0querida
 179Ap17s6dxL5c4b0torre
 195Ap17s6dxL5c4b0llama
@@ -761,50 +1630,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=175querida 179torre 195llama data/ACH.ts
 datamash -t : -g 1 count 2 sum 3 mean 3
 175querida:4:3051:762.75
 179torre:1:1117:1117
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s1 AOI.txt
-166Bp17s1d8L6c4t2comida
-184Bp17s1d8L4c4b1boca
-188Bp17s1d8L6c4t1mañana
-awk -f select-user-aoi-rows.awk -v AOIS=166comida 184boca 188mañana data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s2 AOI.txt
-159Bp17s2d5L6c6t3estado
-173Bp17s2d5L6c6t3oscuro
-awk -f select-user-aoi-rows.awk -v AOIS=159estado 173oscuro data/ACH.tsv | uniq | sort -n
-173oscuro:546:1376
-datamash -t : -g 1 count 2 sum 3 mean 3
-173oscuro:1:1376:1376
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s3 AOI.txt
-190Bp17s3d6L7c6t2soñando
-193Bp17s3d6L7c6t3fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=190soñando 193fortuna data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s4 AOI.txt
-162Bp17s4d6L7c1t2febrero
-168Bp17s4d4L5c1b2fruta
-178Bp17s4d4L5c1b1siglo
-186Bp17s4d4L5c1b2clase
-awk -f select-user-aoi-rows.awk -v AOIS=162febrero 168fruta 178siglo 186clase data/ACH.tsv | uniq | sort -n
-162febrero:541:1555
-168fruta:544:718
-186clase:560:359
-datamash -t : -g 1 count 2 sum 3 mean 3
-162febrero:1:1555:1555
-168fruta:1:718:718
-186clase:1:359:359
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s5 AOI.txt
-164Bp17s5d5L6c2b1libros
-170Bp17s5d2L6c7b2blanco
-182Bp17s5d7L8c2t1celebrar
-awk -f select-user-aoi-rows.awk -v AOIS=164libros 170blanco 182celebrar data/ACH.tsv | uniq | sort -n
-164libros:564:538
-170blanco:545:718
-182celebrar:567:419
-datamash -t : -g 1 count 2 sum 3 mean 3
-164libros:1:538:538
-170blanco:1:718:718
-182celebrar:1:419:419
-awk -f select-aoi-by-criteria.awk C3=17 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=p C1=B AOI.txt
 176Bp17s6dxL7c4t3querida
 180Bp17s6dxL5c4b1torre
 196Bp17s6dxL5c4b2llama
@@ -813,31 +1639,33 @@ awk -f select-user-aoi-rows.awk -v AOIS=176querida 180torre 196llama data/ACH.ts
 176querida:548:678
 datamash -t : -g 1 count 2 sum 3 mean 3
 176querida:2:1595:797.5
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s2 AOI.txt
-160Cp17s2d5L6c6t0estado
-174Cp17s2d5L6c6t0oscuro
-awk -f select-user-aoi-rows.awk -v AOIS=160estado 174oscuro data/ACH.tsv | uniq | sort -n
-160estado:540:877
-174oscuro:546:1376
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=n C1=A AOI.txt
+175Ap17s6dxL7c4t0querida
+179Ap17s6dxL5c4b0torre
+195Ap17s6dxL5c4b0llama
+awk -f select-user-aoi-rows.awk -v AOIS=175querida 179torre 195llama data/ACH.tsv | uniq | sort -n
+175querida:547:917
+175querida:548:678
+175querida:555:718
+175querida:556:738
+179torre:561:1117
 datamash -t : -g 1 count 2 sum 3 mean 3
-160estado:1:877:877
-174oscuro:1:1376:1376
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s3 AOI.txt
-191Cp17s3d6L7c6t0soñando
-194Cp17s3d6L7c6t0fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=191soñando 194fortuna data/ACH.tsv | uniq | sort -n
+175querida:4:3051:762.75
+179torre:1:1117:1117
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=n C1=B AOI.txt
+176Bp17s6dxL7c4t3querida
+180Bp17s6dxL5c4b1torre
+196Bp17s6dxL5c4b2llama
+awk -f select-user-aoi-rows.awk -v AOIS=176querida 180torre 196llama data/ACH.tsv | uniq | sort -n
+176querida:547:917
+176querida:548:678
+datamash -t : -g 1 count 2 sum 3 mean 3
+176querida:2:1595:797.5
+awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s5 AOI.txt
-171Cp17s5d2L6c7b0blanco
-awk -f select-user-aoi-rows.awk -v AOIS=171blanco data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=17 C1=C C4=s6 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=A AOI.txt
 202An19s1d8L6c4t0mosina
 208An19s1d8L6c4t0dipone
 223An19s1d8L6c4t0numapo
@@ -857,14 +1685,89 @@ awk -f select-user-aoi-rows.awk -v AOIS=202mosina 208dipone 223numapo data/ACH.t
 datamash -t : -g 1 count 2 sum 3 mean 3
 202mosina:3:1953:651
 208dipone:9:4566:507.33333333333
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=B AOI.txt
+203Bn19s1d8L6c4t2mosina
+209Bn19s1d8L6c4t3dipone
+224Bn19s1d8L6c4t3numapo
+awk -f select-user-aoi-rows.awk -v AOIS=203mosina 209dipone 224numapo data/ACH.tsv | uniq | sort -n
+209dipone:593:1834
+209dipone:595:180
+209dipone:604:279
+209dipone:621:439
+datamash -t : -g 1 count 2 sum 3 mean 3
+209dipone:4:2732:683
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=A AOI.txt
+202An19s1d8L6c4t0mosina
+208An19s1d8L6c4t0dipone
+223An19s1d8L6c4t0numapo
+awk -f select-user-aoi-rows.awk -v AOIS=202mosina 208dipone 223numapo data/ACH.tsv | uniq | sort -n
+202mosina:583:1435
+202mosina:585:339
+202mosina:636:179
+208dipone:593:1834
+208dipone:595:180
+208dipone:603:140
+208dipone:604:279
+208dipone:605:239
+208dipone:606:379
+208dipone:607:977
+208dipone:608:419
+208dipone:623:119
+datamash -t : -g 1 count 2 sum 3 mean 3
+202mosina:3:1953:651
+208dipone:9:4566:507.33333333333
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=B AOI.txt
+203Bn19s1d8L6c4t2mosina
+209Bn19s1d8L6c4t3dipone
+224Bn19s1d8L6c4t3numapo
+awk -f select-user-aoi-rows.awk -v AOIS=203mosina 209dipone 224numapo data/ACH.tsv | uniq | sort -n
+209dipone:593:1834
+209dipone:595:180
+209dipone:604:279
+209dipone:621:439
+datamash -t : -g 1 count 2 sum 3 mean 3
+209dipone:4:2732:683
+awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=p C1=A AOI.txt
 199An19s2d3L4c6b0albe
 awk -f select-user-aoi-rows.awk -v AOIS=199albe data/ACH.tsv | uniq | sort -n
 199albe:580:359
 199albe:582:837
 datamash -t : -g 1 count 2 sum 3 mean 3
 199albe:2:1196:598
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=p C1=B AOI.txt
+200Bn19s2d3L4c6b2albe
+awk -f select-user-aoi-rows.awk -v AOIS=200albe data/ACH.tsv | uniq | sort -n
+200albe:580:359
+200albe:582:837
+datamash -t : -g 1 count 2 sum 3 mean 3
+200albe:2:1196:598
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=p C1=C AOI.txt
+201Cn19s2d3L4c6b0albe
+awk -f select-user-aoi-rows.awk -v AOIS=201albe data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=n C1=A AOI.txt
+199An19s2d3L4c6b0albe
+awk -f select-user-aoi-rows.awk -v AOIS=199albe data/ACH.tsv | uniq | sort -n
+199albe:580:359
+199albe:582:837
+datamash -t : -g 1 count 2 sum 3 mean 3
+199albe:2:1196:598
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=n C1=B AOI.txt
+200Bn19s2d3L4c6b2albe
+awk -f select-user-aoi-rows.awk -v AOIS=200albe data/ACH.tsv | uniq | sort -n
+200albe:580:359
+200albe:582:837
+datamash -t : -g 1 count 2 sum 3 mean 3
+200albe:2:1196:598
+awk -f select-aoi-by-criteria.awk C3=19 C4=s2 C2=n C1=C AOI.txt
+201Cn19s2d3L4c6b0albe
+awk -f select-user-aoi-rows.awk -v AOIS=201albe data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=p C1=A AOI.txt
 204An19s3d8L7c3t0sepolar
 210An19s3d8L5c3b0mecil
 214An19s3d4L5c6b0pesmo
@@ -893,7 +1796,70 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 204sepolar:7:3229:461.28571428571
 210mecil:8:4944:618
 214pesmo:3:2730:910
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=p C1=B AOI.txt
+205Bn19s3d8L7c3t1sepolar
+211Bn19s3d8L5c3b1mecil
+215Bn19s3d4L5c6b2pesmo
+221Bn19s3d4L5c3b2danlo
+226Bn19s3d6L7c6t2moñanda
+awk -f select-user-aoi-rows.awk -v AOIS=205sepolar 211mecil 215pesmo 221danlo 226moñanda data/ACH.tsv | uniq | sort -n
+215pesmo:599:1136
+215pesmo:633:179
+datamash -t : -g 1 count 2 sum 3 mean 3
+215pesmo:2:1315:657.5
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=p C1=C AOI.txt
+216Cn19s3d4L5c6b0pesmo
+222Cn19s3d4L5c3b0danlo
+227Cn19s3d6L7c6t0moñanda
+awk -f select-user-aoi-rows.awk -v AOIS=216pesmo 222danlo 227moñanda data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=n C1=A AOI.txt
+204An19s3d8L7c3t0sepolar
+210An19s3d8L5c3b0mecil
+214An19s3d4L5c6b0pesmo
+220An19s3d4L5c3b0danlo
+225An19s3d6L7c6t0moñanda
+awk -f select-user-aoi-rows.awk -v AOIS=204sepolar 210mecil 214pesmo 220danlo 225moñanda data/ACH.tsv | uniq | sort -n
+204sepolar:584:718
+204sepolar:586:538
+204sepolar:587:498
+204sepolar:588:479
+204sepolar:589:438
+204sepolar:590:239
+204sepolar:614:319
+210mecil:594:199
+210mecil:596:1415
+210mecil:609:1914
+210mecil:624:180
+210mecil:626:478
+210mecil:627:259
+210mecil:628:379
+210mecil:630:120
+214pesmo:599:1136
+214pesmo:617:1415
+214pesmo:633:179
+datamash -t : -g 1 count 2 sum 3 mean 3
+204sepolar:7:3229:461.28571428571
+210mecil:8:4944:618
+214pesmo:3:2730:910
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=n C1=B AOI.txt
+205Bn19s3d8L7c3t1sepolar
+211Bn19s3d8L5c3b1mecil
+215Bn19s3d4L5c6b2pesmo
+221Bn19s3d4L5c3b2danlo
+226Bn19s3d6L7c6t2moñanda
+awk -f select-user-aoi-rows.awk -v AOIS=205sepolar 211mecil 215pesmo 221danlo 226moñanda data/ACH.tsv | uniq | sort -n
+215pesmo:599:1136
+215pesmo:633:179
+datamash -t : -g 1 count 2 sum 3 mean 3
+215pesmo:2:1315:657.5
+awk -f select-aoi-by-criteria.awk C3=19 C4=s3 C2=n C1=C AOI.txt
+216Cn19s3d4L5c6b0pesmo
+222Cn19s3d4L5c3b0danlo
+227Cn19s3d6L7c6t0moñanda
+awk -f select-user-aoi-rows.awk -v AOIS=216pesmo 222danlo 227moñanda data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=p C1=A AOI.txt
 197An19s4d4L5c1b0tubre
 212An19s4d6L7c1t0puyabra
 230An19s4d6L7c1t0planida
@@ -912,12 +1878,72 @@ awk -f select-user-aoi-rows.awk -v AOIS=197tubre 212puyabra 230planida data/ACH.
 datamash -t : -g 1 count 2 sum 3 mean 3
 197tubre:4:1874:468.5
 212puyabra:7:4445:635
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=p C1=B AOI.txt
+198Bn19s4d4L5c1b1tubre
+213Bn19s4d6L7c1t1puyabra
+231Bn19s4d6L7c1t3planida
+awk -f select-user-aoi-rows.awk -v AOIS=198tubre 213puyabra 231planida data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=n C1=A AOI.txt
+197An19s4d4L5c1b0tubre
+212An19s4d6L7c1t0puyabra
+230An19s4d6L7c1t0planida
+awk -f select-user-aoi-rows.awk -v AOIS=197tubre 212puyabra 230planida data/ACH.tsv | uniq | sort -n
+197tubre:579:997
+197tubre:581:379
+197tubre:591:179
+197tubre:620:319
+212puyabra:597:319
+212puyabra:598:1256
+212puyabra:610:1117
+212puyabra:613:219
+212puyabra:615:159
+212puyabra:616:917
+212puyabra:631:458
+datamash -t : -g 1 count 2 sum 3 mean 3
+197tubre:4:1874:468.5
+212puyabra:7:4445:635
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=n C1=B AOI.txt
+198Bn19s4d4L5c1b1tubre
+213Bn19s4d6L7c1t1puyabra
+231Bn19s4d6L7c1t3planida
+awk -f select-user-aoi-rows.awk -v AOIS=198tubre 213puyabra 231planida data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=p C1=A AOI.txt
 217An19s5d3L8c7t0tranbite
 232An19s5d2L6c7b0planfo
 awk -f select-user-aoi-rows.awk -v AOIS=217tranbite 232planfo data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=19 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=p C1=B AOI.txt
+218Bn19s5d3L8c7t3tranbite
+233Bn19s5d2L6c7b2planfo
+awk -f select-user-aoi-rows.awk -v AOIS=218tranbite 233planfo data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=p C1=C AOI.txt
+219Cn19s5d3L8c7t0tranbite
+234Cn19s5d2L6c7b0planfo
+awk -f select-user-aoi-rows.awk -v AOIS=219tranbite 234planfo data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=n C1=A AOI.txt
+217An19s5d3L8c7t0tranbite
+232An19s5d2L6c7b0planfo
+awk -f select-user-aoi-rows.awk -v AOIS=217tranbite 232planfo data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=n C1=B AOI.txt
+218Bn19s5d3L8c7t3tranbite
+233Bn19s5d2L6c7b2planfo
+awk -f select-user-aoi-rows.awk -v AOIS=218tranbite 233planfo data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s5 C2=n C1=C AOI.txt
+219Cn19s5d3L8c7t0tranbite
+234Cn19s5d2L6c7b0planfo
+awk -f select-user-aoi-rows.awk -v AOIS=219tranbite 234planfo data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=p C1=A AOI.txt
 206An19s6dxL5c4b0quete
 228An19s6dxL5c4b0llafa
 235An19s6dxL7c4t0turrepo
@@ -928,47 +1954,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=206quete 228llafa 235turrepo data/ACH.ts
 206quete:625:279
 datamash -t : -g 1 count 2 sum 3 mean 3
 206quete:4:1615:403.75
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s1 AOI.txt
-203Bn19s1d8L6c4t2mosina
-209Bn19s1d8L6c4t3dipone
-224Bn19s1d8L6c4t3numapo
-awk -f select-user-aoi-rows.awk -v AOIS=203mosina 209dipone 224numapo data/ACH.tsv | uniq | sort -n
-209dipone:593:1834
-209dipone:595:180
-209dipone:604:279
-209dipone:621:439
-datamash -t : -g 1 count 2 sum 3 mean 3
-209dipone:4:2732:683
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s2 AOI.txt
-200Bn19s2d3L4c6b2albe
-awk -f select-user-aoi-rows.awk -v AOIS=200albe data/ACH.tsv | uniq | sort -n
-200albe:580:359
-200albe:582:837
-datamash -t : -g 1 count 2 sum 3 mean 3
-200albe:2:1196:598
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s3 AOI.txt
-205Bn19s3d8L7c3t1sepolar
-211Bn19s3d8L5c3b1mecil
-215Bn19s3d4L5c6b2pesmo
-221Bn19s3d4L5c3b2danlo
-226Bn19s3d6L7c6t2moñanda
-awk -f select-user-aoi-rows.awk -v AOIS=205sepolar 211mecil 215pesmo 221danlo 226moñanda data/ACH.tsv | uniq | sort -n
-215pesmo:599:1136
-215pesmo:633:179
-datamash -t : -g 1 count 2 sum 3 mean 3
-215pesmo:2:1315:657.5
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s4 AOI.txt
-198Bn19s4d4L5c1b1tubre
-213Bn19s4d6L7c1t1puyabra
-231Bn19s4d6L7c1t3planida
-awk -f select-user-aoi-rows.awk -v AOIS=198tubre 213puyabra 231planida data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s5 AOI.txt
-218Bn19s5d3L8c7t3tranbite
-233Bn19s5d2L6c7b2planfo
-awk -f select-user-aoi-rows.awk -v AOIS=218tranbite 233planfo data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=p C1=B AOI.txt
 207Bn19s6dxL5c4b2quete
 229Bn19s6dxL5c4b2llafa
 236Bn19s6dxL7c4t2turrepo
@@ -976,28 +1962,30 @@ awk -f select-user-aoi-rows.awk -v AOIS=207quete 229llafa 236turrepo data/ACH.ts
 207quete:592:678
 datamash -t : -g 1 count 2 sum 3 mean 3
 207quete:1:678:678
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s2 AOI.txt
-201Cn19s2d3L4c6b0albe
-awk -f select-user-aoi-rows.awk -v AOIS=201albe data/ACH.tsv | uniq | sort -n
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=n C1=A AOI.txt
+206An19s6dxL5c4b0quete
+228An19s6dxL5c4b0llafa
+235An19s6dxL7c4t0turrepo
+awk -f select-user-aoi-rows.awk -v AOIS=206quete 228llafa 235turrepo data/ACH.tsv | uniq | sort -n
+206quete:592:678
+206quete:600:339
+206quete:601:319
+206quete:625:279
+datamash -t : -g 1 count 2 sum 3 mean 3
+206quete:4:1615:403.75
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=n C1=B AOI.txt
+207Bn19s6dxL5c4b2quete
+229Bn19s6dxL5c4b2llafa
+236Bn19s6dxL7c4t2turrepo
+awk -f select-user-aoi-rows.awk -v AOIS=207quete 229llafa 236turrepo data/ACH.tsv | uniq | sort -n
+207quete:592:678
+datamash -t : -g 1 count 2 sum 3 mean 3
+207quete:1:678:678
+awk -f select-aoi-by-criteria.awk C3=19 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s3 AOI.txt
-216Cn19s3d4L5c6b0pesmo
-222Cn19s3d4L5c3b0danlo
-227Cn19s3d6L7c6t0moñanda
-awk -f select-user-aoi-rows.awk -v AOIS=216pesmo 222danlo 227moñanda data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s5 AOI.txt
-219Cn19s5d3L8c7t0tranbite
-234Cn19s5d2L6c7b0planfo
-awk -f select-user-aoi-rows.awk -v AOIS=219tranbite 234planfo data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=19 C1=C C4=s6 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=p C1=A AOI.txt
 237An21s1d8L4c4b0muca
 257An21s1d8L6c4t0ropida
 273An21s1d8L4c4b0pape
@@ -1021,7 +2009,59 @@ awk -f select-user-aoi-rows.awk -v AOIS=237muca 257ropida 273pape data/ACH.tsv |
 datamash -t : -g 1 count 2 sum 3 mean 3
 237muca:8:3149:393.625
 257ropida:8:3548:443.5
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=p C1=B AOI.txt
+238Bn21s1d8L4c4b1muca
+258Bn21s1d8L6c4t2ropida
+274Bn21s1d8L4c4b2pape
+awk -f select-user-aoi-rows.awk -v AOIS=238muca 258ropida 274pape data/ACH.tsv | uniq | sort -n
+238muca:698:239
+258ropida:661:199
+258ropida:681:718
+258ropida:682:120
+datamash -t : -g 1 count 2 sum 3 mean 3
+238muca:1:239:239
+258ropida:3:1037:345.66666666667
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=n C1=A AOI.txt
+237An21s1d8L4c4b0muca
+257An21s1d8L6c4t0ropida
+273An21s1d8L4c4b0pape
+awk -f select-user-aoi-rows.awk -v AOIS=237muca 257ropida 273pape data/ACH.tsv | uniq | sort -n
+237muca:642:618
+237muca:649:459
+237muca:650:1316
+237muca:651:139
+237muca:665:199
+237muca:666:159
+237muca:684:20
+237muca:698:239
+257ropida:657:199
+257ropida:659:518
+257ropida:661:199
+257ropida:662:538
+257ropida:681:718
+257ropida:682:120
+257ropida:683:219
+257ropida:694:1037
+datamash -t : -g 1 count 2 sum 3 mean 3
+237muca:8:3149:393.625
+257ropida:8:3548:443.5
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=n C1=B AOI.txt
+238Bn21s1d8L4c4b1muca
+258Bn21s1d8L6c4t2ropida
+274Bn21s1d8L4c4b2pape
+awk -f select-user-aoi-rows.awk -v AOIS=238muca 258ropida 274pape data/ACH.tsv | uniq | sort -n
+238muca:698:239
+258ropida:661:199
+258ropida:681:718
+258ropida:682:120
+datamash -t : -g 1 count 2 sum 3 mean 3
+238muca:1:239:239
+258ropida:3:1037:345.66666666667
+awk -f select-aoi-by-criteria.awk C3=21 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=p C1=A AOI.txt
 246An21s2d3L4c6b0arfo
 252An21s2d8L4c5b0taer
 264An21s2d8L4c5b0tois
@@ -1032,7 +2072,46 @@ awk -f select-user-aoi-rows.awk -v AOIS=246arfo 252taer 264tois 275esno data/ACH
 252taer:692:379
 datamash -t : -g 1 count 2 sum 3 mean 3
 252taer:3:817:272.33333333333
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=p C1=B AOI.txt
+247Bn21s2d3L4c6b2arfo
+253Bn21s2d8L4c5b1taer
+265Bn21s2d8L4c5b1tois
+276Bn21s2d3L4c6b2esno
+awk -f select-user-aoi-rows.awk -v AOIS=247arfo 253taer 265tois 276esno data/ACH.tsv | uniq | sort -n
+253taer:692:379
+datamash -t : -g 1 count 2 sum 3 mean 3
+253taer:1:379:379
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=p C1=C AOI.txt
+248Cn21s2d3L4c6b0arfo
+277Cn21s2d3L4c6b0esno
+awk -f select-user-aoi-rows.awk -v AOIS=248arfo 277esno data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=n C1=A AOI.txt
+246An21s2d3L4c6b0arfo
+252An21s2d8L4c5b0taer
+264An21s2d8L4c5b0tois
+275An21s2d3L4c6b0esno
+awk -f select-user-aoi-rows.awk -v AOIS=246arfo 252taer 264tois 275esno data/ACH.tsv | uniq | sort -n
+252taer:689:239
+252taer:691:199
+252taer:692:379
+datamash -t : -g 1 count 2 sum 3 mean 3
+252taer:3:817:272.33333333333
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=n C1=B AOI.txt
+247Bn21s2d3L4c6b2arfo
+253Bn21s2d8L4c5b1taer
+265Bn21s2d8L4c5b1tois
+276Bn21s2d3L4c6b2esno
+awk -f select-user-aoi-rows.awk -v AOIS=247arfo 253taer 265tois 276esno data/ACH.tsv | uniq | sort -n
+253taer:692:379
+datamash -t : -g 1 count 2 sum 3 mean 3
+253taer:1:379:379
+awk -f select-aoi-by-criteria.awk C3=21 C4=s2 C2=n C1=C AOI.txt
+248Cn21s2d3L4c6b0arfo
+277Cn21s2d3L4c6b0esno
+awk -f select-user-aoi-rows.awk -v AOIS=248arfo 277esno data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=A AOI.txt
 243An21s3d6L7c6t0taronla
 254An21s3d4L5c6b0carpe
 266An21s3d6L7c6t0pilanto
@@ -1046,7 +2125,57 @@ awk -f select-user-aoi-rows.awk -v AOIS=243taronla 254carpe 266pilanto data/ACH.
 254carpe:693:199
 datamash -t : -g 1 count 2 sum 3 mean 3
 254carpe:7:1494:213.42857142857
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=B AOI.txt
+244Bn21s3d6L7c6t2taronla
+255Bn21s3d4L5c6b2carpe
+267Bn21s3d6L7c6t2pilanto
+awk -f select-user-aoi-rows.awk -v AOIS=244taronla 255carpe 267pilanto data/ACH.tsv | uniq | sort -n
+255carpe:656:578
+255carpe:658:139
+255carpe:679:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+255carpe:3:956:318.66666666667
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=C AOI.txt
+245Cn21s3d6L7c6t0taronla
+256Cn21s3d4L5c6b0carpe
+268Cn21s3d6L7c6t0pilanto
+awk -f select-user-aoi-rows.awk -v AOIS=245taronla 256carpe 268pilanto data/ACH.tsv | uniq | sort -n
+256carpe:679:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+256carpe:1:239:239
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=A AOI.txt
+243An21s3d6L7c6t0taronla
+254An21s3d4L5c6b0carpe
+266An21s3d6L7c6t0pilanto
+awk -f select-user-aoi-rows.awk -v AOIS=243taronla 254carpe 266pilanto data/ACH.tsv | uniq | sort -n
+254carpe:656:578
+254carpe:658:139
+254carpe:676:179
+254carpe:679:239
+254carpe:685:20
+254carpe:687:140
+254carpe:693:199
+datamash -t : -g 1 count 2 sum 3 mean 3
+254carpe:7:1494:213.42857142857
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=B AOI.txt
+244Bn21s3d6L7c6t2taronla
+255Bn21s3d4L5c6b2carpe
+267Bn21s3d6L7c6t2pilanto
+awk -f select-user-aoi-rows.awk -v AOIS=244taronla 255carpe 267pilanto data/ACH.tsv | uniq | sort -n
+255carpe:656:578
+255carpe:658:139
+255carpe:679:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+255carpe:3:956:318.66666666667
+awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=C AOI.txt
+245Cn21s3d6L7c6t0taronla
+256Cn21s3d4L5c6b0carpe
+268Cn21s3d6L7c6t0pilanto
+awk -f select-user-aoi-rows.awk -v AOIS=245taronla 256carpe 268pilanto data/ACH.tsv | uniq | sort -n
+256carpe:679:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+256carpe:1:239:239
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=p C1=A AOI.txt
 239An21s4d6L7c1t0pribera
 269An21s4d6L7c1t0tracaja
 awk -f select-user-aoi-rows.awk -v AOIS=239pribera 269tracaja data/ACH.tsv | uniq | sort -n
@@ -1058,7 +2187,41 @@ awk -f select-user-aoi-rows.awk -v AOIS=239pribera 269tracaja data/ACH.tsv | uni
 datamash -t : -g 1 count 2 sum 3 mean 3
 239pribera:3:2392:797.33333333333
 269tracaja:2:458:229
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=p C1=B AOI.txt
+240Bn21s4d6L7c1t3pribera
+270Bn21s4d6L7c1t3tracaja
+awk -f select-user-aoi-rows.awk -v AOIS=240pribera 270tracaja data/ACH.tsv | uniq | sort -n
+240pribera:643:518
+270tracaja:696:179
+datamash -t : -g 1 count 2 sum 3 mean 3
+240pribera:1:518:518
+270tracaja:1:179:179
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=n C1=A AOI.txt
+239An21s4d6L7c1t0pribera
+269An21s4d6L7c1t0tracaja
+awk -f select-user-aoi-rows.awk -v AOIS=239pribera 269tracaja data/ACH.tsv | uniq | sort -n
+239pribera:643:518
+239pribera:644:1755
+239pribera:670:119
+269tracaja:696:179
+269tracaja:697:279
+datamash -t : -g 1 count 2 sum 3 mean 3
+239pribera:3:2392:797.33333333333
+269tracaja:2:458:229
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=n C1=B AOI.txt
+240Bn21s4d6L7c1t3pribera
+270Bn21s4d6L7c1t3tracaja
+awk -f select-user-aoi-rows.awk -v AOIS=240pribera 270tracaja data/ACH.tsv | uniq | sort -n
+240pribera:643:518
+270tracaja:696:179
+datamash -t : -g 1 count 2 sum 3 mean 3
+240pribera:1:518:518
+270tracaja:1:179:179
+awk -f select-aoi-by-criteria.awk C3=21 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=p C1=A AOI.txt
 249An21s5d3L8c7t0plasmica
 261An21s5d2L6c7b0blanje
 278An21s5d3L8c7t0prinfeso
@@ -1069,7 +2232,50 @@ awk -f select-user-aoi-rows.awk -v AOIS=249plasmica 261blanje 278prinfeso data/A
 249plasmica:690:60
 datamash -t : -g 1 count 2 sum 3 mean 3
 249plasmica:4:2174:543.5
-awk -f select-aoi-by-criteria.awk C3=21 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=p C1=B AOI.txt
+250Bn21s5d3L8c7t3plasmica
+262Bn21s5d2L6c7b2blanje
+279Bn21s5d3L8c7t3prinfeso
+awk -f select-user-aoi-rows.awk -v AOIS=250plasmica 262blanje 279prinfeso data/ACH.tsv | uniq | sort -n
+250plasmica:652:1436
+datamash -t : -g 1 count 2 sum 3 mean 3
+250plasmica:1:1436:1436
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=p C1=C AOI.txt
+251Cn21s5d3L8c7t0plasmica
+263Cn21s5d2L6c7b0blanje
+280Cn21s5d3L8c7t0prinfeso
+awk -f select-user-aoi-rows.awk -v AOIS=251plasmica 263blanje 280prinfeso data/ACH.tsv | uniq | sort -n
+251plasmica:652:1436
+datamash -t : -g 1 count 2 sum 3 mean 3
+251plasmica:1:1436:1436
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=n C1=A AOI.txt
+249An21s5d3L8c7t0plasmica
+261An21s5d2L6c7b0blanje
+278An21s5d3L8c7t0prinfeso
+awk -f select-user-aoi-rows.awk -v AOIS=249plasmica 261blanje 278prinfeso data/ACH.tsv | uniq | sort -n
+249plasmica:652:1436
+249plasmica:653:538
+249plasmica:688:140
+249plasmica:690:60
+datamash -t : -g 1 count 2 sum 3 mean 3
+249plasmica:4:2174:543.5
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=n C1=B AOI.txt
+250Bn21s5d3L8c7t3plasmica
+262Bn21s5d2L6c7b2blanje
+279Bn21s5d3L8c7t3prinfeso
+awk -f select-user-aoi-rows.awk -v AOIS=250plasmica 262blanje 279prinfeso data/ACH.tsv | uniq | sort -n
+250plasmica:652:1436
+datamash -t : -g 1 count 2 sum 3 mean 3
+250plasmica:1:1436:1436
+awk -f select-aoi-by-criteria.awk C3=21 C4=s5 C2=n C1=C AOI.txt
+251Cn21s5d3L8c7t0plasmica
+263Cn21s5d2L6c7b0blanje
+280Cn21s5d3L8c7t0prinfeso
+awk -f select-user-aoi-rows.awk -v AOIS=251plasmica 263blanje 280prinfeso data/ACH.tsv | uniq | sort -n
+251plasmica:652:1436
+datamash -t : -g 1 count 2 sum 3 mean 3
+251plasmica:1:1436:1436
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=p C1=A AOI.txt
 241An21s6dxL7c4t0balella
 259An21s6dxL6c4b0guerre
 271An21s6dxL5c4b0tolle
@@ -1079,55 +2285,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=241balella 259guerre 271tolle data/ACH.t
 241balella:673:379
 datamash -t : -g 1 count 2 sum 3 mean 3
 241balella:3:2273:757.66666666667
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s1 AOI.txt
-238Bn21s1d8L4c4b1muca
-258Bn21s1d8L6c4t2ropida
-274Bn21s1d8L4c4b2pape
-awk -f select-user-aoi-rows.awk -v AOIS=238muca 258ropida 274pape data/ACH.tsv | uniq | sort -n
-238muca:698:239
-258ropida:661:199
-258ropida:681:718
-258ropida:682:120
-datamash -t : -g 1 count 2 sum 3 mean 3
-238muca:1:239:239
-258ropida:3:1037:345.66666666667
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s2 AOI.txt
-247Bn21s2d3L4c6b2arfo
-253Bn21s2d8L4c5b1taer
-265Bn21s2d8L4c5b1tois
-276Bn21s2d3L4c6b2esno
-awk -f select-user-aoi-rows.awk -v AOIS=247arfo 253taer 265tois 276esno data/ACH.tsv | uniq | sort -n
-253taer:692:379
-datamash -t : -g 1 count 2 sum 3 mean 3
-253taer:1:379:379
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s3 AOI.txt
-244Bn21s3d6L7c6t2taronla
-255Bn21s3d4L5c6b2carpe
-267Bn21s3d6L7c6t2pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=244taronla 255carpe 267pilanto data/ACH.tsv | uniq | sort -n
-255carpe:656:578
-255carpe:658:139
-255carpe:679:239
-datamash -t : -g 1 count 2 sum 3 mean 3
-255carpe:3:956:318.66666666667
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s4 AOI.txt
-240Bn21s4d6L7c1t3pribera
-270Bn21s4d6L7c1t3tracaja
-awk -f select-user-aoi-rows.awk -v AOIS=240pribera 270tracaja data/ACH.tsv | uniq | sort -n
-240pribera:643:518
-270tracaja:696:179
-datamash -t : -g 1 count 2 sum 3 mean 3
-240pribera:1:518:518
-270tracaja:1:179:179
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s5 AOI.txt
-250Bn21s5d3L8c7t3plasmica
-262Bn21s5d2L6c7b2blanje
-279Bn21s5d3L8c7t3prinfeso
-awk -f select-user-aoi-rows.awk -v AOIS=250plasmica 262blanje 279prinfeso data/ACH.tsv | uniq | sort -n
-250plasmica:652:1436
-datamash -t : -g 1 count 2 sum 3 mean 3
-250plasmica:1:1436:1436
-awk -f select-aoi-by-criteria.awk C3=21 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=p C1=B AOI.txt
 242Bn21s6dxL7c4t1balella
 260Bn21s6dxL6c4b2guerre
 272Bn21s6dxL5c4b1tolle
@@ -1135,34 +2293,29 @@ awk -f select-user-aoi-rows.awk -v AOIS=242balella 260guerre 272tolle data/ACH.t
 242balella:673:379
 datamash -t : -g 1 count 2 sum 3 mean 3
 242balella:1:379:379
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s2 AOI.txt
-248Cn21s2d3L4c6b0arfo
-277Cn21s2d3L4c6b0esno
-awk -f select-user-aoi-rows.awk -v AOIS=248arfo 277esno data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s3 AOI.txt
-245Cn21s3d6L7c6t0taronla
-256Cn21s3d4L5c6b0carpe
-268Cn21s3d6L7c6t0pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=245taronla 256carpe 268pilanto data/ACH.tsv | uniq | sort -n
-256carpe:679:239
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=n C1=A AOI.txt
+241An21s6dxL7c4t0balella
+259An21s6dxL6c4b0guerre
+271An21s6dxL5c4b0tolle
+awk -f select-user-aoi-rows.awk -v AOIS=241balella 259guerre 271tolle data/ACH.tsv | uniq | sort -n
+241balella:645:1116
+241balella:646:778
+241balella:673:379
 datamash -t : -g 1 count 2 sum 3 mean 3
-256carpe:1:239:239
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s5 AOI.txt
-251Cn21s5d3L8c7t0plasmica
-263Cn21s5d2L6c7b0blanje
-280Cn21s5d3L8c7t0prinfeso
-awk -f select-user-aoi-rows.awk -v AOIS=251plasmica 263blanje 280prinfeso data/ACH.tsv | uniq | sort -n
-251plasmica:652:1436
+241balella:3:2273:757.66666666667
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=n C1=B AOI.txt
+242Bn21s6dxL7c4t1balella
+260Bn21s6dxL6c4b2guerre
+272Bn21s6dxL5c4b1tolle
+awk -f select-user-aoi-rows.awk -v AOIS=242balella 260guerre 272tolle data/ACH.tsv | uniq | sort -n
+242balella:673:379
 datamash -t : -g 1 count 2 sum 3 mean 3
-251plasmica:1:1436:1436
-awk -f select-aoi-by-criteria.awk C3=21 C1=C C4=s6 AOI.txt
+242balella:1:379:379
+awk -f select-aoi-by-criteria.awk C3=21 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=p C1=A AOI.txt
 288An23s1d8L6c4t0camido
 296An23s1d8L4c4b0vipo
 316An23s1d8L4c4b0lusa
@@ -1173,7 +2326,38 @@ awk -f select-user-aoi-rows.awk -v AOIS=288camido 296vipo 316lusa data/ACH.tsv |
 datamash -t : -g 1 count 2 sum 3 mean 3
 288camido:1:1455:1455
 296vipo:2:2591:1295.5
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=p C1=B AOI.txt
+289Bn23s1d8L6c4t2camido
+297Bn23s1d8L4c4b2vipo
+317Bn23s1d8L4c4b2lusa
+awk -f select-user-aoi-rows.awk -v AOIS=289camido 297vipo 317lusa data/ACH.tsv | uniq | sort -n
+297vipo:719:1455
+datamash -t : -g 1 count 2 sum 3 mean 3
+297vipo:1:1455:1455
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=n C1=A AOI.txt
+288An23s1d8L6c4t0camido
+296An23s1d8L4c4b0vipo
+316An23s1d8L4c4b0lusa
+awk -f select-user-aoi-rows.awk -v AOIS=288camido 296vipo 316lusa data/ACH.tsv | uniq | sort -n
+288camido:707:1455
+296vipo:719:1455
+296vipo:725:1136
+datamash -t : -g 1 count 2 sum 3 mean 3
+288camido:1:1455:1455
+296vipo:2:2591:1295.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=n C1=B AOI.txt
+289Bn23s1d8L6c4t2camido
+297Bn23s1d8L4c4b2vipo
+317Bn23s1d8L4c4b2lusa
+awk -f select-user-aoi-rows.awk -v AOIS=289camido 297vipo 317lusa data/ACH.tsv | uniq | sort -n
+297vipo:719:1455
+datamash -t : -g 1 count 2 sum 3 mean 3
+297vipo:1:1455:1455
+awk -f select-aoi-by-criteria.awk C3=23 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=p C1=A AOI.txt
 306An23s2d5L6c6t0oscafo
 311An23s2d4L6c6t0esmade
 awk -f select-user-aoi-rows.awk -v AOIS=306oscafo 311esmade data/ACH.tsv | uniq | sort -n
@@ -1181,7 +2365,45 @@ awk -f select-user-aoi-rows.awk -v AOIS=306oscafo 311esmade data/ACH.tsv | uniq 
 306oscafo:742:698
 datamash -t : -g 1 count 2 sum 3 mean 3
 306oscafo:2:957:478.5
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=p C1=B AOI.txt
+307Bn23s2d5L6c6t3oscafo
+312Bn23s2d4L6c6t3esmade
+awk -f select-user-aoi-rows.awk -v AOIS=307oscafo 312esmade data/ACH.tsv | uniq | sort -n
+307oscafo:740:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+307oscafo:1:259:259
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=p C1=C AOI.txt
+308Cn23s2d5L6c6t0oscafo
+313Cn23s2d4L6c6t0esmade
+awk -f select-user-aoi-rows.awk -v AOIS=308oscafo 313esmade data/ACH.tsv | uniq | sort -n
+308oscafo:740:259
+308oscafo:742:698
+datamash -t : -g 1 count 2 sum 3 mean 3
+308oscafo:2:957:478.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=n C1=A AOI.txt
+306An23s2d5L6c6t0oscafo
+311An23s2d4L6c6t0esmade
+awk -f select-user-aoi-rows.awk -v AOIS=306oscafo 311esmade data/ACH.tsv | uniq | sort -n
+306oscafo:740:259
+306oscafo:742:698
+datamash -t : -g 1 count 2 sum 3 mean 3
+306oscafo:2:957:478.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=n C1=B AOI.txt
+307Bn23s2d5L6c6t3oscafo
+312Bn23s2d4L6c6t3esmade
+awk -f select-user-aoi-rows.awk -v AOIS=307oscafo 312esmade data/ACH.tsv | uniq | sort -n
+307oscafo:740:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+307oscafo:1:259:259
+awk -f select-aoi-by-criteria.awk C3=23 C4=s2 C2=n C1=C AOI.txt
+308Cn23s2d5L6c6t0oscafo
+313Cn23s2d4L6c6t0esmade
+awk -f select-user-aoi-rows.awk -v AOIS=308oscafo 313esmade data/ACH.tsv | uniq | sort -n
+308oscafo:740:259
+308oscafo:742:698
+datamash -t : -g 1 count 2 sum 3 mean 3
+308oscafo:2:957:478.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=p C1=A AOI.txt
 294An23s3d8L7c3t0patinos
 302An23s3d8L5c3b0logar
 awk -f select-user-aoi-rows.awk -v AOIS=294patinos 302logar data/ACH.tsv | uniq | sort -n
@@ -1195,14 +2417,71 @@ awk -f select-user-aoi-rows.awk -v AOIS=294patinos 302logar data/ACH.tsv | uniq 
 294patinos:733:140
 datamash -t : -g 1 count 2 sum 3 mean 3
 294patinos:8:4127:515.875
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=p C1=B AOI.txt
+295Bn23s3d8L7c3t1patinos
+303Bn23s3d8L5c3b1logar
+awk -f select-user-aoi-rows.awk -v AOIS=295patinos 303logar data/ACH.tsv | uniq | sort -n
+295patinos:723:1475
+datamash -t : -g 1 count 2 sum 3 mean 3
+295patinos:1:1475:1475
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=n C1=A AOI.txt
+294An23s3d8L7c3t0patinos
+302An23s3d8L5c3b0logar
+awk -f select-user-aoi-rows.awk -v AOIS=294patinos 302logar data/ACH.tsv | uniq | sort -n
+294patinos:715:698
+294patinos:716:279
+294patinos:717:399
+294patinos:718:618
+294patinos:723:1475
+294patinos:724:299
+294patinos:730:219
+294patinos:733:140
+datamash -t : -g 1 count 2 sum 3 mean 3
+294patinos:8:4127:515.875
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=n C1=B AOI.txt
+295Bn23s3d8L7c3t1patinos
+303Bn23s3d8L5c3b1logar
+awk -f select-user-aoi-rows.awk -v AOIS=295patinos 303logar data/ACH.tsv | uniq | sort -n
+295patinos:723:1475
+datamash -t : -g 1 count 2 sum 3 mean 3
+295patinos:1:1475:1475
+awk -f select-aoi-by-criteria.awk C3=23 C4=s3 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=p C1=A AOI.txt
 283An23s4d4L5c1b0clare
 318An23s4d6L7c1t0tabrila
 awk -f select-user-aoi-rows.awk -v AOIS=283clare 318tabrila data/ACH.tsv | uniq | sort -n
 283clare:704:1575
 datamash -t : -g 1 count 2 sum 3 mean 3
 283clare:1:1575:1575
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=p C1=B AOI.txt
+284Bn23s4d4L5c1b2clare
+319Bn23s4d6L7c1t2tabrila
+awk -f select-user-aoi-rows.awk -v AOIS=284clare 319tabrila data/ACH.tsv | uniq | sort -n
+284clare:704:1575
+datamash -t : -g 1 count 2 sum 3 mean 3
+284clare:1:1575:1575
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=n C1=A AOI.txt
+283An23s4d4L5c1b0clare
+318An23s4d6L7c1t0tabrila
+awk -f select-user-aoi-rows.awk -v AOIS=283clare 318tabrila data/ACH.tsv | uniq | sort -n
+283clare:704:1575
+datamash -t : -g 1 count 2 sum 3 mean 3
+283clare:1:1575:1575
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=n C1=B AOI.txt
+284Bn23s4d4L5c1b2clare
+319Bn23s4d6L7c1t2tabrila
+awk -f select-user-aoi-rows.awk -v AOIS=284clare 319tabrila data/ACH.tsv | uniq | sort -n
+284clare:704:1575
+datamash -t : -g 1 count 2 sum 3 mean 3
+284clare:1:1575:1575
+awk -f select-aoi-by-criteria.awk C3=23 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=p C1=A AOI.txt
 285An23s5d2L6c7t0fresdo
 290An23s5d5L6c2b0pefrir
 304An23s5d7L8c2t0telubrar
@@ -1220,7 +2499,63 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 285fresdo:2:1256:628
 290pefrir:3:2771:923.66666666667
 304telubrar:3:2532:844
-awk -f select-aoi-by-criteria.awk C3=23 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=p C1=B AOI.txt
+286Bn23s5d2L6c7t2fresdo
+291Bn23s5d5L6c2b1pefrir
+305Bn23s5d7L8c2t1telubrar
+315Bn23s5d5L6c2b1nebros
+awk -f select-user-aoi-rows.awk -v AOIS=286fresdo 291pefrir 305telubrar 315nebros data/ACH.tsv | uniq | sort -n
+286fresdo:705:937
+286fresdo:706:319
+305telubrar:736:180
+305telubrar:738:2113
+datamash -t : -g 1 count 2 sum 3 mean 3
+286fresdo:2:1256:628
+305telubrar:2:2293:1146.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=p C1=C AOI.txt
+287Cn23s5d2L6c7t0fresdo
+awk -f select-user-aoi-rows.awk -v AOIS=287fresdo data/ACH.tsv | uniq | sort -n
+287fresdo:706:319
+datamash -t : -g 1 count 2 sum 3 mean 3
+287fresdo:1:319:319
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=n C1=A AOI.txt
+285An23s5d2L6c7t0fresdo
+290An23s5d5L6c2b0pefrir
+304An23s5d7L8c2t0telubrar
+314An23s5d5L6c2b0nebros
+awk -f select-user-aoi-rows.awk -v AOIS=285fresdo 290pefrir 304telubrar 314nebros data/ACH.tsv | uniq | sort -n
+285fresdo:705:937
+285fresdo:706:319
+290pefrir:708:678
+290pefrir:710:1914
+290pefrir:748:179
+304telubrar:735:239
+304telubrar:736:180
+304telubrar:738:2113
+datamash -t : -g 1 count 2 sum 3 mean 3
+285fresdo:2:1256:628
+290pefrir:3:2771:923.66666666667
+304telubrar:3:2532:844
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=n C1=B AOI.txt
+286Bn23s5d2L6c7t2fresdo
+291Bn23s5d5L6c2b1pefrir
+305Bn23s5d7L8c2t1telubrar
+315Bn23s5d5L6c2b1nebros
+awk -f select-user-aoi-rows.awk -v AOIS=286fresdo 291pefrir 305telubrar 315nebros data/ACH.tsv | uniq | sort -n
+286fresdo:705:937
+286fresdo:706:319
+305telubrar:736:180
+305telubrar:738:2113
+datamash -t : -g 1 count 2 sum 3 mean 3
+286fresdo:2:1256:628
+305telubrar:2:2293:1146.5
+awk -f select-aoi-by-criteria.awk C3=23 C4=s5 C2=n C1=C AOI.txt
+287Cn23s5d2L6c7t0fresdo
+awk -f select-user-aoi-rows.awk -v AOIS=287fresdo data/ACH.tsv | uniq | sort -n
+287fresdo:706:319
+datamash -t : -g 1 count 2 sum 3 mean 3
+287fresdo:1:319:319
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=p C1=A AOI.txt
 281An23s6dxL5c4b0parre
 292An23s6dxL7c4t0chapeca
 298An23s6dxL5c4b0tocha
@@ -1250,49 +2585,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 298tocha:3:1576:525.33333333333
 300mochede:3:2293:764.33333333333
 309siqueze:4:1775:443.75
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s1 AOI.txt
-289Bn23s1d8L6c4t2camido
-297Bn23s1d8L4c4b2vipo
-317Bn23s1d8L4c4b2lusa
-awk -f select-user-aoi-rows.awk -v AOIS=289camido 297vipo 317lusa data/ACH.tsv | uniq | sort -n
-297vipo:719:1455
-datamash -t : -g 1 count 2 sum 3 mean 3
-297vipo:1:1455:1455
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s2 AOI.txt
-307Bn23s2d5L6c6t3oscafo
-312Bn23s2d4L6c6t3esmade
-awk -f select-user-aoi-rows.awk -v AOIS=307oscafo 312esmade data/ACH.tsv | uniq | sort -n
-307oscafo:740:259
-datamash -t : -g 1 count 2 sum 3 mean 3
-307oscafo:1:259:259
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s3 AOI.txt
-295Bn23s3d8L7c3t1patinos
-303Bn23s3d8L5c3b1logar
-awk -f select-user-aoi-rows.awk -v AOIS=295patinos 303logar data/ACH.tsv | uniq | sort -n
-295patinos:723:1475
-datamash -t : -g 1 count 2 sum 3 mean 3
-295patinos:1:1475:1475
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s4 AOI.txt
-284Bn23s4d4L5c1b2clare
-319Bn23s4d6L7c1t2tabrila
-awk -f select-user-aoi-rows.awk -v AOIS=284clare 319tabrila data/ACH.tsv | uniq | sort -n
-284clare:704:1575
-datamash -t : -g 1 count 2 sum 3 mean 3
-284clare:1:1575:1575
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s5 AOI.txt
-286Bn23s5d2L6c7t2fresdo
-291Bn23s5d5L6c2b1pefrir
-305Bn23s5d7L8c2t1telubrar
-315Bn23s5d5L6c2b1nebros
-awk -f select-user-aoi-rows.awk -v AOIS=286fresdo 291pefrir 305telubrar 315nebros data/ACH.tsv | uniq | sort -n
-286fresdo:705:937
-286fresdo:706:319
-305telubrar:736:180
-305telubrar:738:2113
-datamash -t : -g 1 count 2 sum 3 mean 3
-286fresdo:2:1256:628
-305telubrar:2:2293:1146.5
-awk -f select-aoi-by-criteria.awk C3=23 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=p C1=B AOI.txt
 282Bn23s6dxL5c4b1parre
 293Bn23s6dxL7c4t3chapeca
 299Bn23s6dxL5c4b1tocha
@@ -1303,29 +2596,52 @@ awk -f select-user-aoi-rows.awk -v AOIS=282parre 293chapeca 299tocha 301mochede 
 282parre:703:1176
 datamash -t : -g 1 count 2 sum 3 mean 3
 282parre:2:1296:648
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s2 AOI.txt
-308Cn23s2d5L6c6t0oscafo
-313Cn23s2d4L6c6t0esmade
-awk -f select-user-aoi-rows.awk -v AOIS=308oscafo 313esmade data/ACH.tsv | uniq | sort -n
-308oscafo:740:259
-308oscafo:742:698
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=A AOI.txt
+281An23s6dxL5c4b0parre
+292An23s6dxL7c4t0chapeca
+298An23s6dxL5c4b0tocha
+300An23s6dxL7c4t0mochede
+309An23s6dxL7c4t0siqueze
+awk -f select-user-aoi-rows.awk -v AOIS=281parre 292chapeca 298tocha 300mochede 309siqueze data/ACH.tsv | uniq | sort -n
+281parre:701:518
+281parre:702:120
+281parre:703:1176
+281parre:711:219
+281parre:712:159
+292chapeca:714:359
+292chapeca:722:1256
+298tocha:720:1336
+298tocha:726:100
+298tocha:746:140
+300mochede:721:1595
+300mochede:728:578
+300mochede:749:120
+309siqueze:729:538
+309siqueze:741:160
+309siqueze:743:319
+309siqueze:744:758
 datamash -t : -g 1 count 2 sum 3 mean 3
-308oscafo:2:957:478.5
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s3 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s5 AOI.txt
-287Cn23s5d2L6c7t0fresdo
-awk -f select-user-aoi-rows.awk -v AOIS=287fresdo data/ACH.tsv | uniq | sort -n
-287fresdo:706:319
+281parre:5:2192:438.4
+292chapeca:2:1615:807.5
+298tocha:3:1576:525.33333333333
+300mochede:3:2293:764.33333333333
+309siqueze:4:1775:443.75
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=B AOI.txt
+282Bn23s6dxL5c4b1parre
+293Bn23s6dxL7c4t3chapeca
+299Bn23s6dxL5c4b1tocha
+301Bn23s6dxL7c4t2mochede
+310Bn23s6dxL7c4t2siqueze
+awk -f select-user-aoi-rows.awk -v AOIS=282parre 293chapeca 299tocha 301mochede 310siqueze data/ACH.tsv | uniq | sort -n
+282parre:702:120
+282parre:703:1176
 datamash -t : -g 1 count 2 sum 3 mean 3
-287fresdo:1:319:319
-awk -f select-aoi-by-criteria.awk C3=23 C1=C C4=s6 AOI.txt
+282parre:2:1296:648
+awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=A AOI.txt
 323An25s1d8L6c4t0canojo
 334An25s1d8L4c4b0tena
 awk -f select-user-aoi-rows.awk -v AOIS=323canojo 334tena data/ACH.tsv | uniq | sort -n
@@ -1338,11 +2654,58 @@ awk -f select-user-aoi-rows.awk -v AOIS=323canojo 334tena data/ACH.tsv | uniq | 
 datamash -t : -g 1 count 2 sum 3 mean 3
 323canojo:2:1754:877
 334tena:4:1714:428.5
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=B AOI.txt
+324Bn25s1d8L6c4t1canojo
+335Bn25s1d8L4c4b1tena
+awk -f select-user-aoi-rows.awk -v AOIS=324canojo 335tena data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=A AOI.txt
+323An25s1d8L6c4t0canojo
+334An25s1d8L4c4b0tena
+awk -f select-user-aoi-rows.awk -v AOIS=323canojo 334tena data/ACH.tsv | uniq | sort -n
+323canojo:762:219
+323canojo:763:1535
+334tena:772:658
+334tena:774:319
+334tena:776:239
+334tena:791:498
+datamash -t : -g 1 count 2 sum 3 mean 3
+323canojo:2:1754:877
+334tena:4:1714:428.5
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=B AOI.txt
+324Bn25s1d8L6c4t1canojo
+335Bn25s1d8L4c4b1tena
+awk -f select-user-aoi-rows.awk -v AOIS=324canojo 335tena data/ACH.tsv | uniq | sort -n
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s2 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s3 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=A AOI.txt
 325An25s4d4L5c1b0brune
 332An25s4d4L5c1b0muglo
 awk -f select-user-aoi-rows.awk -v AOIS=325brune 332muglo data/ACH.tsv | uniq | sort -n
@@ -1354,7 +2717,37 @@ awk -f select-user-aoi-rows.awk -v AOIS=325brune 332muglo data/ACH.tsv | uniq | 
 datamash -t : -g 1 count 2 sum 3 mean 3
 325brune:1:1017:1017
 332muglo:4:2293:573.25
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=B AOI.txt
+326Bn25s4d4L5c1b2brune
+333Bn25s4d4L5c1b1muglo
+awk -f select-user-aoi-rows.awk -v AOIS=326brune 333muglo data/ACH.tsv | uniq | sort -n
+326brune:764:1017
+datamash -t : -g 1 count 2 sum 3 mean 3
+326brune:1:1017:1017
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=A AOI.txt
+325An25s4d4L5c1b0brune
+332An25s4d4L5c1b0muglo
+awk -f select-user-aoi-rows.awk -v AOIS=325brune 332muglo data/ACH.tsv | uniq | sort -n
+325brune:764:1017
+332muglo:771:797
+332muglo:789:439
+332muglo:790:718
+332muglo:799:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+325brune:1:1017:1017
+332muglo:4:2293:573.25
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=B AOI.txt
+326Bn25s4d4L5c1b2brune
+333Bn25s4d4L5c1b1muglo
+awk -f select-user-aoi-rows.awk -v AOIS=326brune 333muglo data/ACH.tsv | uniq | sort -n
+326brune:764:1017
+datamash -t : -g 1 count 2 sum 3 mean 3
+326brune:1:1017:1017
+awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=p C1=A AOI.txt
 320An25s5d3L8c7t0nubrirso
 329An25s5d3L8c7t0cabrando
 awk -f select-user-aoi-rows.awk -v AOIS=320nubrirso 329cabrando data/ACH.tsv | uniq | sort -n
@@ -1377,31 +2770,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=320nubrirso 329cabrando data/ACH.tsv | u
 datamash -t : -g 1 count 2 sum 3 mean 3
 320nubrirso:13:7535:579.61538461538
 329cabrando:3:1395:465
-awk -f select-aoi-by-criteria.awk C3=25 C1=A C4=s6 AOI.txt
-327An25s6dxL5c4b0fague
-awk -f select-user-aoi-rows.awk -v AOIS=327fague data/ACH.tsv | uniq | sort -n
-327fague:765:1336
-327fague:767:179
-327fague:768:359
-datamash -t : -g 1 count 2 sum 3 mean 3
-327fague:3:1874:624.66666666667
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s1 AOI.txt
-324Bn25s1d8L6c4t1canojo
-335Bn25s1d8L4c4b1tena
-awk -f select-user-aoi-rows.awk -v AOIS=324canojo 335tena data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s2 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s3 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s4 AOI.txt
-326Bn25s4d4L5c1b2brune
-333Bn25s4d4L5c1b1muglo
-awk -f select-user-aoi-rows.awk -v AOIS=326brune 333muglo data/ACH.tsv | uniq | sort -n
-326brune:764:1017
-datamash -t : -g 1 count 2 sum 3 mean 3
-326brune:1:1017:1017
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=p C1=B AOI.txt
 321Bn25s5d3L8c7t2nubrirso
 330Bn25s5d3L8c7t2cabrando
 awk -f select-user-aoi-rows.awk -v AOIS=321nubrirso 330cabrando data/ACH.tsv | uniq | sort -n
@@ -1414,19 +2783,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=321nubrirso 330cabrando data/ACH.tsv | u
 datamash -t : -g 1 count 2 sum 3 mean 3
 321nubrirso:5:2711:542.2
 330cabrando:1:119:119
-awk -f select-aoi-by-criteria.awk C3=25 C1=B C4=s6 AOI.txt
-328Bn25s6dxL5c4b1fague
-awk -f select-user-aoi-rows.awk -v AOIS=328fague data/ACH.tsv | uniq | sort -n
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s1 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s2 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s3 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s4 AOI.txt
-
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=p C1=C AOI.txt
 322Cn25s5d3L8c7t0nubrirso
 331Cn25s5d3L8c7t0cabrando
 awk -f select-user-aoi-rows.awk -v AOIS=322nubrirso 331cabrando data/ACH.tsv | uniq | sort -n
@@ -1434,41 +2791,147 @@ awk -f select-user-aoi-rows.awk -v AOIS=322nubrirso 331cabrando data/ACH.tsv | u
 331cabrando:803:119
 datamash -t : -g 1 count 2 sum 3 mean 3
 331cabrando:2:478:239
-awk -f select-aoi-by-criteria.awk C3=25 C1=C C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=n C1=A AOI.txt
+320An25s5d3L8c7t0nubrirso
+329An25s5d3L8c7t0cabrando
+awk -f select-user-aoi-rows.awk -v AOIS=320nubrirso 329cabrando data/ACH.tsv | uniq | sort -n
+320nubrirso:755:239
+320nubrirso:756:259
+320nubrirso:757:299
+320nubrirso:758:259
+320nubrirso:759:1595
+320nubrirso:760:179
+320nubrirso:761:419
+320nubrirso:766:399
+320nubrirso:770:2113
+320nubrirso:780:718
+320nubrirso:784:179
+320nubrirso:785:458
+320nubrirso:787:419
+329cabrando:783:359
+329cabrando:788:917
+329cabrando:803:119
+datamash -t : -g 1 count 2 sum 3 mean 3
+320nubrirso:13:7535:579.61538461538
+329cabrando:3:1395:465
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=n C1=B AOI.txt
+321Bn25s5d3L8c7t2nubrirso
+330Bn25s5d3L8c7t2cabrando
+awk -f select-user-aoi-rows.awk -v AOIS=321nubrirso 330cabrando data/ACH.tsv | uniq | sort -n
+321nubrirso:756:259
+321nubrirso:758:259
+321nubrirso:759:1595
+321nubrirso:760:179
+321nubrirso:761:419
+330cabrando:803:119
+datamash -t : -g 1 count 2 sum 3 mean 3
+321nubrirso:5:2711:542.2
+330cabrando:1:119:119
+awk -f select-aoi-by-criteria.awk C3=25 C4=s5 C2=n C1=C AOI.txt
+322Cn25s5d3L8c7t0nubrirso
+331Cn25s5d3L8c7t0cabrando
+awk -f select-user-aoi-rows.awk -v AOIS=322nubrirso 331cabrando data/ACH.tsv | uniq | sort -n
+331cabrando:783:359
+331cabrando:803:119
+datamash -t : -g 1 count 2 sum 3 mean 3
+331cabrando:2:478:239
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=A AOI.txt
+327An25s6dxL5c4b0fague
+awk -f select-user-aoi-rows.awk -v AOIS=327fague data/ACH.tsv | uniq | sort -n
+327fague:765:1336
+327fague:767:179
+327fague:768:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+327fague:3:1874:624.66666666667
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=B AOI.txt
+328Bn25s6dxL5c4b1fague
+awk -f select-user-aoi-rows.awk -v AOIS=328fague data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=A AOI.txt
+327An25s6dxL5c4b0fague
+awk -f select-user-aoi-rows.awk -v AOIS=327fague data/ACH.tsv | uniq | sort -n
+327fague:765:1336
+327fague:767:179
+327fague:768:359
+datamash -t : -g 1 count 2 sum 3 mean 3
+327fague:3:1874:624.66666666667
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=B AOI.txt
+328Bn25s6dxL5c4b1fague
+awk -f select-user-aoi-rows.awk -v AOIS=328fague data/ACH.tsv | uniq | sort -n
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=p C1=A AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=p C1=B AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=A C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=n C1=A AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=n C1=B AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=p C1=A AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=p C1=B AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=B C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=p C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s1 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=n C1=A AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s2 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=n C1=B AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s3 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=n C1=C AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s4 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=p C1=A AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s5 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=p C1=B AOI.txt
 
-awk -f select-aoi-by-criteria.awk C3=27 C1=C C4=s6 AOI.txt
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s3 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s5 C2=n C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=p C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=p C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=p C1=C AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=n C1=A AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=n C1=B AOI.txt
+
+awk -f select-aoi-by-criteria.awk C3=27 C4=s6 C2=n C1=C AOI.txt
 
