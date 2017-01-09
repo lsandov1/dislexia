@@ -10,7 +10,7 @@ set -o errexit
 PATH=".:$PATH"
 
 # Constants
-AOI_FILE="AOI.txt"
+AOI_FILE="aoi.txt"
 DEBUG=echo
 DATADIR="data"
 OUTDIR="out"
@@ -96,20 +96,27 @@ for USERDATA in $DATADIR/$USERDATA_REGEX; do
             	    # Remove certain AOI's
             	    AOIS=$(echo "$AOIS" | egrep -v '394texto|395busqueda')
 
-            	    # Filter rows matching the AOIS
-		    ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n)
-		    echo "awk -f select-user-aoi-rows.awk -v AOIS="$AOIS" $USERDATA | uniq | sort -n" >> $F_INPUT
-		    echo "$ROWS" >> $F_INPUT
+		    # loop each AOI, easier to detect if no user has no AOI data
+		    for AOI in $AOIS; do
 
-    		    # Make sure there is user data based on the selected AOIS
-    		    [ -z "$ROWS" ] && { continue; }
+            	    	# Filter rows matching the AOI
+    		    	ROWS=$(awk -f select-user-aoi-rows.awk -v AOIS="$AOI" $USERDATA | uniq | sort -n)
+    		    	echo "awk -f select-user-aoi-rows.awk -v AOIS="$AOI" $USERDATA | uniq | sort -n" >> $F_INPUT
+    		    	echo "$ROWS" >> $F_INPUT
 
-            	    # get and append the slide and line number for each AOI
-            	    STAT=$(echo "$ROWS" | datamash -t : -g 1 count 2 sum 3 mean 3)
-		    OUT=$(echo "$STAT" | awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME" -v CRITERIA="s$C4 $C2 $C1")
-		    echo "datamash -t : -g 1 count 2 sum 3 mean 3" >> $F_INPUT
-            	    echo "$STAT" >> $F_INPUT
-            	    echo "$OUT" >> $F_OUTPUT
+    		    	# In case there is no related AOI user data, just print zeros and continue loop
+    		    	if [ -z "$ROWS" ]; then
+			    echo "$USERDATA_BASENAME s$C4 $C2 $C1 $AOI 0 0 0 0 0" >> $F_OUTPUT
+			    continue
+			fi
+
+            	    	# get and append the slide and line number for each AOI
+            	    	STAT=$(echo "$ROWS" | datamash -t : -g 1 count 2 sum 3 mean 3)
+    		    	OUT=$(echo "$STAT" | awk -f slide-line-numbers.awk -v USERDATA="$USERDATA_BASENAME" -v CRITERIA="s$C4 $C2 $C1")
+    		    	echo "datamash -t : -g 1 count 2 sum 3 mean 3" >> $F_INPUT
+            	    	echo "$STAT" >> $F_INPUT
+            	    	echo "$OUT" >> $F_OUTPUT
+		    done
 		done
     	    done
     	done
