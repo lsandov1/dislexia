@@ -172,7 +172,7 @@
 172Ap17s2d5L6c6t0oscuro
 173Bp17s2d5L6c6t3oscuro
 174Cp17s2d5L6c6t0oscuro
-1755Ap17s6dxL7c4t0querida
+175Ap17s6dxL7c4t0querida
 176Bp17s6dxL7c4t3querida
 177Ap17s4d4L5c1b0siglo
 178Bp17s4d4L5c1b1siglo
