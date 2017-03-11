@@ -1,0 +1,822 @@
+APB s1 p A 009luna 1 758 758 9 1
+APB s1 p A 012cena, 011cena 1 518 518 9 2
+APB s1 p A 026cabeza 1 518 518 9 3
+APB s1 p B 010luna 0 0 0 0 0
+APB s1 p B 012cena, 011cena 1 518 518 9 2
+APB s1 p B 027cabeza 0 0 0 0 0
+APB s1 n A 009luna 1 758 758 9 1
+APB s1 n A 012cena, 011cena 1 518 518 9 2
+APB s1 n A 026cabeza 1 518 518 9 3
+APB s1 n B 010luna 0 0 0 0 0
+APB s1 n B 012cena, 011cena 1 518 518 9 2
+APB s1 n B 027cabeza 0 0 0 0 0
+APB s2 p A 004escoba 1 698 698 9 1
+APB s2 p A 018maiz, 017maiz 1 439 439 9 2
+APB s2 p A 021arte 1 658 658 9 3
+APB s2 p B 005escoba 0 0 0 0 0
+APB s2 p B 018maiz, 017maiz 1 439 439 9 2
+APB s2 p B 022arte 0 0 0 0 0
+APB s2 p C 006escoba 0 0 0 0 0
+APB s2 p C 023arte 0 0 0 0 0
+APB s2 n A 004escoba 1 698 698 9 1
+APB s2 n A 018maiz, 017maiz 1 439 439 9 2
+APB s2 n A 021arte 1 658 658 9 3
+APB s2 n B 005escoba 0 0 0 0 0
+APB s2 n B 018maiz, 017maiz 1 439 439 9 2
+APB s2 n B 022arte 0 0 0 0 0
+APB s2 n C 006escoba 0 0 0 0 0
+APB s2 n C 023arte 0 0 0 0 0
+APB s3 p A 036pepinos, 035pepinos 1 578 578 9 4
+APB s3 p B 036pepinos, 035pepinos 1 578 578 9 4
+APB s3 n A 036pepinos, 035pepinos 1 578 578 9 4
+APB s3 n B 036pepinos, 035pepinos 1 578 578 9 4
+APB s4 p A 007primero 1 738 738 9 1
+APB s4 p A 016pobre, 015pobre 1 997 997 9 2
+APB s4 p A 020bruja, 019bruja 2 758 379 9 2
+APB s4 p A 033planeta 3 458 152.66666666667 9 4
+APB s4 p A 034planeta, 033planeta 1 20 20 9 4
+APB s4 p B 008primero 0 0 0 0 0
+APB s4 p B 016pobre, 015pobre 1 997 997 9 2
+APB s4 p B 020bruja, 019bruja 2 758 379 9 2
+APB s4 p B 034planeta, 033planeta 1 20 20 9 4
+APB s4 n A 007primero 1 738 738 9 1
+APB s4 n A 016pobre, 015pobre 1 997 997 9 2
+APB s4 n A 020bruja, 019bruja 2 758 379 9 2
+APB s4 n A 033planeta 3 458 152.66666666667 9 4
+APB s4 n A 034planeta, 033planeta 1 20 20 9 4
+APB s4 n B 008primero 0 0 0 0 0
+APB s4 n B 016pobre, 015pobre 1 997 997 9 2
+APB s4 n B 020bruja, 019bruja 2 758 379 9 2
+APB s4 n B 034planeta, 033planeta 1 20 20 9 4
+APB s5 p A 001princesa 3 1435 478.33333333333 9 1
+APB s5 p A 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s5 p A 029plastico, 028plastico 1 120 120 9 3
+APB s5 p A 038sufrir, 037sufrir 1 339 339 9 4
+APB s5 p B 002princesa 0 0 0 0 0
+APB s5 p B 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s5 p B 029plastico, 028plastico 1 120 120 9 3
+APB s5 p B 038sufrir, 037sufrir 1 339 339 9 4
+APB s5 p C 003princesa 0 0 0 0 0
+APB s5 p C 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s5 n A 001princesa 3 1435 478.33333333333 9 1
+APB s5 n A 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s5 n A 029plastico, 028plastico 1 120 120 9 3
+APB s5 n A 038sufrir, 037sufrir 1 339 339 9 4
+APB s5 n B 002princesa 0 0 0 0 0
+APB s5 n B 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s5 n B 029plastico, 028plastico 1 120 120 9 3
+APB s5 n B 038sufrir, 037sufrir 1 339 339 9 4
+APB s5 n C 003princesa 0 0 0 0 0
+APB s5 n C 029plastico, 028plastico, 030plastico 1 917 917 9 3
+APB s6 p A 013fecha 1 179 179 9 2
+APB s6 p A 014fecha, 013fecha 2 638 319 9 2
+APB s6 p A 024botella 1 219 219 9 3
+APB s6 p A 025botella, 024botella 1 459 459 9 3
+APB s6 p A 031queso 1 179 179 9 4
+APB s6 p B 014fecha, 013fecha 2 638 319 9 2
+APB s6 p B 025botella, 024botella 1 459 459 9 3
+APB s6 p B 032queso 0 0 0 0 0
+APB s6 n A 013fecha 1 179 179 9 2
+APB s6 n A 014fecha, 013fecha 2 638 319 9 2
+APB s6 n A 024botella 1 219 219 9 3
+APB s6 n A 025botella, 024botella 1 459 459 9 3
+APB s6 n A 031queso 1 179 179 9 4
+APB s6 n B 014fecha, 013fecha 2 638 319 9 2
+APB s6 n B 025botella, 024botella 1 459 459 9 3
+APB s6 n B 032queso 0 0 0 0 0
+APB s1 p A 041musica, 042musica 2 757 378.5 11 1
+APB s1 p A 041musica 2 299 149.5 11 1
+APB s1 p A 050belleza 2 478 239 11 2
+APB s1 p A 051belleza, 050belleza 1 499 499 11 2
+APB s1 p A 063bonita 1 259 259 11 3
+APB s1 p A 064bonita, 063bonita 1 220 220 11 3
+APB s1 p A 074numero 1 219 219 11 4
+APB s1 p B 041musica, 042musica 2 757 378.5 11 1
+APB s1 p B 051belleza, 050belleza 1 499 499 11 2
+APB s1 p B 064bonita, 063bonita 1 220 220 11 3
+APB s1 p B 075numero 0 0 0 0 0
+APB s1 n A 041musica, 042musica 2 757 378.5 11 1
+APB s1 n A 041musica 2 299 149.5 11 1
+APB s1 n A 050belleza 2 478 239 11 2
+APB s1 n A 051belleza, 050belleza 1 499 499 11 2
+APB s1 n A 063bonita 1 259 259 11 3
+APB s1 n A 064bonita, 063bonita 1 220 220 11 3
+APB s1 n A 074numero 1 219 219 11 4
+APB s1 n B 041musica, 042musica 2 757 378.5 11 1
+APB s1 n B 051belleza, 050belleza 1 499 499 11 2
+APB s1 n B 064bonita, 063bonita 1 220 220 11 3
+APB s1 n B 075numero 0 0 0 0 0
+APB s2 p A 039leer, 040leer 1 239 239 11 1
+APB s2 p A 039leer 1 1316 1316 11 1
+APB s2 p A 057esto 1 140 140 11 2
+APB s2 p A 058esto, 059esto, 057esto 1 877 877 11 2
+APB s2 p A 070pais 1 857 857 11 3
+APB s2 p B 039leer, 040leer 1 239 239 11 1
+APB s2 p B 058esto, 059esto, 057esto 1 877 877 11 2
+APB s2 p B 071pais 0 0 0 0 0
+APB s2 p C 058esto, 059esto, 057esto 1 877 877 11 2
+APB s2 n A 039leer, 040leer 1 239 239 11 1
+APB s2 n A 039leer 1 1316 1316 11 1
+APB s2 n A 057esto 1 140 140 11 2
+APB s2 n A 058esto, 059esto, 057esto 1 877 877 11 2
+APB s2 n A 070pais 1 857 857 11 3
+APB s2 n B 039leer, 040leer 1 239 239 11 1
+APB s2 n B 058esto, 059esto, 057esto 1 877 877 11 2
+APB s2 n B 071pais 0 0 0 0 0
+APB s2 n C 058esto, 059esto, 057esto 1 877 877 11 2
+APB s3 p A 044jugar, 043jugar 1 498 498 11 1
+APB s3 p A 048volante, 047volante 2 737 368.5 11 1
+APB s3 p A 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s3 p B 044jugar, 043jugar 1 498 498 11 1
+APB s3 p B 048volante, 047volante 2 737 368.5 11 1
+APB s3 p B 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s3 p C 049volante 0 0 0 0 0
+APB s3 p C 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s3 n A 044jugar, 043jugar 1 498 498 11 1
+APB s3 n A 048volante, 047volante 2 737 368.5 11 1
+APB s3 n A 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s3 n B 044jugar, 043jugar 1 498 498 11 1
+APB s3 n B 048volante, 047volante 2 737 368.5 11 1
+APB s3 n B 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s3 n C 049volante 0 0 0 0 0
+APB s3 n C 061toronja, 062toronja, 060toronja 2 837 418.5 11 3
+APB s4 p A 055fabrica 1 199 199 11 2
+APB s4 p A 056fabrica, 055fabrica 1 339 339 11 2
+APB s4 p A 069madre, 068madre 2 539 269.5 11 3
+APB s4 p A 078palabra 3 359 119.66666666667 11 4
+APB s4 p B 056fabrica, 055fabrica 1 339 339 11 2
+APB s4 p B 069madre, 068madre 2 539 269.5 11 3
+APB s4 p B 079palabra 0 0 0 0 0
+APB s4 n A 055fabrica 1 199 199 11 2
+APB s4 n A 056fabrica, 055fabrica 1 339 339 11 2
+APB s4 n A 069madre, 068madre 2 539 269.5 11 3
+APB s4 n A 078palabra 3 359 119.66666666667 11 4
+APB s4 n B 056fabrica, 055fabrica 1 339 339 11 2
+APB s4 n B 069madre, 068madre 2 539 269.5 11 3
+APB s4 n B 079palabra 0 0 0 0 0
+APB s5 p A 052cobrando 1 119 119 11 2
+APB s5 p A 053cobrando, 052cobrando 2 718 359 11 2
+APB s5 p A 054cobrando, 052cobrando 1 259 259 11 2
+APB s5 p A 067planta, 065planta 2 419 209.5 11 3
+APB s5 p A 076cicatriz 1 757 757 11 4
+APB s5 p B 053cobrando, 052cobrando 2 718 359 11 2
+APB s5 p B 066planta 0 0 0 0 0
+APB s5 p B 077cicatriz 0 0 0 0 0
+APB s5 p C 054cobrando, 052cobrando 1 259 259 11 2
+APB s5 p C 067planta, 065planta 2 419 209.5 11 3
+APB s5 n A 052cobrando 1 119 119 11 2
+APB s5 n A 053cobrando, 052cobrando 2 718 359 11 2
+APB s5 n A 054cobrando, 052cobrando 1 259 259 11 2
+APB s5 n A 067planta, 065planta 2 419 209.5 11 3
+APB s5 n A 076cicatriz 1 757 757 11 4
+APB s5 n B 053cobrando, 052cobrando 2 718 359 11 2
+APB s5 n B 066planta 0 0 0 0 0
+APB s5 n B 077cicatriz 0 0 0 0 0
+APB s5 n C 054cobrando, 052cobrando 1 259 259 11 2
+APB s5 n C 067planta, 065planta 2 419 209.5 11 3
+APB s6 p A 045chile 1 798 798 11 1
+APB s6 p A 046chile, 045chile 1 199 199 11 1
+APB s6 p A 072llorona 1 1057 1057 11 4
+APB s6 p B 046chile, 045chile 1 199 199 11 1
+APB s6 p B 073llorona 0 0 0 0 0
+APB s6 n A 045chile 1 798 798 11 1
+APB s6 n A 046chile, 045chile 1 199 199 11 1
+APB s6 n A 072llorona 1 1057 1057 11 4
+APB s6 n B 046chile, 045chile 1 199 199 11 1
+APB s6 n B 073llorona 0 0 0 0 0
+APB s1 p A 093papa 2 797 398.5 13 2
+APB s1 p A 110rapido 2 459 229.5 13 3
+APB s1 p A 116conejo 1 518 518 13 4
+APB s1 p B 094papa 0 0 0 0 0
+APB s1 p B 111rapido 0 0 0 0 0
+APB s1 p B 117conejo 0 0 0 0 0
+APB s1 n A 093papa 2 797 398.5 13 2
+APB s1 n A 110rapido 2 459 229.5 13 3
+APB s1 n A 116conejo 1 518 518 13 4
+APB s1 n B 094papa 0 0 0 0 0
+APB s1 n B 111rapido 0 0 0 0 0
+APB s1 n B 117conejo 0 0 0 0 0
+APB s3 p A 080danza 1 199 199 13 1
+APB s3 p A 081danza, 080danza 1 438 438 13 1
+APB s3 p A 084señalar 0 0 0 0 0
+APB s3 p A 099manzana 1 638 638 13 3
+APB s3 p A 106carta, 104carta 2 897 448.5 13 3
+APB s3 p A 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s3 p A 113facil, 112facil 1 837 837 13 4
+APB s3 p B 081danza, 080danza 1 438 438 13 1
+APB s3 p B 085señalar 0 0 0 0 0
+APB s3 p B 100manzana 0 0 0 0 0
+APB s3 p B 105carta 0 0 0 0 0
+APB s3 p B 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s3 p B 113facil, 112facil 1 837 837 13 4
+APB s3 p C 101manzana 0 0 0 0 0
+APB s3 p C 106carta, 104carta 2 897 448.5 13 3
+APB s3 p C 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s3 n A 080danza 1 199 199 13 1
+APB s3 n A 081danza, 080danza 1 438 438 13 1
+APB s3 n A 084señalar 0 0 0 0 0
+APB s3 n A 099manzana 1 638 638 13 3
+APB s3 n A 106carta, 104carta 2 897 448.5 13 3
+APB s3 n A 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s3 n A 113facil, 112facil 1 837 837 13 4
+APB s3 n B 081danza, 080danza 1 438 438 13 1
+APB s3 n B 085señalar 0 0 0 0 0
+APB s3 n B 100manzana 0 0 0 0 0
+APB s3 n B 105carta 0 0 0 0 0
+APB s3 n B 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s3 n B 113facil, 112facil 1 837 837 13 4
+APB s3 n C 101manzana 0 0 0 0 0
+APB s3 n C 106carta, 104carta 2 897 448.5 13 3
+APB s3 n C 108vestido, 109vestido, 107vestido 1 717 717 13 3
+APB s4 p A 095posible 2 458 229 13 2
+APB s4 p A 096posible, 095posible 1 219 219 13 2
+APB s4 p A 118padrino 1 100 100 13 4
+APB s4 p A 119padrino, 118padrino 1 319 319 13 4
+APB s4 p B 096posible, 095posible 1 219 219 13 2
+APB s4 p B 119padrino, 118padrino 1 319 319 13 4
+APB s4 n A 095posible 2 458 229 13 2
+APB s4 n A 096posible, 095posible 1 219 219 13 2
+APB s4 n A 118padrino 1 100 100 13 4
+APB s4 n A 119padrino, 118padrino 1 319 319 13 4
+APB s4 n B 096posible, 095posible 1 219 219 13 2
+APB s4 n B 119padrino, 118padrino 1 319 319 13 4
+APB s5 p A 087transito, 086transito 1 319 319 13 1
+APB s5 p A 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 p A 088transito, 086transito 1 758 758 13 1
+APB s5 p A 092palabras, 091palabras 2 1157 578.5 13 2
+APB s5 p B 087transito, 086transito 1 319 319 13 1
+APB s5 p B 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 p B 092palabras, 091palabras 2 1157 578.5 13 2
+APB s5 p C 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 p C 088transito, 086transito 1 758 758 13 1
+APB s5 n A 087transito, 086transito 1 319 319 13 1
+APB s5 n A 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 n A 088transito, 086transito 1 758 758 13 1
+APB s5 n A 092palabras, 091palabras 2 1157 578.5 13 2
+APB s5 n B 087transito, 086transito 1 319 319 13 1
+APB s5 n B 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 n B 092palabras, 091palabras 2 1157 578.5 13 2
+APB s5 n C 087transito, 088transito, 086transito 1 100 100 13 1
+APB s5 n C 088transito, 086transito 1 758 758 13 1
+APB s6 p A 083sigue, 082sigue 1 658 658 13 1
+APB s6 p A 089guerra 0 0 0 0 0
+APB s6 p A 097calle 2 918 459 13 2
+APB s6 p A 102derecho 1 180 180 13 3
+APB s6 p A 103derecho, 102derecho 2 518 259 13 3
+APB s6 p A 115terreno, 114terreno 1 618 618 13 4
+APB s6 p B 083sigue, 082sigue 1 658 658 13 1
+APB s6 p B 090guerra 0 0 0 0 0
+APB s6 p B 098calle 0 0 0 0 0
+APB s6 p B 103derecho, 102derecho 2 518 259 13 3
+APB s6 p B 115terreno, 114terreno 1 618 618 13 4
+APB s6 n A 083sigue, 082sigue 1 658 658 13 1
+APB s6 n A 089guerra 0 0 0 0 0
+APB s6 n A 097calle 2 918 459 13 2
+APB s6 n A 102derecho 1 180 180 13 3
+APB s6 n A 103derecho, 102derecho 2 518 259 13 3
+APB s6 n A 115terreno, 114terreno 1 618 618 13 4
+APB s6 n B 083sigue, 082sigue 1 658 658 13 1
+APB s6 n B 090guerra 0 0 0 0 0
+APB s6 n B 098calle 0 0 0 0 0
+APB s6 n B 103derecho, 102derecho 2 518 259 13 3
+APB s6 n B 115terreno, 114terreno 1 618 618 13 4
+APB s1 p A 136poco 1 379 379 15 2
+APB s1 p A 145dinero 1 200 200 15 3
+APB s1 p A 146dinero, 145dinero 1 518 518 15 3
+APB s1 p B 137poco 0 0 0 0 0
+APB s1 p B 146dinero, 145dinero 1 518 518 15 3
+APB s1 n A 136poco 1 379 379 15 2
+APB s1 n A 145dinero 1 200 200 15 3
+APB s1 n A 146dinero, 145dinero 1 518 518 15 3
+APB s1 n B 137poco 0 0 0 0 0
+APB s1 n B 146dinero, 145dinero 1 518 518 15 3
+APB s2 p A 123vivian 1 877 877 15 1
+APB s2 p A 142alto, 140alto 1 797 797 15 3
+APB s2 p A 150vivo 1 359 359 15 4
+APB s2 p B 124vivian 0 0 0 0 0
+APB s2 p B 141alto 0 0 0 0 0
+APB s2 p B 151vivo 0 0 0 0 0
+APB s2 p C 142alto, 140alto 1 797 797 15 3
+APB s2 n A 123vivian 1 877 877 15 1
+APB s2 n A 142alto, 140alto 1 797 797 15 3
+APB s2 n A 150vivo 1 359 359 15 4
+APB s2 n B 124vivian 0 0 0 0 0
+APB s2 n B 141alto 0 0 0 0 0
+APB s2 n B 151vivo 0 0 0 0 0
+APB s2 n C 142alto, 140alto 1 797 797 15 3
+APB s3 p A 121pesca, 120pesca 1 917 917 15 1
+APB s3 p A 122pesca, 120pesca 1 439 439 15 1
+APB s3 p A 135papel, 134papel 1 478 478 15 2
+APB s3 p A 153camaron, 152camaron 2 678 339 15 4
+APB s3 p B 121pesca, 120pesca 1 917 917 15 1
+APB s3 p B 135papel, 134papel 1 478 478 15 2
+APB s3 p B 153camaron, 152camaron 2 678 339 15 4
+APB s3 p C 122pesca, 120pesca 1 439 439 15 1
+APB s3 n A 121pesca, 120pesca 1 917 917 15 1
+APB s3 n A 122pesca, 120pesca 1 439 439 15 1
+APB s3 n A 135papel, 134papel 1 478 478 15 2
+APB s3 n A 153camaron, 152camaron 2 678 339 15 4
+APB s3 n B 121pesca, 120pesca 1 917 917 15 1
+APB s3 n B 135papel, 134papel 1 478 478 15 2
+APB s3 n B 153camaron, 152camaron 2 678 339 15 4
+APB s3 n C 122pesca, 120pesca 1 439 439 15 1
+APB s4 p A 131peligro, 130peligro 1 1116 1116 15 2
+APB s4 p A 143trabajo 4 1157 289.25 15 3
+APB s4 p A 144trabajo, 143trabajo 1 180 180 15 3
+APB s4 p B 131peligro, 130peligro 1 1116 1116 15 2
+APB s4 p B 144trabajo, 143trabajo 1 180 180 15 3
+APB s4 n A 131peligro, 130peligro 1 1116 1116 15 2
+APB s4 n A 143trabajo 4 1157 289.25 15 3
+APB s4 n A 144trabajo, 143trabajo 1 180 180 15 3
+APB s4 n B 131peligro, 130peligro 1 1116 1116 15 2
+APB s4 n B 144trabajo, 143trabajo 1 180 180 15 3
+APB s5 p A 128cubrirse, 127cubrirse 1 578 578 15 1
+APB s5 p A 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 p A 148fresca, 147fresca 1 957 957 15 3
+APB s5 p A 156padres 1 339 339 15 4
+APB s5 p A 157padres, 156padres 1 897 897 17 1
+APB s5 p B 128cubrirse, 127cubrirse 1 578 578 15 1
+APB s5 p B 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 p B 148fresca, 147fresca 1 957 957 15 3
+APB s5 p B 157padres, 156padres 1 897 897 17 1
+APB s5 p C 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 p C 149fresca 0 0 0 0 0
+APB s5 n A 128cubrirse, 127cubrirse 1 578 578 15 1
+APB s5 n A 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 n A 148fresca, 147fresca 1 957 957 15 3
+APB s5 n A 156padres 1 339 339 15 4
+APB s5 n A 157padres, 156padres 1 897 897 17 1
+APB s5 n B 128cubrirse, 127cubrirse 1 578 578 15 1
+APB s5 n B 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 n B 148fresca, 147fresca 1 957 957 15 3
+APB s5 n B 157padres, 156padres 1 897 897 17 1
+APB s5 n C 128cubrirse, 129cubrirse, 127cubrirse 1 399 399 15 1
+APB s5 n C 149fresca 0 0 0 0 0
+APB s6 p A 125chaparro 1 578 578 15 1
+APB s6 p A 126chaparro, 125chaparro 1 140 140 15 1
+APB s6 p A 132riqueza 1 418 418 15 2
+APB s6 p A 133riqueza, 132riqueza 2 359 179.5 15 2
+APB s6 p A 139chaleco, 138chaleco 2 1077 538.5 15 2
+APB s6 p A 155machete, 154machete 2 398 199 15 4
+APB s6 p B 126chaparro, 125chaparro 1 140 140 15 1
+APB s6 p B 133riqueza, 132riqueza 2 359 179.5 15 2
+APB s6 p B 139chaleco, 138chaleco 2 1077 538.5 15 2
+APB s6 p B 155machete, 154machete 2 398 199 15 4
+APB s6 n A 125chaparro 1 578 578 15 1
+APB s6 n A 126chaparro, 125chaparro 1 140 140 15 1
+APB s6 n A 132riqueza 1 418 418 15 2
+APB s6 n A 133riqueza, 132riqueza 2 359 179.5 15 2
+APB s6 n A 139chaleco, 138chaleco 2 1077 538.5 15 2
+APB s6 n A 155machete, 154machete 2 398 199 15 4
+APB s6 n B 126chaparro, 125chaparro 1 140 140 15 1
+APB s6 n B 133riqueza, 132riqueza 2 359 179.5 15 2
+APB s6 n B 139chaleco, 138chaleco 2 1077 538.5 15 2
+APB s6 n B 155machete, 154machete 2 398 199 15 4
+APB s1 p A 165comida 1 219 219 17 1
+APB s1 p A 166comida, 165comida 2 438 219 17 1
+APB s1 p A 183boca 1 100 100 17 3
+APB s1 p A 184boca, 183boca 1 399 399 17 3
+APB s1 p A 187mañana 0 0 0 0 0
+APB s1 p B 166comida, 165comida 2 438 219 17 1
+APB s1 p B 184boca, 183boca 1 399 399 17 3
+APB s1 p B 188mañana 0 0 0 0 0
+APB s1 n A 165comida 1 219 219 17 1
+APB s1 n A 166comida, 165comida 2 438 219 17 1
+APB s1 n A 183boca 1 100 100 17 3
+APB s1 n A 184boca, 183boca 1 399 399 17 3
+APB s1 n A 187mañana 0 0 0 0 0
+APB s1 n B 166comida, 165comida 2 438 219 17 1
+APB s1 n B 184boca, 183boca 1 399 399 17 3
+APB s1 n B 188mañana 0 0 0 0 0
+APB s2 p A 158estado 2 359 179.5 17 1
+APB s2 p A 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 p A 174oscuro, 172oscuro 2 499 249.5 17 2
+APB s2 p B 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 p B 173oscuro 0 0 0 0 0
+APB s2 p C 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 p C 174oscuro, 172oscuro 2 499 249.5 17 2
+APB s2 n A 158estado 2 359 179.5 17 1
+APB s2 n A 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 n A 174oscuro, 172oscuro 2 499 249.5 17 2
+APB s2 n B 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 n B 173oscuro 0 0 0 0 0
+APB s2 n C 159estado, 160estado, 158estado 1 379 379 17 1
+APB s2 n C 174oscuro, 172oscuro 2 499 249.5 17 2
+APB s3 p A 189soñando 0 0 0 0 0
+APB s3 p A 192fortuna 0 0 0 0 0
+APB s3 p B 190soñando 0 0 0 0 0
+APB s3 p B 193fortuna 0 0 0 0 0
+APB s3 p C 191soñando 0 0 0 0 0
+APB s3 p C 194fortuna 0 0 0 0 0
+APB s3 n A 189soñando 0 0 0 0 0
+APB s3 n A 192fortuna 0 0 0 0 0
+APB s3 n B 190soñando 0 0 0 0 0
+APB s3 n B 193fortuna 0 0 0 0 0
+APB s3 n C 191soñando 0 0 0 0 0
+APB s3 n C 194fortuna 0 0 0 0 0
+APB s4 p A 162febrero, 161febrero 2 918 459 17 1
+APB s4 p A 167fruta 1 159 159 17 2
+APB s4 p A 168fruta, 167fruta 1 698 698 17 2
+APB s4 p A 178siglo, 177siglo 1 837 837 17 3
+APB s4 p A 186clase, 185clase 2 598 299 17 3
+APB s4 p B 162febrero, 161febrero 2 918 459 17 1
+APB s4 p B 168fruta, 167fruta 1 698 698 17 2
+APB s4 p B 178siglo, 177siglo 1 837 837 17 3
+APB s4 p B 186clase, 185clase 2 598 299 17 3
+APB s4 n A 162febrero, 161febrero 2 918 459 17 1
+APB s4 n A 167fruta 1 159 159 17 2
+APB s4 n A 168fruta, 167fruta 1 698 698 17 2
+APB s4 n A 178siglo, 177siglo 1 837 837 17 3
+APB s4 n A 186clase, 185clase 2 598 299 17 3
+APB s4 n B 162febrero, 161febrero 2 918 459 17 1
+APB s4 n B 168fruta, 167fruta 1 698 698 17 2
+APB s4 n B 178siglo, 177siglo 1 837 837 17 3
+APB s4 n B 186clase, 185clase 2 598 299 17 3
+APB s5 p A 164libros, 163libros 2 956 478 17 1
+APB s5 p A 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s5 p A 182celebrar, 181celebrar 2 1436 718 17 3
+APB s5 p B 164libros, 163libros 2 956 478 17 1
+APB s5 p B 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s5 p B 182celebrar, 181celebrar 2 1436 718 17 3
+APB s5 p C 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s5 n A 164libros, 163libros 2 956 478 17 1
+APB s5 n A 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s5 n A 182celebrar, 181celebrar 2 1436 718 17 3
+APB s5 n B 164libros, 163libros 2 956 478 17 1
+APB s5 n B 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s5 n B 182celebrar, 181celebrar 2 1436 718 17 3
+APB s5 n C 170blanco, 171blanco, 169blanco 1 897 897 17 2
+APB s6 p A 175querida 2 539 269.5 17 2
+APB s6 p A 176querida, 175querida 1 498 498 17 2
+APB s6 p A 180torre, 179torre 2 577 288.5 17 3
+APB s6 p A 195llama 3 518 172.66666666667 17 4
+APB s6 p B 176querida, 175querida 1 498 498 17 2
+APB s6 p B 180torre, 179torre 2 577 288.5 17 3
+APB s6 p B 196llama 0 0 0 0 0
+APB s6 n A 175querida 2 539 269.5 17 2
+APB s6 n A 176querida, 175querida 1 498 498 17 2
+APB s6 n A 180torre, 179torre 2 577 288.5 17 3
+APB s6 n A 195llama 3 518 172.66666666667 17 4
+APB s6 n B 176querida, 175querida 1 498 498 17 2
+APB s6 n B 180torre, 179torre 2 577 288.5 17 3
+APB s6 n B 196llama 0 0 0 0 0
+APB s1 p A 202mosina 1 199 199 19 1
+APB s1 p A 203mosina, 202mosina 1 518 518 19 1
+APB s1 p A 208dipone 1 977 977 19 2
+APB s1 p A 223numapo 0 0 0 0 0
+APB s1 p B 203mosina, 202mosina 1 518 518 19 1
+APB s1 p B 209dipone 0 0 0 0 0
+APB s1 p B 224numapo 0 0 0 0 0
+APB s1 n A 202mosina 1 199 199 19 1
+APB s1 n A 203mosina, 202mosina 1 518 518 19 1
+APB s1 n A 208dipone 1 977 977 19 2
+APB s1 n A 223numapo 0 0 0 0 0
+APB s1 n B 203mosina, 202mosina 1 518 518 19 1
+APB s1 n B 209dipone 0 0 0 0 0
+APB s1 n B 224numapo 0 0 0 0 0
+APB s2 p A 199albe 1 120 120 19 1
+APB s2 p A 201albe, 199albe 1 439 439 19 1
+APB s2 p B 200albe 0 0 0 0 0
+APB s2 p C 201albe, 199albe 1 439 439 19 1
+APB s2 n A 199albe 1 120 120 19 1
+APB s2 n A 201albe, 199albe 1 439 439 19 1
+APB s2 n B 200albe 0 0 0 0 0
+APB s2 n C 201albe, 199albe 1 439 439 19 1
+APB s3 p A 204sepolar 2 857 428.5 19 1
+APB s3 p A 205sepolar, 204sepolar 1 219 219 19 1
+APB s3 p A 211mecil, 210mecil 1 678 678 19 2
+APB s3 p A 215pesmo, 214pesmo 1 538 538 19 2
+APB s3 p A 216pesmo, 214pesmo 1 100 100 19 2
+APB s3 p A 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 p A 225moñanda 0 0 0 0 0
+APB s3 p B 205sepolar, 204sepolar 1 219 219 19 1
+APB s3 p B 211mecil, 210mecil 1 678 678 19 2
+APB s3 p B 215pesmo, 214pesmo 1 538 538 19 2
+APB s3 p B 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 p B 226moñanda 0 0 0 0 0
+APB s3 p C 216pesmo, 214pesmo 1 100 100 19 2
+APB s3 p C 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 p C 227moñanda 0 0 0 0 0
+APB s3 n A 204sepolar 2 857 428.5 19 1
+APB s3 n A 205sepolar, 204sepolar 1 219 219 19 1
+APB s3 n A 211mecil, 210mecil 1 678 678 19 2
+APB s3 n A 215pesmo, 214pesmo 1 538 538 19 2
+APB s3 n A 216pesmo, 214pesmo 1 100 100 19 2
+APB s3 n A 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 n A 225moñanda 0 0 0 0 0
+APB s3 n B 205sepolar, 204sepolar 1 219 219 19 1
+APB s3 n B 211mecil, 210mecil 1 678 678 19 2
+APB s3 n B 215pesmo, 214pesmo 1 538 538 19 2
+APB s3 n B 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 n B 226moñanda 0 0 0 0 0
+APB s3 n C 216pesmo, 214pesmo 1 100 100 19 2
+APB s3 n C 221danlo, 222danlo, 220danlo 1 698 698 19 3
+APB s3 n C 227moñanda 0 0 0 0 0
+APB s4 p A 198tubre, 197tubre 2 797 398.5 19 1
+APB s4 p A 212puyabra 2 1156 578 19 2
+APB s4 p A 213puyabra, 212puyabra 1 140 140 19 2
+APB s4 p A 230planida 4 976 244 19 4
+APB s4 p B 198tubre, 197tubre 2 797 398.5 19 1
+APB s4 p B 213puyabra, 212puyabra 1 140 140 19 2
+APB s4 p B 231planida 0 0 0 0 0
+APB s4 n A 198tubre, 197tubre 2 797 398.5 19 1
+APB s4 n A 212puyabra 2 1156 578 19 2
+APB s4 n A 213puyabra, 212puyabra 1 140 140 19 2
+APB s4 n A 230planida 4 976 244 19 4
+APB s4 n B 198tubre, 197tubre 2 797 398.5 19 1
+APB s4 n B 213puyabra, 212puyabra 1 140 140 19 2
+APB s4 n B 231planida 0 0 0 0 0
+APB s5 p A 219tranbite, 217tranbite 1 897 897 19 3
+APB s5 p A 233planfo, 232planfo 1 120 120 19 4
+APB s5 p A 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s5 p B 218tranbite 0 0 0 0 0
+APB s5 p B 233planfo, 232planfo 1 120 120 19 4
+APB s5 p B 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s5 p C 219tranbite, 217tranbite 1 897 897 19 3
+APB s5 p C 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s5 n A 219tranbite, 217tranbite 1 897 897 19 3
+APB s5 n A 233planfo, 232planfo 1 120 120 19 4
+APB s5 n A 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s5 n B 218tranbite 0 0 0 0 0
+APB s5 n B 233planfo, 232planfo 1 120 120 19 4
+APB s5 n B 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s5 n C 219tranbite, 217tranbite 1 897 897 19 3
+APB s5 n C 233planfo, 234planfo, 232planfo 1 139 139 19 4
+APB s6 p A 206quete 1 658 658 19 2
+APB s6 p A 228llafa 2 299 149.5 19 4
+APB s6 p A 235turrepo 3 498 166 19 4
+APB s6 p A 236turrepo, 235turrepo 1 120 120 19 4
+APB s6 p B 207quete 0 0 0 0 0
+APB s6 p B 229llafa 0 0 0 0 0
+APB s6 p B 236turrepo, 235turrepo 1 120 120 19 4
+APB s6 n A 206quete 1 658 658 19 2
+APB s6 n A 228llafa 2 299 149.5 19 4
+APB s6 n A 235turrepo 3 498 166 19 4
+APB s6 n A 236turrepo, 235turrepo 1 120 120 19 4
+APB s6 n B 207quete 0 0 0 0 0
+APB s6 n B 229llafa 0 0 0 0 0
+APB s6 n B 236turrepo, 235turrepo 1 120 120 19 4
+APB s1 p A 237muca 1 519 519 21 1
+APB s1 p A 238muca, 237muca 1 259 259 21 1
+APB s1 p A 257ropida 1 1077 1077 21 2
+APB s1 p A 258ropida, 257ropida 1 140 140 21 2
+APB s1 p A 273pape 1 239 239 21 4
+APB s1 p B 238muca, 237muca 1 259 259 21 1
+APB s1 p B 258ropida, 257ropida 1 140 140 21 2
+APB s1 p B 274pape 0 0 0 0 0
+APB s1 n A 237muca 1 519 519 21 1
+APB s1 n A 238muca, 237muca 1 259 259 21 1
+APB s1 n A 257ropida 1 1077 1077 21 2
+APB s1 n A 258ropida, 257ropida 1 140 140 21 2
+APB s1 n A 273pape 1 239 239 21 4
+APB s1 n B 238muca, 237muca 1 259 259 21 1
+APB s1 n B 258ropida, 257ropida 1 140 140 21 2
+APB s1 n B 274pape 0 0 0 0 0
+APB s2 p A 246arfo 2 359 179.5 21 2
+APB s2 p A 248arfo, 246arfo 1 319 319 21 2
+APB s2 p A 252taer 1 678 678 21 2
+APB s2 p A 264tois 3 339 113 21 3
+APB s2 p A 276esno, 277esno, 275esno 1 239 239 21 4
+APB s2 p B 247arfo 0 0 0 0 0
+APB s2 p B 253taer 0 0 0 0 0
+APB s2 p B 265tois 0 0 0 0 0
+APB s2 p B 276esno, 277esno, 275esno 1 239 239 21 4
+APB s2 p C 248arfo, 246arfo 1 319 319 21 2
+APB s2 p C 276esno, 277esno, 275esno 1 239 239 21 4
+APB s2 n A 246arfo 2 359 179.5 21 2
+APB s2 n A 248arfo, 246arfo 1 319 319 21 2
+APB s2 n A 252taer 1 678 678 21 2
+APB s2 n A 264tois 3 339 113 21 3
+APB s2 n A 276esno, 277esno, 275esno 1 239 239 21 4
+APB s2 n B 247arfo 0 0 0 0 0
+APB s2 n B 253taer 0 0 0 0 0
+APB s2 n B 265tois 0 0 0 0 0
+APB s2 n B 276esno, 277esno, 275esno 1 239 239 21 4
+APB s2 n C 248arfo, 246arfo 1 319 319 21 2
+APB s2 n C 276esno, 277esno, 275esno 1 239 239 21 4
+APB s3 p A 243taronla 0 0 0 0 0
+APB s3 p A 255carpe, 254carpe 1 179 179 21 2
+APB s3 p A 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 p A 266pilanto 0 0 0 0 0
+APB s3 p B 244taronla 0 0 0 0 0
+APB s3 p B 255carpe, 254carpe 1 179 179 21 2
+APB s3 p B 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 p B 267pilanto, 266pilantro 2 837 418.5 21 3
+APB s3 p B 267pilanto, 268pilanto, 266pilantro 1 20 20 21 3
+APB s3 p C 245taronla 0 0 0 0 0
+APB s3 p C 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 p C 267pilanto, 268pilanto, 266pilantro 1 20 20 21 3
+APB s3 p C 268pilanto, 266pilantro 1 140 140 21 3
+APB s3 n A 243taronla 0 0 0 0 0
+APB s3 n A 255carpe, 254carpe 1 179 179 21 2
+APB s3 n A 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 n A 266pilanto 0 0 0 0 0
+APB s3 n B 244taronla 0 0 0 0 0
+APB s3 n B 255carpe, 254carpe 1 179 179 21 2
+APB s3 n B 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 n B 267pilanto, 266pilantro 2 837 418.5 21 3
+APB s3 n B 267pilanto, 268pilanto, 266pilantro 1 20 20 21 3
+APB s3 n C 245taronla 0 0 0 0 0
+APB s3 n C 255carpe, 256carpe, 254carpe 1 538 538 21 2
+APB s3 n C 267pilanto, 268pilanto, 266pilantro 1 20 20 21 3
+APB s3 n C 268pilanto, 266pilantro 1 140 140 21 3
+APB s4 p A 239pribera 3 1116 372 21 1
+APB s4 p A 269tracaja 3 1236 412 21 3
+APB s4 p A 270tracaja, 269tracaja 3 1356 452 21 3
+APB s4 p B 240pribera 0 0 0 0 0
+APB s4 p B 270tracaja, 269tracaja 3 1356 452 21 3
+APB s4 n A 239pribera 3 1116 372 21 1
+APB s4 n A 269tracaja 3 1236 412 21 3
+APB s4 n A 270tracaja, 269tracaja 3 1356 452 21 3
+APB s4 n B 240pribera 0 0 0 0 0
+APB s4 n B 270tracaja, 269tracaja 3 1356 452 21 3
+APB s5 p A 249plasmica 2 378 189 21 2
+APB s5 p A 251plasmica, 249plasmica 1 379 379 21 2
+APB s5 p A 262blanje, 261blanje 1 119 119 21 3
+APB s5 p A 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 p A 278prinfeso 1 20 20 21 4
+APB s5 p A 279prinfeso, 278prinfeso 1 100 100 21 4
+APB s5 p A 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 p A 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 p B 250plasmica 0 0 0 0 0
+APB s5 p B 262blanje, 261blanje 1 119 119 21 3
+APB s5 p B 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 p B 279prinfeso, 278prinfeso 1 100 100 21 4
+APB s5 p B 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 p C 251plasmica, 249plasmica 1 379 379 21 2
+APB s5 p C 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 p C 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 p C 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 n A 249plasmica 2 378 189 21 2
+APB s5 n A 251plasmica, 249plasmica 1 379 379 21 2
+APB s5 n A 262blanje, 261blanje 1 119 119 21 3
+APB s5 n A 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 n A 278prinfeso 1 20 20 21 4
+APB s5 n A 279prinfeso, 278prinfeso 1 100 100 21 4
+APB s5 n A 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 n A 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 n B 250plasmica 0 0 0 0 0
+APB s5 n B 262blanje, 261blanje 1 119 119 21 3
+APB s5 n B 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 n B 279prinfeso, 278prinfeso 1 100 100 21 4
+APB s5 n B 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 n C 251plasmica, 249plasmica 1 379 379 21 2
+APB s5 n C 262blanje, 263blanje, 261blanje 1 718 718 21 3
+APB s5 n C 279prinfeso, 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s5 n C 280prinfeso, 278prinfeso 1 20 20 21 4
+APB s6 p A 241balella 2 698 349 21 1
+APB s6 p A 242balella, 241balella 1 279 279 21 1
+APB s6 p A 259guerre 3 719 239.66666666667 21 3
+APB s6 p A 272tolle, 271tolle 1 618 618 21 4
+APB s6 p B 242balella, 241balella 1 279 279 21 1
+APB s6 p B 260guerre 0 0 0 0 0
+APB s6 p B 272tolle, 271tolle 1 618 618 21 4
+APB s6 n A 241balella 2 698 349 21 1
+APB s6 n A 242balella, 241balella 1 279 279 21 1
+APB s6 n A 259guerre 3 719 239.66666666667 21 3
+APB s6 n A 272tolle, 271tolle 1 618 618 21 4
+APB s6 n B 242balella, 241balella 1 279 279 21 1
+APB s6 n B 260guerre 0 0 0 0 0
+APB s6 n B 272tolle, 271tolle 1 618 618 21 4
+APB s1 p A 288camido 1 120 120 23 1
+APB s1 p A 289camido, 288camido 1 937 937 23 1
+APB s1 p A 296vipo 1 837 837 23 2
+APB s1 p A 316lusa 2 319 159.5 23 4
+APB s1 p B 289camido, 288camido 1 937 937 23 1
+APB s1 p B 297vipo 0 0 0 0 0
+APB s1 p B 317lusa 0 0 0 0 0
+APB s1 n A 288camido 1 120 120 23 1
+APB s1 n A 289camido, 288camido 1 937 937 23 1
+APB s1 n A 296vipo 1 837 837 23 2
+APB s1 n A 316lusa 2 319 159.5 23 4
+APB s1 n B 289camido, 288camido 1 937 937 23 1
+APB s1 n B 297vipo 0 0 0 0 0
+APB s1 n B 317lusa 0 0 0 0 0
+APB s2 p A 308oscafo, 306oscafo 1 1316 1316 23 3
+APB s2 p A 311esmade 2 877 438.5 23 4
+APB s2 p B 307oscafo 0 0 0 0 0
+APB s2 p B 312esmade 0 0 0 0 0
+APB s2 p C 308oscafo, 306oscafo 1 1316 1316 23 3
+APB s2 p C 313esmade 0 0 0 0 0
+APB s2 n A 308oscafo, 306oscafo 1 1316 1316 23 3
+APB s2 n A 311esmade 2 877 438.5 23 4
+APB s2 n B 307oscafo 0 0 0 0 0
+APB s2 n B 312esmade 0 0 0 0 0
+APB s2 n C 308oscafo, 306oscafo 1 1316 1316 23 3
+APB s2 n C 313esmade 0 0 0 0 0
+APB s3 p A 294patinos 2 817 408.5 23 2
+APB s3 p A 295patinos, 294patinos 2 299 149.5 23 2
+APB s3 p A 303logar, 302logar 2 418 209 23 3
+APB s3 p B 295patinos, 294patinos 2 299 149.5 23 2
+APB s3 p B 303logar, 302logar 2 418 209 23 3
+APB s3 n A 294patinos 2 817 408.5 23 2
+APB s3 n A 295patinos, 294patinos 2 299 149.5 23 2
+APB s3 n A 303logar, 302logar 2 418 209 23 3
+APB s3 n B 295patinos, 294patinos 2 299 149.5 23 2
+APB s3 n B 303logar, 302logar 2 418 209 23 3
+APB s4 p A 283clare 2 1077 538.5 23 1
+APB s4 p A 284clare, 283clare 1 439 439 23 1
+APB s4 p A 318tabrila 1 279 279 23 4
+APB s4 p A 319tabrila, 318tabrila 5 1755 351 23 4
+APB s4 p B 284clare, 283clare 1 439 439 23 1
+APB s4 p B 319tabrila, 318tabrila 5 1755 351 23 4
+APB s4 n A 283clare 2 1077 538.5 23 1
+APB s4 n A 284clare, 283clare 1 439 439 23 1
+APB s4 n A 318tabrila 1 279 279 23 4
+APB s4 n A 319tabrila, 318tabrila 5 1755 351 23 4
+APB s4 n B 284clare, 283clare 1 439 439 23 1
+APB s4 n B 319tabrila, 318tabrila 5 1755 351 23 4
+APB s5 p A 286fresdo, 285fresdo 1 479 479 23 1
+APB s5 p A 287fresdo, 285fresdo 1 139 139 23 1
+APB s5 p A 291pefrir, 290pefrir 4 2372 593 23 1
+APB s5 p A 305telubrar, 304telubrar 3 1296 432 23 3
+APB s5 p A 315nebros, 314nebros 2 658 329 23 4
+APB s5 p B 286fresdo, 285fresdo 1 479 479 23 1
+APB s5 p B 291pefrir, 290pefrir 4 2372 593 23 1
+APB s5 p B 305telubrar, 304telubrar 3 1296 432 23 3
+APB s5 p B 315nebros, 314nebros 2 658 329 23 4
+APB s5 p C 287fresdo, 285fresdo 1 139 139 23 1
+APB s5 n A 286fresdo, 285fresdo 1 479 479 23 1
+APB s5 n A 287fresdo, 285fresdo 1 139 139 23 1
+APB s5 n A 291pefrir, 290pefrir 4 2372 593 23 1
+APB s5 n A 305telubrar, 304telubrar 3 1296 432 23 3
+APB s5 n A 315nebros, 314nebros 2 658 329 23 4
+APB s5 n B 286fresdo, 285fresdo 1 479 479 23 1
+APB s5 n B 291pefrir, 290pefrir 4 2372 593 23 1
+APB s5 n B 305telubrar, 304telubrar 3 1296 432 23 3
+APB s5 n B 315nebros, 314nebros 2 658 329 23 4
+APB s5 n C 287fresdo, 285fresdo 1 139 139 23 1
+APB s6 p A 282parre, 281parre 2 438 219 23 1
+APB s6 p A 292chapeca 4 1555 388.75 23 2
+APB s6 p A 298tocha 1 439 439 23 2
+APB s6 p A 299tocha, 298tocha 2 419 209.5 23 2
+APB s6 p A 301mochede, 300mochede 2 1037 518.5 23 2
+APB s6 p A 309siqueze 1 120 120 23 3
+APB s6 p A 310siqueza, 309siqueze 2 837 418.5 23 3
+APB s6 p B 282parre, 281parre 2 438 219 23 1
+APB s6 p B 293chapeca 0 0 0 0 0
+APB s6 p B 299tocha, 298tocha 2 419 209.5 23 2
+APB s6 p B 301mochede, 300mochede 2 1037 518.5 23 2
+APB s6 p B 310siqueze 0 0 0 0 0
+APB s6 n A 282parre, 281parre 2 438 219 23 1
+APB s6 n A 292chapeca 4 1555 388.75 23 2
+APB s6 n A 298tocha 1 439 439 23 2
+APB s6 n A 299tocha, 298tocha 2 419 209.5 23 2
+APB s6 n A 301mochede, 300mochede 2 1037 518.5 23 2
+APB s6 n A 309siqueze 1 120 120 23 3
+APB s6 n A 310siqueza, 309siqueze 2 837 418.5 23 3
+APB s6 n B 282parre, 281parre 2 438 219 23 1
+APB s6 n B 293chapeca 0 0 0 0 0
+APB s6 n B 299tocha, 298tocha 2 419 209.5 23 2
+APB s6 n B 301mochede, 300mochede 2 1037 518.5 23 2
+APB s6 n B 310siqueze 0 0 0 0 0
+APB s1 p A 323canojo 2 957 478.5 25 1
+APB s1 p A 324canojo, 323canojo 1 140 140 25 1
+APB s1 p A 334tena 1 578 578 25 2
+APB s1 p B 324canojo, 323canojo 1 140 140 25 1
+APB s1 p B 335tena 0 0 0 0 0
+APB s1 n A 323canojo 2 957 478.5 25 1
+APB s1 n A 324canojo, 323canojo 1 140 140 25 1
+APB s1 n A 334tena 1 578 578 25 2
+APB s1 n B 324canojo, 323canojo 1 140 140 25 1
+APB s1 n B 335tena 0 0 0 0 0
+APB s4 p A 326brune, 325brune 1 578 578 25 1
+APB s4 p A 333muglo, 332muglo 2 638 319 25 2
+APB s4 p B 326brune, 325brune 1 578 578 25 1
+APB s4 p B 333muglo, 332muglo 2 638 319 25 2
+APB s4 n A 326brune, 325brune 1 578 578 25 1
+APB s4 n A 333muglo, 332muglo 2 638 319 25 2
+APB s4 n B 326brune, 325brune 1 578 578 25 1
+APB s4 n B 333muglo, 332muglo 2 638 319 25 2
+APB s5 p A 320nubrirso 2 1356 678 25 1
+APB s5 p A 321nubrirso, 320nubrirso 1 758 758 25 1
+APB s5 p A 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 p A 329cabrando 2 539 269.5 25 2
+APB s5 p A 330cabrando, 329cabrando 1 518 518 25 2
+APB s5 p A 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 p A 331cabrando, 329cabrando 1 479 479 25 2
+APB s5 p B 321nubrirso, 320nubrirso 1 758 758 25 1
+APB s5 p B 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 p B 330cabrando, 329cabrando 1 518 518 25 2
+APB s5 p B 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 p C 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 p C 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 p C 331cabrando, 329cabrando 1 479 479 25 2
+APB s5 n A 320nubrirso 2 1356 678 25 1
+APB s5 n A 321nubrirso, 320nubrirso 1 758 758 25 1
+APB s5 n A 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 n A 329cabrando 2 539 269.5 25 2
+APB s5 n A 330cabrando, 329cabrando 1 518 518 25 2
+APB s5 n A 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 n A 331cabrando, 329cabrando 1 479 479 25 2
+APB s5 n B 321nubrirso, 320nubrirso 1 758 758 25 1
+APB s5 n B 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 n B 330cabrando, 329cabrando 1 518 518 25 2
+APB s5 n B 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 n C 321nubrirso, 322nubrirso, 320nubrirso 1 199 199 25 1
+APB s5 n C 330cabrando, 331cabrando, 329cabrando 2 379 189.5 25 2
+APB s5 n C 331cabrando, 329cabrando 1 479 479 25 2
+APB s6 p A 327fague 1 937 937 25 1
+APB s6 p B 328fague 0 0 0 0 0
+APB s6 n A 327fague 1 937 937 25 1
+APB s6 n B 328fague 0 0 0 0 0
