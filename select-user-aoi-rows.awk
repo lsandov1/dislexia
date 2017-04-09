@@ -14,16 +14,16 @@ BEGIN {
 }
 
 $FIX_AOI ~ regex {
-	if (index($FIX_AOI, "\"") == 1) {
+	if (index($FIX_AOI, ",") != 0 ) {
 		split($FIX_AOI, aois, ",")
-		 for (i in aois) {
-			 sub(/\"/, "", aois[i])
-			 sub(/ +/, "", aois[i])
-			 if (aois[i] ~ regex) {
-			 	 print aois[i], $FIX_INDEX, $FIX_DURATION
-			 	 break
-			 }
-		 }
+		for (i in aois) {
+			sub(/\"/, "", aois[i])
+			sub(/ +/, "", aois[i])
+			if (aois[i] ~ regex) {
+				print aois[i], $FIX_INDEX, $FIX_DURATION
+				break
+			}
+		}
 	} else {
 		print $FIX_AOI, $FIX_INDEX, $FIX_DURATION
 	}
