@@ -1,120 +1,106 @@
-AEA s1 p A 010luna, 009luna 1 778 778 9 1
-AEA s1 p A 012cena, 011cena 1 638 638 9 2
+AEA s1 p A 009luna 1 778 778 9 1
+AEA s1 p A 011cena 1 638 638 9 2
 AEA s1 p A 026cabeza 1 478 478 9 3
-AEA s1 p B 010luna, 009luna 1 778 778 9 1
-AEA s1 p B 012cena, 011cena 1 638 638 9 2
+AEA s1 p B 010luna 1 778 778 9 1
+AEA s1 p B 012cena 1 638 638 9 2
 AEA s1 p B 027cabeza 0 0 0 0 0
-AEA s1 n A 010luna, 009luna 1 778 778 9 1
-AEA s1 n A 012cena, 011cena 1 638 638 9 2
+AEA s1 n A 009luna 1 778 778 9 1
+AEA s1 n A 011cena 1 638 638 9 2
 AEA s1 n A 026cabeza 1 478 478 9 3
-AEA s1 n B 010luna, 009luna 1 778 778 9 1
-AEA s1 n B 012cena, 011cena 1 638 638 9 2
+AEA s1 n B 010luna 1 778 778 9 1
+AEA s1 n B 012cena 1 638 638 9 2
 AEA s1 n B 027cabeza 0 0 0 0 0
-AEA s2 p A 004escoba 1 498 498 9 1
-AEA s2 p A 005escoba, 004escoba 1 160 160 9 1
-AEA s2 p A 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 p A 004escoba 3 1037 345.66666666667 9 1
 AEA s2 p A 017maiz 1 419 419 9 2
 AEA s2 p A 021arte 1 259 259 9 3
-AEA s2 p B 005escoba, 004escoba 1 160 160 9 1
-AEA s2 p B 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 p B 005escoba 2 539 269.5 9 1
 AEA s2 p B 018maiz 0 0 0 0 0
 AEA s2 p B 022arte 0 0 0 0 0
-AEA s2 p C 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 p C 006escoba 1 379 379 9 1
 AEA s2 p C 023arte 0 0 0 0 0
-AEA s2 n A 004escoba 1 498 498 9 1
-AEA s2 n A 005escoba, 004escoba 1 160 160 9 1
-AEA s2 n A 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 n A 004escoba 3 1037 345.66666666667 9 1
 AEA s2 n A 017maiz 1 419 419 9 2
 AEA s2 n A 021arte 1 259 259 9 3
-AEA s2 n B 005escoba, 004escoba 1 160 160 9 1
-AEA s2 n B 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 n B 005escoba 2 539 269.5 9 1
 AEA s2 n B 018maiz 0 0 0 0 0
 AEA s2 n B 022arte 0 0 0 0 0
-AEA s2 n C 005escoba, 006escoba, 004escoba 1 379 379 9 1
+AEA s2 n C 006escoba 1 379 379 9 1
 AEA s2 n C 023arte 0 0 0 0 0
-AEA s3 p A 036pepinos, 035pepinos 2 1336 668 9 4
-AEA s3 p B 036pepinos, 035pepinos 2 1336 668 9 4
-AEA s3 n A 036pepinos, 035pepinos 2 1336 668 9 4
-AEA s3 n B 036pepinos, 035pepinos 2 1336 668 9 4
-AEA s4 p A 008primero, 007primero 1 857 857 9 1
+AEA s3 p A 035pepinos 2 1336 668 9 4
+AEA s3 p B 036pepinos 2 1336 668 9 4
+AEA s3 n A 035pepinos 2 1336 668 9 4
+AEA s3 n B 036pepinos 2 1336 668 9 4
+AEA s4 p A 007primero 1 857 857 9 1
 AEA s4 p A 015pobre 1 698 698 9 2
-AEA s4 p A 019bruja 1 239 239 9 2
-AEA s4 p A 020bruja, 019bruja 2 459 229.5 9 2
+AEA s4 p A 019bruja 3 698 232.66666666667 9 2
 AEA s4 p A 033planeta 1 578 578 9 4
-AEA s4 p B 008primero, 007primero 1 857 857 9 1
+AEA s4 p B 008primero 1 857 857 9 1
 AEA s4 p B 016pobre 0 0 0 0 0
-AEA s4 p B 020bruja, 019bruja 2 459 229.5 9 2
+AEA s4 p B 020bruja 2 459 229.5 9 2
 AEA s4 p B 034planeta 0 0 0 0 0
-AEA s4 n A 008primero, 007primero 1 857 857 9 1
+AEA s4 n A 007primero 1 857 857 9 1
 AEA s4 n A 015pobre 1 698 698 9 2
-AEA s4 n A 019bruja 1 239 239 9 2
-AEA s4 n A 020bruja, 019bruja 2 459 229.5 9 2
+AEA s4 n A 019bruja 3 698 232.66666666667 9 2
 AEA s4 n A 033planeta 1 578 578 9 4
-AEA s4 n B 008primero, 007primero 1 857 857 9 1
+AEA s4 n B 008primero 1 857 857 9 1
 AEA s4 n B 016pobre 0 0 0 0 0
-AEA s4 n B 020bruja, 019bruja 2 459 229.5 9 2
+AEA s4 n B 020bruja 2 459 229.5 9 2
 AEA s4 n B 034planeta 0 0 0 0 0
-AEA s5 p A 001princesa 2 1077 538.5 9 1
-AEA s5 p A 003princesa, 001princesa 1 957 957 9 1
-AEA s5 p A 028plastico 1 498 498 9 3
-AEA s5 p A 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s5 p A 037sufrir 1 239 239 9 4
-AEA s5 p A 038sufrir, 037sufrir 2 1076 538 9 4
+AEA s5 p A 001princesa 3 2034 678 9 1
+AEA s5 p A 028plastico 3 1116 372 9 3
+AEA s5 p A 037sufrir 3 1315 438.33333333333 9 4
 AEA s5 p B 002princesa 0 0 0 0 0
-AEA s5 p B 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s5 p B 038sufrir, 037sufrir 2 1076 538 9 4
-AEA s5 p C 003princesa, 001princesa 1 957 957 9 1
-AEA s5 p C 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s5 n A 001princesa 2 1077 538.5 9 1
-AEA s5 n A 003princesa, 001princesa 1 957 957 9 1
-AEA s5 n A 028plastico 1 498 498 9 3
-AEA s5 n A 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s5 n A 037sufrir 1 239 239 9 4
-AEA s5 n A 038sufrir, 037sufrir 2 1076 538 9 4
+AEA s5 p B 029plastico 2 618 309 9 3
+AEA s5 p B 038sufrir 2 1076 538 9 4
+AEA s5 p C 003princesa 1 957 957 9 1
+AEA s5 p C 030plastico 2 618 309 9 3
+AEA s5 n A 001princesa 3 2034 678 9 1
+AEA s5 n A 028plastico 3 1116 372 9 3
+AEA s5 n A 037sufrir 3 1315 438.33333333333 9 4
 AEA s5 n B 002princesa 0 0 0 0 0
-AEA s5 n B 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s5 n B 038sufrir, 037sufrir 2 1076 538 9 4
-AEA s5 n C 003princesa, 001princesa 1 957 957 9 1
-AEA s5 n C 029plastico, 028plastico, 030plastico 2 618 309 9 3
-AEA s6 p A 014fecha, 013fecha 1 698 698 9 2
+AEA s5 n B 029plastico 2 618 309 9 3
+AEA s5 n B 038sufrir 2 1076 538 9 4
+AEA s5 n C 003princesa 1 957 957 9 1
+AEA s5 n C 030plastico 2 618 309 9 3
+AEA s6 p A 013fecha 1 698 698 9 2
 AEA s6 p A 024botella 4 1196 299 9 3
 AEA s6 p A 031queso 0 0 0 0 0
-AEA s6 p B 014fecha, 013fecha 1 698 698 9 2
+AEA s6 p B 014fecha 1 698 698 9 2
 AEA s6 p B 025botella 0 0 0 0 0
 AEA s6 p B 032queso 0 0 0 0 0
-AEA s6 n A 014fecha, 013fecha 1 698 698 9 2
+AEA s6 n A 013fecha 1 698 698 9 2
 AEA s6 n A 024botella 4 1196 299 9 3
 AEA s6 n A 031queso 0 0 0 0 0
-AEA s6 n B 014fecha, 013fecha 1 698 698 9 2
+AEA s6 n B 014fecha 1 698 698 9 2
 AEA s6 n B 025botella 0 0 0 0 0
 AEA s6 n B 032queso 0 0 0 0 0
-AEA s1 p A 041musica, 042musica 1 1057 1057 11 1
-AEA s1 p A 051belleza, 050belleza 2 617 308.5 11 2
+AEA s1 p A 041musica 1 1057 1057 11 1
+AEA s1 p A 050belleza 2 617 308.5 11 2
 AEA s1 p A 063bonita 1 977 977 11 3
 AEA s1 p A 074numero 2 917 458.5 11 4
-AEA s1 p B 041musica, 042musica 1 1057 1057 11 1
-AEA s1 p B 051belleza, 050belleza 2 617 308.5 11 2
+AEA s1 p B 042musica 1 1057 1057 11 1
+AEA s1 p B 051belleza 2 617 308.5 11 2
 AEA s1 p B 064bonita 0 0 0 0 0
 AEA s1 p B 075numero 0 0 0 0 0
-AEA s1 n A 041musica, 042musica 1 1057 1057 11 1
-AEA s1 n A 051belleza, 050belleza 2 617 308.5 11 2
+AEA s1 n A 041musica 1 1057 1057 11 1
+AEA s1 n A 050belleza 2 617 308.5 11 2
 AEA s1 n A 063bonita 1 977 977 11 3
 AEA s1 n A 074numero 2 917 458.5 11 4
-AEA s1 n B 041musica, 042musica 1 1057 1057 11 1
-AEA s1 n B 051belleza, 050belleza 2 617 308.5 11 2
+AEA s1 n B 042musica 1 1057 1057 11 1
+AEA s1 n B 051belleza 2 617 308.5 11 2
 AEA s1 n B 064bonita 0 0 0 0 0
 AEA s1 n B 075numero 0 0 0 0 0
-AEA s2 p A 039leer, 040leer 2 1376 688 11 1
+AEA s2 p A 039leer 2 1376 688 11 1
 AEA s2 p A 057esto 1 458 458 11 2
 AEA s2 p A 070pais 1 459 459 11 3
-AEA s2 p B 039leer, 040leer 2 1376 688 11 1
+AEA s2 p B 040leer 2 1376 688 11 1
 AEA s2 p B 058esto 0 0 0 0 0
 AEA s2 p B 071pais 0 0 0 0 0
 AEA s2 p C 059esto 0 0 0 0 0
-AEA s2 n A 039leer, 040leer 2 1376 688 11 1
+AEA s2 n A 039leer 2 1376 688 11 1
 AEA s2 n A 057esto 1 458 458 11 2
 AEA s2 n A 070pais 1 459 459 11 3
-AEA s2 n B 039leer, 040leer 2 1376 688 11 1
+AEA s2 n B 040leer 2 1376 688 11 1
 AEA s2 n B 058esto 0 0 0 0 0
 AEA s2 n B 071pais 0 0 0 0 0
 AEA s2 n C 059esto 0 0 0 0 0
@@ -134,68 +120,54 @@ AEA s3 n B 048volante 0 0 0 0 0
 AEA s3 n B 061toronja 0 0 0 0 0
 AEA s3 n C 049volante 0 0 0 0 0
 AEA s3 n C 062toronja 0 0 0 0 0
-AEA s4 p A 055fabrica 2 518 259 11 2
-AEA s4 p A 056fabrica, 055fabrica 1 160 160 11 2
-AEA s4 p A 068madre 1 259 259 11 3
-AEA s4 p A 069madre, 068madre 1 259 259 11 3
+AEA s4 p A 055fabrica 3 678 226 11 2
+AEA s4 p A 068madre 2 518 259 11 3
 AEA s4 p A 078palabra 2 797 398.5 11 4
-AEA s4 p B 056fabrica, 055fabrica 1 160 160 11 2
-AEA s4 p B 069madre, 068madre 1 259 259 11 3
+AEA s4 p B 056fabrica 1 160 160 11 2
+AEA s4 p B 069madre 1 259 259 11 3
 AEA s4 p B 079palabra 0 0 0 0 0
-AEA s4 n A 055fabrica 2 518 259 11 2
-AEA s4 n A 056fabrica, 055fabrica 1 160 160 11 2
-AEA s4 n A 068madre 1 259 259 11 3
-AEA s4 n A 069madre, 068madre 1 259 259 11 3
+AEA s4 n A 055fabrica 3 678 226 11 2
+AEA s4 n A 068madre 2 518 259 11 3
 AEA s4 n A 078palabra 2 797 398.5 11 4
-AEA s4 n B 056fabrica, 055fabrica 1 160 160 11 2
-AEA s4 n B 069madre, 068madre 1 259 259 11 3
+AEA s4 n B 056fabrica 1 160 160 11 2
+AEA s4 n B 069madre 1 259 259 11 3
 AEA s4 n B 079palabra 0 0 0 0 0
-AEA s5 p A 053cobrando, 052cobrando 1 678 678 11 2
-AEA s5 p A 054cobrando, 052cobrando 1 179 179 11 2
-AEA s5 p A 065planta 1 179 179 11 3
-AEA s5 p A 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s5 p A 076cicatriz 1 120 120 11 4
-AEA s5 p A 077cicatriz, 076cicatriz 3 1136 378.66666666667 11 4
-AEA s5 p B 053cobrando, 052cobrando 1 678 678 11 2
-AEA s5 p B 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s5 p B 077cicatriz, 076cicatriz 3 1136 378.66666666667 11 4
-AEA s5 p C 054cobrando, 052cobrando 1 179 179 11 2
-AEA s5 p C 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s5 n A 053cobrando, 052cobrando 1 678 678 11 2
-AEA s5 n A 054cobrando, 052cobrando 1 179 179 11 2
-AEA s5 n A 065planta 1 179 179 11 3
-AEA s5 n A 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s5 n A 076cicatriz 1 120 120 11 4
-AEA s5 n A 077cicatriz, 076cicatriz 3 1136 378.66666666667 11 4
-AEA s5 n B 053cobrando, 052cobrando 1 678 678 11 2
-AEA s5 n B 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s5 n B 077cicatriz, 076cicatriz 3 1136 378.66666666667 11 4
-AEA s5 n C 054cobrando, 052cobrando 1 179 179 11 2
-AEA s5 n C 066planta, 067planta, 065planta 1 439 439 11 3
-AEA s6 p A 046chile, 045chile 1 678 678 11 1
+AEA s5 p A 052cobrando 2 857 428.5 11 2
+AEA s5 p A 065planta 2 618 309 11 3
+AEA s5 p A 076cicatriz 4 1256 314 11 4
+AEA s5 p B 053cobrando 1 678 678 11 2
+AEA s5 p B 066planta 1 439 439 11 3
+AEA s5 p B 077cicatriz 3 1136 378.66666666667 11 4
+AEA s5 p C 054cobrando 1 179 179 11 2
+AEA s5 p C 067planta 1 439 439 11 3
+AEA s5 n A 052cobrando 2 857 428.5 11 2
+AEA s5 n A 065planta 2 618 309 11 3
+AEA s5 n A 076cicatriz 4 1256 314 11 4
+AEA s5 n B 053cobrando 1 678 678 11 2
+AEA s5 n B 066planta 1 439 439 11 3
+AEA s5 n B 077cicatriz 3 1136 378.66666666667 11 4
+AEA s5 n C 054cobrando 1 179 179 11 2
+AEA s5 n C 067planta 1 439 439 11 3
+AEA s6 p A 045chile 1 678 678 11 1
 AEA s6 p A 072llorona 1 558 558 11 4
-AEA s6 p B 046chile, 045chile 1 678 678 11 1
+AEA s6 p B 046chile 1 678 678 11 1
 AEA s6 p B 073llorona 0 0 0 0 0
-AEA s6 n A 046chile, 045chile 1 678 678 11 1
+AEA s6 n A 045chile 1 678 678 11 1
 AEA s6 n A 072llorona 1 558 558 11 4
-AEA s6 n B 046chile, 045chile 1 678 678 11 1
+AEA s6 n B 046chile 1 678 678 11 1
 AEA s6 n B 073llorona 0 0 0 0 0
-AEA s1 p A 093papa 1 239 239 13 2
-AEA s1 p A 094papa, 093papa 1 339 339 13 2
-AEA s1 p A 110rapido 2 379 189.5 13 3
-AEA s1 p A 111rapido, 110rapido 2 240 120 13 3
-AEA s1 p A 117conejo, 116conejo 1 777 777 13 4
-AEA s1 p B 094papa, 093papa 1 339 339 13 2
-AEA s1 p B 111rapido, 110rapido 2 240 120 13 3
-AEA s1 p B 117conejo, 116conejo 1 777 777 13 4
-AEA s1 n A 093papa 1 239 239 13 2
-AEA s1 n A 094papa, 093papa 1 339 339 13 2
-AEA s1 n A 110rapido 2 379 189.5 13 3
-AEA s1 n A 111rapido, 110rapido 2 240 120 13 3
-AEA s1 n A 117conejo, 116conejo 1 777 777 13 4
-AEA s1 n B 094papa, 093papa 1 339 339 13 2
-AEA s1 n B 111rapido, 110rapido 2 240 120 13 3
-AEA s1 n B 117conejo, 116conejo 1 777 777 13 4
+AEA s1 p A 093papa 2 578 289 13 2
+AEA s1 p A 110rapido 4 619 154.75 13 3
+AEA s1 p A 116conejo 1 777 777 13 4
+AEA s1 p B 094papa 1 339 339 13 2
+AEA s1 p B 111rapido 2 240 120 13 3
+AEA s1 p B 117conejo 1 777 777 13 4
+AEA s1 n A 093papa 2 578 289 13 2
+AEA s1 n A 110rapido 4 619 154.75 13 3
+AEA s1 n A 116conejo 1 777 777 13 4
+AEA s1 n B 094papa 1 339 339 13 2
+AEA s1 n B 111rapido 2 240 120 13 3
+AEA s1 n B 117conejo 1 777 777 13 4
 AEA s3 p A 080danza 1 738 738 13 1
 AEA s3 p A 084señalar 0 0 0 0 0
 AEA s3 p A 099manzana 1 140 140 13 3
@@ -227,50 +199,42 @@ AEA s3 n C 101manzana 0 0 0 0 0
 AEA s3 n C 106carta 0 0 0 0 0
 AEA s3 n C 109vestido 0 0 0 0 0
 AEA s4 p A 095posible 1 598 598 13 2
-AEA s4 p A 118padrino 2 399 199.5 13 4
-AEA s4 p A 119padrino, 118padrino 3 1097 365.66666666667 13 4
+AEA s4 p A 118padrino 5 1496 299.2 13 4
 AEA s4 p B 096posible 0 0 0 0 0
-AEA s4 p B 119padrino, 118padrino 3 1097 365.66666666667 13 4
+AEA s4 p B 119padrino 3 1097 365.66666666667 13 4
 AEA s4 n A 095posible 1 598 598 13 2
-AEA s4 n A 118padrino 2 399 199.5 13 4
-AEA s4 n A 119padrino, 118padrino 3 1097 365.66666666667 13 4
+AEA s4 n A 118padrino 5 1496 299.2 13 4
 AEA s4 n B 096posible 0 0 0 0 0
-AEA s4 n B 119padrino, 118padrino 3 1097 365.66666666667 13 4
-AEA s5 p A 087transito, 086transito 1 279 279 13 1
-AEA s5 p A 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s5 p A 091palabras 1 279 279 13 2
-AEA s5 p A 092palabras, 091palabras 1 499 499 13 2
-AEA s5 p B 087transito, 086transito 1 279 279 13 1
-AEA s5 p B 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s5 p B 092palabras, 091palabras 1 499 499 13 2
-AEA s5 p C 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s5 n A 087transito, 086transito 1 279 279 13 1
-AEA s5 n A 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s5 n A 091palabras 1 279 279 13 2
-AEA s5 n A 092palabras, 091palabras 1 499 499 13 2
-AEA s5 n B 087transito, 086transito 1 279 279 13 1
-AEA s5 n B 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s5 n B 092palabras, 091palabras 1 499 499 13 2
-AEA s5 n C 087transito, 088transito, 086transito 1 299 299 13 1
-AEA s6 p A 083sigue, 082sigue 1 857 857 13 1
+AEA s4 n B 119padrino 3 1097 365.66666666667 13 4
+AEA s5 p A 086transito 2 578 289 13 1
+AEA s5 p A 091palabras 2 778 389 13 2
+AEA s5 p B 087transito 2 578 289 13 1
+AEA s5 p B 092palabras 1 499 499 13 2
+AEA s5 p C 088transito 1 299 299 13 1
+AEA s5 n A 086transito 2 578 289 13 1
+AEA s5 n A 091palabras 2 778 389 13 2
+AEA s5 n B 087transito 2 578 289 13 1
+AEA s5 n B 092palabras 1 499 499 13 2
+AEA s5 n C 088transito 1 299 299 13 1
+AEA s6 p A 082sigue 1 857 857 13 1
 AEA s6 p A 089guerra 0 0 0 0 0
 AEA s6 p A 097calle 1 479 479 13 2
-AEA s6 p A 103derecho, 102derecho 1 738 738 13 3
+AEA s6 p A 102derecho 1 738 738 13 3
 AEA s6 p A 114terreno 3 1216 405.33333333333 13 4
-AEA s6 p B 083sigue, 082sigue 1 857 857 13 1
+AEA s6 p B 083sigue 1 857 857 13 1
 AEA s6 p B 090guerra 0 0 0 0 0
 AEA s6 p B 098calle 0 0 0 0 0
-AEA s6 p B 103derecho, 102derecho 1 738 738 13 3
+AEA s6 p B 103derecho 1 738 738 13 3
 AEA s6 p B 115terreno 0 0 0 0 0
-AEA s6 n A 083sigue, 082sigue 1 857 857 13 1
+AEA s6 n A 082sigue 1 857 857 13 1
 AEA s6 n A 089guerra 0 0 0 0 0
 AEA s6 n A 097calle 1 479 479 13 2
-AEA s6 n A 103derecho, 102derecho 1 738 738 13 3
+AEA s6 n A 102derecho 1 738 738 13 3
 AEA s6 n A 114terreno 3 1216 405.33333333333 13 4
-AEA s6 n B 083sigue, 082sigue 1 857 857 13 1
+AEA s6 n B 083sigue 1 857 857 13 1
 AEA s6 n B 090guerra 0 0 0 0 0
 AEA s6 n B 098calle 0 0 0 0 0
-AEA s6 n B 103derecho, 102derecho 1 738 738 13 3
+AEA s6 n B 103derecho 1 738 738 13 3
 AEA s6 n B 115terreno 0 0 0 0 0
 AEA s1 p A 136poco 1 718 718 15 2
 AEA s1 p A 145dinero 2 599 299.5 15 3
@@ -294,98 +258,84 @@ AEA s2 n B 124vivian 0 0 0 0 0
 AEA s2 n B 141alto 0 0 0 0 0
 AEA s2 n B 151vivo 0 0 0 0 0
 AEA s2 n C 142alto 0 0 0 0 0
-AEA s3 p A 120pesca 1 319 319 15 1
-AEA s3 p A 122pesca, 120pesca 1 638 638 15 1
+AEA s3 p A 120pesca 2 957 478.5 15 1
 AEA s3 p A 134papel 1 538 538 15 2
 AEA s3 p A 152camaron 2 1136 568 15 4
 AEA s3 p B 121pesca 0 0 0 0 0
 AEA s3 p B 135papel 0 0 0 0 0
 AEA s3 p B 153camaron 0 0 0 0 0
-AEA s3 p C 122pesca, 120pesca 1 638 638 15 1
-AEA s3 n A 120pesca 1 319 319 15 1
-AEA s3 n A 122pesca, 120pesca 1 638 638 15 1
+AEA s3 p C 122pesca 1 638 638 15 1
+AEA s3 n A 120pesca 2 957 478.5 15 1
 AEA s3 n A 134papel 1 538 538 15 2
 AEA s3 n A 152camaron 2 1136 568 15 4
 AEA s3 n B 121pesca 0 0 0 0 0
 AEA s3 n B 135papel 0 0 0 0 0
 AEA s3 n B 153camaron 0 0 0 0 0
-AEA s3 n C 122pesca, 120pesca 1 638 638 15 1
-AEA s4 p A 130peligro 1 179 179 15 2
-AEA s4 p A 131peligro, 130peligro 1 379 379 15 2
-AEA s4 p A 143trabajo 2 1116 558 15 3
-AEA s4 p A 144trabajo, 143trabajo 1 179 179 15 3
-AEA s4 p B 131peligro, 130peligro 1 379 379 15 2
-AEA s4 p B 144trabajo, 143trabajo 1 179 179 15 3
-AEA s4 n A 130peligro 1 179 179 15 2
-AEA s4 n A 131peligro, 130peligro 1 379 379 15 2
-AEA s4 n A 143trabajo 2 1116 558 15 3
-AEA s4 n A 144trabajo, 143trabajo 1 179 179 15 3
-AEA s4 n B 131peligro, 130peligro 1 379 379 15 2
-AEA s4 n B 144trabajo, 143trabajo 1 179 179 15 3
-AEA s5 p A 127cubrirse 1 758 758 15 1
-AEA s5 p A 128cubrirse, 127cubrirse 1 518 518 15 1
-AEA s5 p A 149fresca, 147fresca 1 1156 1156 15 3
-AEA s5 p A 157padres, 156padres 1 658 658 17 1
-AEA s5 p B 128cubrirse, 127cubrirse 1 518 518 15 1
+AEA s3 n C 122pesca 1 638 638 15 1
+AEA s4 p A 130peligro 2 558 279 15 2
+AEA s4 p A 143trabajo 3 1295 431.66666666667 15 3
+AEA s4 p B 131peligro 1 379 379 15 2
+AEA s4 p B 144trabajo 1 179 179 15 3
+AEA s4 n A 130peligro 2 558 279 15 2
+AEA s4 n A 143trabajo 3 1295 431.66666666667 15 3
+AEA s4 n B 131peligro 1 379 379 15 2
+AEA s4 n B 144trabajo 1 179 179 15 3
+AEA s5 p A 127cubrirse 2 1276 638 15 1
+AEA s5 p A 147fresca 1 1156 1156 15 3
+AEA s5 p A 156padres 1 658 658 15 4
+AEA s5 p B 128cubrirse 1 518 518 15 1
 AEA s5 p B 148fresca 0 0 0 0 0
-AEA s5 p B 157padres, 156padres 1 658 658 17 1
+AEA s5 p B 157padres 1 658 658 17 1
 AEA s5 p C 129cubrirse 0 0 0 0 0
-AEA s5 p C 149fresca, 147fresca 1 1156 1156 15 3
-AEA s5 n A 127cubrirse 1 758 758 15 1
-AEA s5 n A 128cubrirse, 127cubrirse 1 518 518 15 1
-AEA s5 n A 149fresca, 147fresca 1 1156 1156 15 3
-AEA s5 n A 157padres, 156padres 1 658 658 17 1
-AEA s5 n B 128cubrirse, 127cubrirse 1 518 518 15 1
+AEA s5 p C 149fresca 1 1156 1156 15 3
+AEA s5 n A 127cubrirse 2 1276 638 15 1
+AEA s5 n A 147fresca 1 1156 1156 15 3
+AEA s5 n A 156padres 1 658 658 15 4
+AEA s5 n B 128cubrirse 1 518 518 15 1
 AEA s5 n B 148fresca 0 0 0 0 0
-AEA s5 n B 157padres, 156padres 1 658 658 17 1
+AEA s5 n B 157padres 1 658 658 17 1
 AEA s5 n C 129cubrirse 0 0 0 0 0
-AEA s5 n C 149fresca, 147fresca 1 1156 1156 15 3
+AEA s5 n C 149fresca 1 1156 1156 15 3
 AEA s6 p A 125chaparro 1 658 658 15 1
-AEA s6 p A 133riqueza, 132riqueza 1 658 658 15 2
-AEA s6 p A 139chaleco, 138chaleco 1 937 937 15 2
-AEA s6 p A 154machete 2 1455 727.5 15 4
-AEA s6 p A 155machete, 154machete 1 279 279 15 4
+AEA s6 p A 132riqueza 1 658 658 15 2
+AEA s6 p A 138chaleco 1 937 937 15 2
+AEA s6 p A 154machete 3 1734 578 15 4
 AEA s6 p B 126chaparro 0 0 0 0 0
-AEA s6 p B 133riqueza, 132riqueza 1 658 658 15 2
-AEA s6 p B 139chaleco, 138chaleco 1 937 937 15 2
-AEA s6 p B 155machete, 154machete 1 279 279 15 4
+AEA s6 p B 133riqueza 1 658 658 15 2
+AEA s6 p B 139chaleco 1 937 937 15 2
+AEA s6 p B 155machete 1 279 279 15 4
 AEA s6 n A 125chaparro 1 658 658 15 1
-AEA s6 n A 133riqueza, 132riqueza 1 658 658 15 2
-AEA s6 n A 139chaleco, 138chaleco 1 937 937 15 2
-AEA s6 n A 154machete 2 1455 727.5 15 4
-AEA s6 n A 155machete, 154machete 1 279 279 15 4
+AEA s6 n A 132riqueza 1 658 658 15 2
+AEA s6 n A 138chaleco 1 937 937 15 2
+AEA s6 n A 154machete 3 1734 578 15 4
 AEA s6 n B 126chaparro 0 0 0 0 0
-AEA s6 n B 133riqueza, 132riqueza 1 658 658 15 2
-AEA s6 n B 139chaleco, 138chaleco 1 937 937 15 2
-AEA s6 n B 155machete, 154machete 1 279 279 15 4
+AEA s6 n B 133riqueza 1 658 658 15 2
+AEA s6 n B 139chaleco 1 937 937 15 2
+AEA s6 n B 155machete 1 279 279 15 4
 AEA s1 p A 165comida 1 439 439 17 1
-AEA s1 p A 183boca 1 319 319 17 3
-AEA s1 p A 184boca, 183boca 1 180 180 17 3
+AEA s1 p A 183boca 2 499 249.5 17 3
 AEA s1 p A 187mañana 0 0 0 0 0
 AEA s1 p B 166comida 0 0 0 0 0
-AEA s1 p B 184boca, 183boca 1 180 180 17 3
+AEA s1 p B 184boca 1 180 180 17 3
 AEA s1 p B 188mañana 0 0 0 0 0
 AEA s1 n A 165comida 1 439 439 17 1
-AEA s1 n A 183boca 1 319 319 17 3
-AEA s1 n A 184boca, 183boca 1 180 180 17 3
+AEA s1 n A 183boca 2 499 249.5 17 3
 AEA s1 n A 187mañana 0 0 0 0 0
 AEA s1 n B 166comida 0 0 0 0 0
-AEA s1 n B 184boca, 183boca 1 180 180 17 3
+AEA s1 n B 184boca 1 180 180 17 3
 AEA s1 n B 188mañana 0 0 0 0 0
 AEA s2 p A 158estado 2 917 458.5 17 1
-AEA s2 p A 172oscuro 1 259 259 17 2
-AEA s2 p A 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 p A 172oscuro 2 478 239 17 2
 AEA s2 p B 159estado 0 0 0 0 0
-AEA s2 p B 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 p B 173oscuro 1 219 219 17 2
 AEA s2 p C 160estado 0 0 0 0 0
-AEA s2 p C 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 p C 174oscuro 1 219 219 17 2
 AEA s2 n A 158estado 2 917 458.5 17 1
-AEA s2 n A 172oscuro 1 259 259 17 2
-AEA s2 n A 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 n A 172oscuro 2 478 239 17 2
 AEA s2 n B 159estado 0 0 0 0 0
-AEA s2 n B 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 n B 173oscuro 1 219 219 17 2
 AEA s2 n C 160estado 0 0 0 0 0
-AEA s2 n C 173oscuro, 174oscuro, 172oscuro 1 219 219 17 2
+AEA s2 n C 174oscuro 1 219 219 17 2
 AEA s3 p A 189soñando 0 0 0 0 0
 AEA s3 p A 192fortuna 1 1096 1096 17 4
 AEA s3 p B 190soñando 0 0 0 0 0
@@ -398,60 +348,48 @@ AEA s3 n B 190soñando 0 0 0 0 0
 AEA s3 n B 193fortuna 0 0 0 0 0
 AEA s3 n C 191soñando 0 0 0 0 0
 AEA s3 n C 194fortuna 0 0 0 0 0
-AEA s4 p A 162febrero, 161febrero 1 957 957 17 1
+AEA s4 p A 161febrero 1 957 957 17 1
 AEA s4 p A 167fruta 1 618 618 17 2
 AEA s4 p A 177siglo 0 0 0 0 0
-AEA s4 p A 185clase 1 140 140 17 3
-AEA s4 p A 186clase, 185clase 1 438 438 17 3
-AEA s4 p B 162febrero, 161febrero 1 957 957 17 1
+AEA s4 p A 185clase 2 578 289 17 3
+AEA s4 p B 162febrero 1 957 957 17 1
 AEA s4 p B 168fruta 0 0 0 0 0
 AEA s4 p B 178siglo 0 0 0 0 0
-AEA s4 p B 186clase, 185clase 1 438 438 17 3
-AEA s4 n A 162febrero, 161febrero 1 957 957 17 1
+AEA s4 p B 186clase 1 438 438 17 3
+AEA s4 n A 161febrero 1 957 957 17 1
 AEA s4 n A 167fruta 1 618 618 17 2
 AEA s4 n A 177siglo 0 0 0 0 0
-AEA s4 n A 185clase 1 140 140 17 3
-AEA s4 n A 186clase, 185clase 1 438 438 17 3
-AEA s4 n B 162febrero, 161febrero 1 957 957 17 1
+AEA s4 n A 185clase 2 578 289 17 3
+AEA s4 n B 162febrero 1 957 957 17 1
 AEA s4 n B 168fruta 0 0 0 0 0
 AEA s4 n B 178siglo 0 0 0 0 0
-AEA s4 n B 186clase, 185clase 1 438 438 17 3
-AEA s5 p A 163libros 2 697 348.5 17 1
-AEA s5 p A 164libros, 163libros 1 140 140 17 1
-AEA s5 p A 169blanco 1 179 179 17 2
-AEA s5 p A 170blanco, 169blanco 1 837 837 17 2
-AEA s5 p A 181celebrar 1 179 179 17 3
-AEA s5 p A 182celebrar, 181celebrar 2 598 299 17 3
-AEA s5 p B 164libros, 163libros 1 140 140 17 1
-AEA s5 p B 170blanco, 169blanco 1 837 837 17 2
-AEA s5 p B 182celebrar, 181celebrar 2 598 299 17 3
+AEA s4 n B 186clase 1 438 438 17 3
+AEA s5 p A 163libros 3 837 279 17 1
+AEA s5 p A 169blanco 2 1016 508 17 2
+AEA s5 p A 181celebrar 3 777 259 17 3
+AEA s5 p B 164libros 1 140 140 17 1
+AEA s5 p B 170blanco 1 837 837 17 2
+AEA s5 p B 182celebrar 2 598 299 17 3
 AEA s5 p C 171blanco 0 0 0 0 0
-AEA s5 n A 163libros 2 697 348.5 17 1
-AEA s5 n A 164libros, 163libros 1 140 140 17 1
-AEA s5 n A 169blanco 1 179 179 17 2
-AEA s5 n A 170blanco, 169blanco 1 837 837 17 2
-AEA s5 n A 181celebrar 1 179 179 17 3
-AEA s5 n A 182celebrar, 181celebrar 2 598 299 17 3
-AEA s5 n B 164libros, 163libros 1 140 140 17 1
-AEA s5 n B 170blanco, 169blanco 1 837 837 17 2
-AEA s5 n B 182celebrar, 181celebrar 2 598 299 17 3
+AEA s5 n A 163libros 3 837 279 17 1
+AEA s5 n A 169blanco 2 1016 508 17 2
+AEA s5 n A 181celebrar 3 777 259 17 3
+AEA s5 n B 164libros 1 140 140 17 1
+AEA s5 n B 170blanco 1 837 837 17 2
+AEA s5 n B 182celebrar 2 598 299 17 3
 AEA s5 n C 171blanco 0 0 0 0 0
-AEA s6 p A 176querida, 175querida 1 797 797 17 2
-AEA s6 p A 179torre 1 678 678 17 3
-AEA s6 p A 180torre, 179torre 1 120 120 17 3
-AEA s6 p A 195llama 1 479 479 17 4
-AEA s6 p A 196llama, 195llama 1 399 399 17 4
-AEA s6 p B 176querida, 175querida 1 797 797 17 2
-AEA s6 p B 180torre, 179torre 1 120 120 17 3
-AEA s6 p B 196llama, 195llama 1 399 399 17 4
-AEA s6 n A 176querida, 175querida 1 797 797 17 2
-AEA s6 n A 179torre 1 678 678 17 3
-AEA s6 n A 180torre, 179torre 1 120 120 17 3
-AEA s6 n A 195llama 1 479 479 17 4
-AEA s6 n A 196llama, 195llama 1 399 399 17 4
-AEA s6 n B 176querida, 175querida 1 797 797 17 2
-AEA s6 n B 180torre, 179torre 1 120 120 17 3
-AEA s6 n B 196llama, 195llama 1 399 399 17 4
+AEA s6 p A 175querida 1 797 797 17 2
+AEA s6 p A 179torre 2 798 399 17 3
+AEA s6 p A 195llama 2 878 439 17 4
+AEA s6 p B 176querida 1 797 797 17 2
+AEA s6 p B 180torre 1 120 120 17 3
+AEA s6 p B 196llama 1 399 399 17 4
+AEA s6 n A 175querida 1 797 797 17 2
+AEA s6 n A 179torre 2 798 399 17 3
+AEA s6 n A 195llama 2 878 439 17 4
+AEA s6 n B 176querida 1 797 797 17 2
+AEA s6 n B 180torre 1 120 120 17 3
+AEA s6 n B 196llama 1 399 399 17 4
 AEA s1 p A 202mosina 1 658 658 19 1
 AEA s1 p A 208dipone 2 778 389 19 2
 AEA s1 p A 223numapo 0 0 0 0 0
@@ -464,58 +402,48 @@ AEA s1 n A 223numapo 0 0 0 0 0
 AEA s1 n B 203mosina 0 0 0 0 0
 AEA s1 n B 209dipone 0 0 0 0 0
 AEA s1 n B 224numapo 0 0 0 0 0
-AEA s2 p A 199albe 1 658 658 19 1
-AEA s2 p A 201albe, 199albe 1 777 777 19 1
+AEA s2 p A 199albe 2 1435 717.5 19 1
 AEA s2 p B 200albe 0 0 0 0 0
-AEA s2 p C 201albe, 199albe 1 777 777 19 1
-AEA s2 n A 199albe 1 658 658 19 1
-AEA s2 n A 201albe, 199albe 1 777 777 19 1
+AEA s2 p C 201albe 1 777 777 19 1
+AEA s2 n A 199albe 2 1435 717.5 19 1
 AEA s2 n B 200albe 0 0 0 0 0
-AEA s2 n C 201albe, 199albe 1 777 777 19 1
+AEA s2 n C 201albe 1 777 777 19 1
 AEA s3 p A 204sepolar 1 997 997 19 1
-AEA s3 p A 211mecil, 210mecil 1 1196 1196 19 2
-AEA s3 p A 214pesmo 1 478 478 19 2
-AEA s3 p A 215pesmo, 214pesmo 1 219 219 19 2
-AEA s3 p A 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 p A 210mecil 1 1196 1196 19 2
+AEA s3 p A 214pesmo 3 1195 398.33333333333 19 2
 AEA s3 p A 220danlo 1 578 578 19 3
 AEA s3 p A 225moñanda 0 0 0 0 0
 AEA s3 p B 205sepolar 0 0 0 0 0
-AEA s3 p B 211mecil, 210mecil 1 1196 1196 19 2
-AEA s3 p B 215pesmo, 214pesmo 1 219 219 19 2
-AEA s3 p B 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 p B 211mecil 1 1196 1196 19 2
+AEA s3 p B 215pesmo 2 717 358.5 19 2
 AEA s3 p B 221danlo 0 0 0 0 0
 AEA s3 p B 226moñanda 0 0 0 0 0
-AEA s3 p C 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 p C 216pesmo 1 498 498 19 2
 AEA s3 p C 222danlo 0 0 0 0 0
 AEA s3 p C 227moñanda 0 0 0 0 0
 AEA s3 n A 204sepolar 1 997 997 19 1
-AEA s3 n A 211mecil, 210mecil 1 1196 1196 19 2
-AEA s3 n A 214pesmo 1 478 478 19 2
-AEA s3 n A 215pesmo, 214pesmo 1 219 219 19 2
-AEA s3 n A 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 n A 210mecil 1 1196 1196 19 2
+AEA s3 n A 214pesmo 3 1195 398.33333333333 19 2
 AEA s3 n A 220danlo 1 578 578 19 3
 AEA s3 n A 225moñanda 0 0 0 0 0
 AEA s3 n B 205sepolar 0 0 0 0 0
-AEA s3 n B 211mecil, 210mecil 1 1196 1196 19 2
-AEA s3 n B 215pesmo, 214pesmo 1 219 219 19 2
-AEA s3 n B 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 n B 211mecil 1 1196 1196 19 2
+AEA s3 n B 215pesmo 2 717 358.5 19 2
 AEA s3 n B 221danlo 0 0 0 0 0
 AEA s3 n B 226moñanda 0 0 0 0 0
-AEA s3 n C 215pesmo, 216pesmo, 214pesmo 1 498 498 19 2
+AEA s3 n C 216pesmo 1 498 498 19 2
 AEA s3 n C 222danlo 0 0 0 0 0
 AEA s3 n C 227moñanda 0 0 0 0 0
-AEA s4 p A 197tubre 1 299 299 19 1
-AEA s4 p A 198tubre, 197tubre 1 877 877 19 1
+AEA s4 p A 197tubre 2 1176 588 19 1
 AEA s4 p A 212puyabra 1 1116 1116 19 2
 AEA s4 p A 230planida 3 1775 591.66666666667 19 4
-AEA s4 p B 198tubre, 197tubre 1 877 877 19 1
+AEA s4 p B 198tubre 1 877 877 19 1
 AEA s4 p B 213puyabra 0 0 0 0 0
 AEA s4 p B 231planida 0 0 0 0 0
-AEA s4 n A 197tubre 1 299 299 19 1
-AEA s4 n A 198tubre, 197tubre 1 877 877 19 1
+AEA s4 n A 197tubre 2 1176 588 19 1
 AEA s4 n A 212puyabra 1 1116 1116 19 2
 AEA s4 n A 230planida 3 1775 591.66666666667 19 4
-AEA s4 n B 198tubre, 197tubre 1 877 877 19 1
+AEA s4 n B 198tubre 1 877 877 19 1
 AEA s4 n B 213puyabra 0 0 0 0 0
 AEA s4 n B 231planida 0 0 0 0 0
 AEA s5 p A 217tranbite 1 1196 1196 19 3
@@ -532,112 +460,92 @@ AEA s5 n C 219tranbite 0 0 0 0 0
 AEA s5 n C 234planfo 0 0 0 0 0
 AEA s6 p A 206quete 1 159 159 19 2
 AEA s6 p A 228llafa 0 0 0 0 0
-AEA s6 p A 235turrepo 1 179 179 19 4
-AEA s6 p A 236turrepo, 235turrepo 1 379 379 19 4
+AEA s6 p A 235turrepo 2 558 279 19 4
 AEA s6 p B 207quete 0 0 0 0 0
 AEA s6 p B 229llafa 0 0 0 0 0
-AEA s6 p B 236turrepo, 235turrepo 1 379 379 19 4
+AEA s6 p B 236turrepo 1 379 379 19 4
 AEA s6 n A 206quete 1 159 159 19 2
 AEA s6 n A 228llafa 0 0 0 0 0
-AEA s6 n A 235turrepo 1 179 179 19 4
-AEA s6 n A 236turrepo, 235turrepo 1 379 379 19 4
+AEA s6 n A 235turrepo 2 558 279 19 4
 AEA s6 n B 207quete 0 0 0 0 0
 AEA s6 n B 229llafa 0 0 0 0 0
-AEA s6 n B 236turrepo, 235turrepo 1 379 379 19 4
-AEA s1 p A 238muca, 237muca 1 658 658 21 1
+AEA s6 n B 236turrepo 1 379 379 19 4
+AEA s1 p A 237muca 1 658 658 21 1
 AEA s1 p A 257ropida 1 937 937 21 2
 AEA s1 p A 273pape 1 937 937 21 4
-AEA s1 p B 238muca, 237muca 1 658 658 21 1
+AEA s1 p B 238muca 1 658 658 21 1
 AEA s1 p B 258ropida 0 0 0 0 0
 AEA s1 p B 274pape 0 0 0 0 0
-AEA s1 n A 238muca, 237muca 1 658 658 21 1
+AEA s1 n A 237muca 1 658 658 21 1
 AEA s1 n A 257ropida 1 937 937 21 2
 AEA s1 n A 273pape 1 937 937 21 4
-AEA s1 n B 238muca, 237muca 1 658 658 21 1
+AEA s1 n B 238muca 1 658 658 21 1
 AEA s1 n B 258ropida 0 0 0 0 0
 AEA s1 n B 274pape 0 0 0 0 0
 AEA s2 p A 246arfo 1 458 458 21 2
-AEA s2 p A 252taer 1 738 738 21 2
-AEA s2 p A 253taer, 252taer 1 578 578 21 2
+AEA s2 p A 252taer 2 1316 658 21 2
 AEA s2 p A 264tois 1 479 479 21 3
 AEA s2 p A 275esno 1 458 458 21 4
 AEA s2 p B 247arfo 0 0 0 0 0
-AEA s2 p B 253taer, 252taer 1 578 578 21 2
+AEA s2 p B 253taer 1 578 578 21 2
 AEA s2 p B 265tois 0 0 0 0 0
 AEA s2 p B 276esno 0 0 0 0 0
 AEA s2 p C 248arfo 0 0 0 0 0
 AEA s2 p C 277esno 0 0 0 0 0
 AEA s2 n A 246arfo 1 458 458 21 2
-AEA s2 n A 252taer 1 738 738 21 2
-AEA s2 n A 253taer, 252taer 1 578 578 21 2
+AEA s2 n A 252taer 2 1316 658 21 2
 AEA s2 n A 264tois 1 479 479 21 3
 AEA s2 n A 275esno 1 458 458 21 4
 AEA s2 n B 247arfo 0 0 0 0 0
-AEA s2 n B 253taer, 252taer 1 578 578 21 2
+AEA s2 n B 253taer 1 578 578 21 2
 AEA s2 n B 265tois 0 0 0 0 0
 AEA s2 n B 276esno 0 0 0 0 0
 AEA s2 n C 248arfo 0 0 0 0 0
 AEA s2 n C 277esno 0 0 0 0 0
 AEA s3 p A 243taronla 0 0 0 0 0
-AEA s3 p A 255carpe, 254carpe 1 179 179 21 2
-AEA s3 p A 255carpe, 256carpe, 254carpe 1 658 658 21 2
-AEA s3 p A 256carpe, 254carpe 1 179 179 21 2
+AEA s3 p A 254carpe 3 1016 338.66666666667 21 2
 AEA s3 p A 266pilanto 0 0 0 0 0
 AEA s3 p B 244taronla 0 0 0 0 0
-AEA s3 p B 255carpe, 254carpe 1 179 179 21 2
-AEA s3 p B 255carpe, 256carpe, 254carpe 1 658 658 21 2
+AEA s3 p B 255carpe 2 837 418.5 21 2
 AEA s3 p B 267pilanto 0 0 0 0 0
 AEA s3 p C 245taronla 0 0 0 0 0
-AEA s3 p C 255carpe, 256carpe, 254carpe 1 658 658 21 2
-AEA s3 p C 256carpe, 254carpe 1 179 179 21 2
-AEA s3 p C 268pilanto, 266pilantro 1 1117 1117 21 3
+AEA s3 p C 256carpe 2 837 418.5 21 2
+AEA s3 p C 268pilanto 1 1117 1117 21 3
 AEA s3 n A 243taronla 0 0 0 0 0
-AEA s3 n A 255carpe, 254carpe 1 179 179 21 2
-AEA s3 n A 255carpe, 256carpe, 254carpe 1 658 658 21 2
-AEA s3 n A 256carpe, 254carpe 1 179 179 21 2
+AEA s3 n A 254carpe 3 1016 338.66666666667 21 2
 AEA s3 n A 266pilanto 0 0 0 0 0
 AEA s3 n B 244taronla 0 0 0 0 0
-AEA s3 n B 255carpe, 254carpe 1 179 179 21 2
-AEA s3 n B 255carpe, 256carpe, 254carpe 1 658 658 21 2
+AEA s3 n B 255carpe 2 837 418.5 21 2
 AEA s3 n B 267pilanto 0 0 0 0 0
 AEA s3 n C 245taronla 0 0 0 0 0
-AEA s3 n C 255carpe, 256carpe, 254carpe 1 658 658 21 2
-AEA s3 n C 256carpe, 254carpe 1 179 179 21 2
-AEA s3 n C 268pilanto, 266pilantro 1 1117 1117 21 3
-AEA s4 p A 239pribera 2 997 498.5 21 1
-AEA s4 p A 240pribera, 239pribera 1 199 199 21 1
-AEA s4 p A 269tracaja 3 1754 584.66666666667 21 3
-AEA s4 p A 270tracaja, 269tracaja 3 757 252.33333333333 21 3
-AEA s4 p B 240pribera, 239pribera 1 199 199 21 1
-AEA s4 p B 270tracaja, 269tracaja 3 757 252.33333333333 21 3
-AEA s4 n A 239pribera 2 997 498.5 21 1
-AEA s4 n A 240pribera, 239pribera 1 199 199 21 1
-AEA s4 n A 269tracaja 3 1754 584.66666666667 21 3
-AEA s4 n A 270tracaja, 269tracaja 3 757 252.33333333333 21 3
-AEA s4 n B 240pribera, 239pribera 1 199 199 21 1
-AEA s4 n B 270tracaja, 269tracaja 3 757 252.33333333333 21 3
-AEA s5 p A 249plasmica 1 200 200 21 2
-AEA s5 p A 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s3 n C 256carpe 2 837 418.5 21 2
+AEA s3 n C 268pilanto 1 1117 1117 21 3
+AEA s4 p A 239pribera 3 1196 398.66666666667 21 1
+AEA s4 p A 269tracaja 6 2511 418.5 21 3
+AEA s4 p B 240pribera 1 199 199 21 1
+AEA s4 p B 270tracaja 3 757 252.33333333333 21 3
+AEA s4 n A 239pribera 3 1196 398.66666666667 21 1
+AEA s4 n A 269tracaja 6 2511 418.5 21 3
+AEA s4 n B 240pribera 1 199 199 21 1
+AEA s4 n B 270tracaja 3 757 252.33333333333 21 3
+AEA s5 p A 249plasmica 2 798 399 21 2
 AEA s5 p A 261blanje 2 1594 797 21 3
-AEA s5 p A 278prinfeso 3 2034 678 21 4
-AEA s5 p A 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
-AEA s5 p B 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s5 p A 278prinfeso 4 2333 583.25 21 4
+AEA s5 p B 250plasmica 1 598 598 21 2
 AEA s5 p B 262blanje 0 0 0 0 0
-AEA s5 p B 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
-AEA s5 p C 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s5 p B 279prinfeso 1 299 299 21 4
+AEA s5 p C 251plasmica 1 598 598 21 2
 AEA s5 p C 263blanje 0 0 0 0 0
-AEA s5 p C 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
-AEA s5 n A 249plasmica 1 200 200 21 2
-AEA s5 n A 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s5 p C 280prinfeso 1 299 299 21 4
+AEA s5 n A 249plasmica 2 798 399 21 2
 AEA s5 n A 261blanje 2 1594 797 21 3
-AEA s5 n A 278prinfeso 3 2034 678 21 4
-AEA s5 n A 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
-AEA s5 n B 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s5 n A 278prinfeso 4 2333 583.25 21 4
+AEA s5 n B 250plasmica 1 598 598 21 2
 AEA s5 n B 262blanje 0 0 0 0 0
-AEA s5 n B 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
-AEA s5 n C 250plasmica, 251plasmica, 249plasmica 1 598 598 21 2
+AEA s5 n B 279prinfeso 1 299 299 21 4
+AEA s5 n C 251plasmica 1 598 598 21 2
 AEA s5 n C 263blanje 0 0 0 0 0
-AEA s5 n C 279prinfeso, 280prinfeso, 278prinfeso 1 299 299 21 4
+AEA s5 n C 280prinfeso 1 299 299 21 4
 AEA s6 p A 241balella 1 817 817 21 1
 AEA s6 p A 259guerre 0 0 0 0 0
 AEA s6 p A 271tolle 1 538 538 21 4
@@ -674,67 +582,59 @@ AEA s2 n B 307oscafo 0 0 0 0 0
 AEA s2 n B 312esmade 0 0 0 0 0
 AEA s2 n C 308oscafo 0 0 0 0 0
 AEA s2 n C 313esmade 0 0 0 0 0
-AEA s3 p A 295patinos, 294patinos 1 1037 1037 23 2
+AEA s3 p A 294patinos 1 1037 1037 23 2
 AEA s3 p A 302logar 0 0 0 0 0
-AEA s3 p B 295patinos, 294patinos 1 1037 1037 23 2
+AEA s3 p B 295patinos 1 1037 1037 23 2
 AEA s3 p B 303logar 0 0 0 0 0
-AEA s3 n A 295patinos, 294patinos 1 1037 1037 23 2
+AEA s3 n A 294patinos 1 1037 1037 23 2
 AEA s3 n A 302logar 0 0 0 0 0
-AEA s3 n B 295patinos, 294patinos 1 1037 1037 23 2
+AEA s3 n B 295patinos 1 1037 1037 23 2
 AEA s3 n B 303logar 0 0 0 0 0
 AEA s4 p A 283clare 2 1176 588 23 1
-AEA s4 p A 318tabrila 2 1276 638 23 4
-AEA s4 p A 319tabrila, 318tabrila 1 857 857 23 4
+AEA s4 p A 318tabrila 3 2133 711 23 4
 AEA s4 p B 284clare 0 0 0 0 0
-AEA s4 p B 319tabrila, 318tabrila 1 857 857 23 4
+AEA s4 p B 319tabrila 1 857 857 23 4
 AEA s4 n A 283clare 2 1176 588 23 1
-AEA s4 n A 318tabrila 2 1276 638 23 4
-AEA s4 n A 319tabrila, 318tabrila 1 857 857 23 4
+AEA s4 n A 318tabrila 3 2133 711 23 4
 AEA s4 n B 284clare 0 0 0 0 0
-AEA s4 n B 319tabrila, 318tabrila 1 857 857 23 4
-AEA s5 p A 286fresdo, 285fresdo 1 419 419 23 1
-AEA s5 p A 287fresdo, 285fresdo 2 419 209.5 23 1
+AEA s4 n B 319tabrila 1 857 857 23 4
+AEA s5 p A 285fresdo 3 838 279.33333333333 23 1
 AEA s5 p A 290pefrir 2 1315 657.5 23 1
-AEA s5 p A 305telubrar, 304telubrar 1 1475 1475 23 3
+AEA s5 p A 304telubrar 1 1475 1475 23 3
 AEA s5 p A 314nebros 2 1634 817 23 4
-AEA s5 p B 286fresdo, 285fresdo 1 419 419 23 1
+AEA s5 p B 286fresdo 1 419 419 23 1
 AEA s5 p B 291pefrir 0 0 0 0 0
-AEA s5 p B 305telubrar, 304telubrar 1 1475 1475 23 3
+AEA s5 p B 305telubrar 1 1475 1475 23 3
 AEA s5 p B 315nebros 0 0 0 0 0
-AEA s5 p C 287fresdo, 285fresdo 2 419 209.5 23 1
-AEA s5 n A 286fresdo, 285fresdo 1 419 419 23 1
-AEA s5 n A 287fresdo, 285fresdo 2 419 209.5 23 1
+AEA s5 p C 287fresdo 2 419 209.5 23 1
+AEA s5 n A 285fresdo 3 838 279.33333333333 23 1
 AEA s5 n A 290pefrir 2 1315 657.5 23 1
-AEA s5 n A 305telubrar, 304telubrar 1 1475 1475 23 3
+AEA s5 n A 304telubrar 1 1475 1475 23 3
 AEA s5 n A 314nebros 2 1634 817 23 4
-AEA s5 n B 286fresdo, 285fresdo 1 419 419 23 1
+AEA s5 n B 286fresdo 1 419 419 23 1
 AEA s5 n B 291pefrir 0 0 0 0 0
-AEA s5 n B 305telubrar, 304telubrar 1 1475 1475 23 3
+AEA s5 n B 305telubrar 1 1475 1475 23 3
 AEA s5 n B 315nebros 0 0 0 0 0
-AEA s5 n C 287fresdo, 285fresdo 2 419 209.5 23 1
-AEA s6 p A 281parre 1 578 578 23 1
-AEA s6 p A 282parre, 281parre 1 499 499 23 1
+AEA s5 n C 287fresdo 2 419 209.5 23 1
+AEA s6 p A 281parre 2 1077 538.5 23 1
 AEA s6 p A 292chapeca 2 977 488.5 23 2
-AEA s6 p A 299tocha, 298tocha 1 478 478 23 2
-AEA s6 p A 300mochede 1 239 239 23 2
-AEA s6 p A 301mochede, 300mochede 3 1594 531.33333333333 23 2
-AEA s6 p A 310siqueza, 309siqueze 1 877 877 23 3
-AEA s6 p B 282parre, 281parre 1 499 499 23 1
+AEA s6 p A 298tocha 1 478 478 23 2
+AEA s6 p A 300mochede 4 1833 458.25 23 2
+AEA s6 p A 309siqueze 1 877 877 23 3
+AEA s6 p B 282parre 1 499 499 23 1
 AEA s6 p B 293chapeca 0 0 0 0 0
-AEA s6 p B 299tocha, 298tocha 1 478 478 23 2
-AEA s6 p B 301mochede, 300mochede 3 1594 531.33333333333 23 2
+AEA s6 p B 299tocha 1 478 478 23 2
+AEA s6 p B 301mochede 3 1594 531.33333333333 23 2
 AEA s6 p B 310siqueze 0 0 0 0 0
-AEA s6 n A 281parre 1 578 578 23 1
-AEA s6 n A 282parre, 281parre 1 499 499 23 1
+AEA s6 n A 281parre 2 1077 538.5 23 1
 AEA s6 n A 292chapeca 2 977 488.5 23 2
-AEA s6 n A 299tocha, 298tocha 1 478 478 23 2
-AEA s6 n A 300mochede 1 239 239 23 2
-AEA s6 n A 301mochede, 300mochede 3 1594 531.33333333333 23 2
-AEA s6 n A 310siqueza, 309siqueze 1 877 877 23 3
-AEA s6 n B 282parre, 281parre 1 499 499 23 1
+AEA s6 n A 298tocha 1 478 478 23 2
+AEA s6 n A 300mochede 4 1833 458.25 23 2
+AEA s6 n A 309siqueze 1 877 877 23 3
+AEA s6 n B 282parre 1 499 499 23 1
 AEA s6 n B 293chapeca 0 0 0 0 0
-AEA s6 n B 299tocha, 298tocha 1 478 478 23 2
-AEA s6 n B 301mochede, 300mochede 3 1594 531.33333333333 23 2
+AEA s6 n B 299tocha 1 478 478 23 2
+AEA s6 n B 301mochede 3 1594 531.33333333333 23 2
 AEA s6 n B 310siqueze 0 0 0 0 0
 AEA s1 p A 323canojo 2 1336 668 25 1
 AEA s1 p A 334tena 1 558 558 25 2
@@ -744,35 +644,27 @@ AEA s1 n A 323canojo 2 1336 668 25 1
 AEA s1 n A 334tena 1 558 558 25 2
 AEA s1 n B 324canojo 0 0 0 0 0
 AEA s1 n B 335tena 0 0 0 0 0
-AEA s4 p A 326brune, 325brune 1 997 997 25 1
-AEA s4 p A 333muglo, 332muglo 1 538 538 25 2
-AEA s4 p B 326brune, 325brune 1 997 997 25 1
-AEA s4 p B 333muglo, 332muglo 1 538 538 25 2
-AEA s4 n A 326brune, 325brune 1 997 997 25 1
-AEA s4 n A 333muglo, 332muglo 1 538 538 25 2
-AEA s4 n B 326brune, 325brune 1 997 997 25 1
-AEA s4 n B 333muglo, 332muglo 1 538 538 25 2
-AEA s5 p A 320nubrirso 2 738 369 25 1
-AEA s5 p A 321nubrirso, 320nubrirso 2 638 319 25 1
-AEA s5 p A 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s4 p A 325brune 1 997 997 25 1
+AEA s4 p A 332muglo 1 538 538 25 2
+AEA s4 p B 326brune 1 997 997 25 1
+AEA s4 p B 333muglo 1 538 538 25 2
+AEA s4 n A 325brune 1 997 997 25 1
+AEA s4 n A 332muglo 1 538 538 25 2
+AEA s4 n B 326brune 1 997 997 25 1
+AEA s4 n B 333muglo 1 538 538 25 2
+AEA s5 p A 320nubrirso 5 2034 406.8 25 1
 AEA s5 p A 329cabrando 2 678 339 25 2
-AEA s5 p B 321nubrirso, 320nubrirso 2 638 319 25 1
-AEA s5 p B 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s5 p B 321nubrirso 3 1296 432 25 1
 AEA s5 p B 330cabrando 0 0 0 0 0
-AEA s5 p C 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s5 p C 322nubrirso 1 658 658 25 1
 AEA s5 p C 331cabrando 0 0 0 0 0
-AEA s5 n A 320nubrirso 2 738 369 25 1
-AEA s5 n A 321nubrirso, 320nubrirso 2 638 319 25 1
-AEA s5 n A 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s5 n A 320nubrirso 5 2034 406.8 25 1
 AEA s5 n A 329cabrando 2 678 339 25 2
-AEA s5 n B 321nubrirso, 320nubrirso 2 638 319 25 1
-AEA s5 n B 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s5 n B 321nubrirso 3 1296 432 25 1
 AEA s5 n B 330cabrando 0 0 0 0 0
-AEA s5 n C 321nubrirso, 322nubrirso, 320nubrirso 1 658 658 25 1
+AEA s5 n C 322nubrirso 1 658 658 25 1
 AEA s5 n C 331cabrando 0 0 0 0 0
-AEA s6 p A 327fague 2 378 189 25 1
-AEA s6 p A 328fague, 327fague 1 518 518 25 1
-AEA s6 p B 328fague, 327fague 1 518 518 25 1
-AEA s6 n A 327fague 2 378 189 25 1
-AEA s6 n A 328fague, 327fague 1 518 518 25 1
-AEA s6 n B 328fague, 327fague 1 518 518 25 1
+AEA s6 p A 327fague 3 896 298.66666666667 25 1
+AEA s6 p B 328fague 1 518 518 25 1
+AEA s6 n A 327fague 3 896 298.66666666667 25 1
+AEA s6 n B 328fague 1 518 518 25 1

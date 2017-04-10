@@ -1,399 +1,317 @@
 EOR s1 p A 009luna 1 419 419 9 1
-EOR s1 p A 011cena 1 897 897 9 2
-EOR s1 p A 012cena, 011cena 1 399 399 9 2
-EOR s1 p A 027cabeza, 026cabeza 1 997 997 9 3
+EOR s1 p A 011cena 2 1296 648 9 2
+EOR s1 p A 026cabeza 1 997 997 9 3
 EOR s1 p B 010luna 0 0 0 0 0
-EOR s1 p B 012cena, 011cena 1 399 399 9 2
-EOR s1 p B 027cabeza, 026cabeza 1 997 997 9 3
+EOR s1 p B 012cena 1 399 399 9 2
+EOR s1 p B 027cabeza 1 997 997 9 3
 EOR s1 n A 009luna 1 419 419 9 1
-EOR s1 n A 011cena 1 897 897 9 2
-EOR s1 n A 012cena, 011cena 1 399 399 9 2
-EOR s1 n A 027cabeza, 026cabeza 1 997 997 9 3
+EOR s1 n A 011cena 2 1296 648 9 2
+EOR s1 n A 026cabeza 1 997 997 9 3
 EOR s1 n B 010luna 0 0 0 0 0
-EOR s1 n B 012cena, 011cena 1 399 399 9 2
-EOR s1 n B 027cabeza, 026cabeza 1 997 997 9 3
-EOR s2 p A 004escoba 1 179 179 9 1
-EOR s2 p A 006escoba, 004escoba 1 1595 1595 9 1
+EOR s1 n B 012cena 1 399 399 9 2
+EOR s1 n B 027cabeza 1 997 997 9 3
+EOR s2 p A 004escoba 2 1774 887 9 1
 EOR s2 p A 017maiz 1 997 997 9 2
-EOR s2 p A 022arte, 021arte 1 299 299 9 3
-EOR s2 p A 022arte, 023arte, 021arte 1 897 897 9 3
+EOR s2 p A 021arte 2 1196 598 9 3
 EOR s2 p B 005escoba 0 0 0 0 0
 EOR s2 p B 018maiz 0 0 0 0 0
-EOR s2 p B 022arte, 021arte 1 299 299 9 3
-EOR s2 p B 022arte, 023arte, 021arte 1 897 897 9 3
-EOR s2 p C 006escoba, 004escoba 1 1595 1595 9 1
-EOR s2 p C 022arte, 023arte, 021arte 1 897 897 9 3
-EOR s2 n A 004escoba 1 179 179 9 1
-EOR s2 n A 006escoba, 004escoba 1 1595 1595 9 1
+EOR s2 p B 022arte 2 1196 598 9 3
+EOR s2 p C 006escoba 1 1595 1595 9 1
+EOR s2 p C 023arte 1 897 897 9 3
+EOR s2 n A 004escoba 2 1774 887 9 1
 EOR s2 n A 017maiz 1 997 997 9 2
-EOR s2 n A 022arte, 021arte 1 299 299 9 3
-EOR s2 n A 022arte, 023arte, 021arte 1 897 897 9 3
+EOR s2 n A 021arte 2 1196 598 9 3
 EOR s2 n B 005escoba 0 0 0 0 0
 EOR s2 n B 018maiz 0 0 0 0 0
-EOR s2 n B 022arte, 021arte 1 299 299 9 3
-EOR s2 n B 022arte, 023arte, 021arte 1 897 897 9 3
-EOR s2 n C 006escoba, 004escoba 1 1595 1595 9 1
-EOR s2 n C 022arte, 023arte, 021arte 1 897 897 9 3
-EOR s3 p A 035pepinos 1 1495 1495 9 4
-EOR s3 p A 036pepinos, 035pepinos 1 179 179 9 4
-EOR s3 p B 036pepinos, 035pepinos 1 179 179 9 4
-EOR s3 n A 035pepinos 1 1495 1495 9 4
-EOR s3 n A 036pepinos, 035pepinos 1 179 179 9 4
-EOR s3 n B 036pepinos, 035pepinos 1 179 179 9 4
-EOR s4 p A 007primero 1 120 120 9 1
-EOR s4 p A 008primero, 007primero 2 1037 518.5 9 1
+EOR s2 n B 022arte 2 1196 598 9 3
+EOR s2 n C 006escoba 1 1595 1595 9 1
+EOR s2 n C 023arte 1 897 897 9 3
+EOR s3 p A 035pepinos 2 1674 837 9 4
+EOR s3 p B 036pepinos 1 179 179 9 4
+EOR s3 n A 035pepinos 2 1674 837 9 4
+EOR s3 n B 036pepinos 1 179 179 9 4
+EOR s4 p A 007primero 3 1157 385.66666666667 9 1
 EOR s4 p A 015pobre 1 738 738 9 2
-EOR s4 p A 020bruja, 019bruja 1 758 758 9 2
-EOR s4 p A 033planeta 2 1256 628 9 4
-EOR s4 p A 034planeta, 033planeta 1 239 239 9 4
-EOR s4 p B 008primero, 007primero 2 1037 518.5 9 1
+EOR s4 p A 019bruja 1 758 758 9 2
+EOR s4 p A 033planeta 3 1495 498.33333333333 9 4
+EOR s4 p B 008primero 2 1037 518.5 9 1
 EOR s4 p B 016pobre 0 0 0 0 0
-EOR s4 p B 020bruja, 019bruja 1 758 758 9 2
-EOR s4 p B 034planeta, 033planeta 1 239 239 9 4
-EOR s4 n A 007primero 1 120 120 9 1
-EOR s4 n A 008primero, 007primero 2 1037 518.5 9 1
+EOR s4 p B 020bruja 1 758 758 9 2
+EOR s4 p B 034planeta 1 239 239 9 4
+EOR s4 n A 007primero 3 1157 385.66666666667 9 1
 EOR s4 n A 015pobre 1 738 738 9 2
-EOR s4 n A 020bruja, 019bruja 1 758 758 9 2
-EOR s4 n A 033planeta 2 1256 628 9 4
-EOR s4 n A 034planeta, 033planeta 1 239 239 9 4
-EOR s4 n B 008primero, 007primero 2 1037 518.5 9 1
+EOR s4 n A 019bruja 1 758 758 9 2
+EOR s4 n A 033planeta 3 1495 498.33333333333 9 4
+EOR s4 n B 008primero 2 1037 518.5 9 1
 EOR s4 n B 016pobre 0 0 0 0 0
-EOR s4 n B 020bruja, 019bruja 1 758 758 9 2
-EOR s4 n B 034planeta, 033planeta 1 239 239 9 4
-EOR s5 p A 002princesa, 001princesa 1 1894 1894 9 1
-EOR s5 p A 028plastico 1 199 199 9 3
-EOR s5 p A 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s5 p A 029plastico, 028plastico 1 419 419 9 3
-EOR s5 p A 038sufrir, 037sufrir 1 1794 1794 9 4
-EOR s5 p B 002princesa, 001princesa 1 1894 1894 9 1
-EOR s5 p B 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s5 p B 029plastico, 028plastico 1 419 419 9 3
-EOR s5 p B 038sufrir, 037sufrir 1 1794 1794 9 4
+EOR s4 n B 020bruja 1 758 758 9 2
+EOR s4 n B 034planeta 1 239 239 9 4
+EOR s5 p A 001princesa 1 1894 1894 9 1
+EOR s5 p A 028plastico 3 1196 398.66666666667 9 3
+EOR s5 p A 037sufrir 1 1794 1794 9 4
+EOR s5 p B 002princesa 1 1894 1894 9 1
+EOR s5 p B 029plastico 2 997 498.5 9 3
+EOR s5 p B 038sufrir 1 1794 1794 9 4
 EOR s5 p C 003princesa 0 0 0 0 0
-EOR s5 p C 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s5 n A 002princesa, 001princesa 1 1894 1894 9 1
-EOR s5 n A 028plastico 1 199 199 9 3
-EOR s5 n A 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s5 n A 029plastico, 028plastico 1 419 419 9 3
-EOR s5 n A 038sufrir, 037sufrir 1 1794 1794 9 4
-EOR s5 n B 002princesa, 001princesa 1 1894 1894 9 1
-EOR s5 n B 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s5 n B 029plastico, 028plastico 1 419 419 9 3
-EOR s5 n B 038sufrir, 037sufrir 1 1794 1794 9 4
+EOR s5 p C 030plastico 1 578 578 9 3
+EOR s5 n A 001princesa 1 1894 1894 9 1
+EOR s5 n A 028plastico 3 1196 398.66666666667 9 3
+EOR s5 n A 037sufrir 1 1794 1794 9 4
+EOR s5 n B 002princesa 1 1894 1894 9 1
+EOR s5 n B 029plastico 2 997 498.5 9 3
+EOR s5 n B 038sufrir 1 1794 1794 9 4
 EOR s5 n C 003princesa 0 0 0 0 0
-EOR s5 n C 029plastico, 028plastico, 030plastico 1 578 578 9 3
-EOR s6 p A 013fecha 2 498 249 9 2
-EOR s6 p A 014fecha, 013fecha 1 698 698 9 2
-EOR s6 p A 024botella 1 797 797 9 3
-EOR s6 p A 025botella, 024botella 1 279 279 9 3
-EOR s6 p A 031queso 1 259 259 9 4
-EOR s6 p A 032queso, 031queso 1 897 897 9 4
-EOR s6 p B 014fecha, 013fecha 1 698 698 9 2
-EOR s6 p B 025botella, 024botella 1 279 279 9 3
-EOR s6 p B 032queso, 031queso 1 897 897 9 4
-EOR s6 n A 013fecha 2 498 249 9 2
-EOR s6 n A 014fecha, 013fecha 1 698 698 9 2
-EOR s6 n A 024botella 1 797 797 9 3
-EOR s6 n A 025botella, 024botella 1 279 279 9 3
-EOR s6 n A 031queso 1 259 259 9 4
-EOR s6 n A 032queso, 031queso 1 897 897 9 4
-EOR s6 n B 014fecha, 013fecha 1 698 698 9 2
-EOR s6 n B 025botella, 024botella 1 279 279 9 3
-EOR s6 n B 032queso, 031queso 1 897 897 9 4
-EOR s1 p A 041musica, 042musica 1 798 798 11 1
-EOR s1 p A 050belleza 1 199 199 11 2
-EOR s1 p A 051belleza, 050belleza 1 1535 1535 11 2
-EOR s1 p A 063bonita 1 419 419 11 3
-EOR s1 p A 064bonita, 063bonita 1 1076 1076 11 3
+EOR s5 n C 030plastico 1 578 578 9 3
+EOR s6 p A 013fecha 3 1196 398.66666666667 9 2
+EOR s6 p A 024botella 2 1076 538 9 3
+EOR s6 p A 031queso 2 1156 578 9 4
+EOR s6 p B 014fecha 1 698 698 9 2
+EOR s6 p B 025botella 1 279 279 9 3
+EOR s6 p B 032queso 1 897 897 9 4
+EOR s6 n A 013fecha 3 1196 398.66666666667 9 2
+EOR s6 n A 024botella 2 1076 538 9 3
+EOR s6 n A 031queso 2 1156 578 9 4
+EOR s6 n B 014fecha 1 698 698 9 2
+EOR s6 n B 025botella 1 279 279 9 3
+EOR s6 n B 032queso 1 897 897 9 4
+EOR s1 p A 041musica 1 798 798 11 1
+EOR s1 p A 050belleza 2 1734 867 11 2
+EOR s1 p A 063bonita 2 1495 747.5 11 3
 EOR s1 p A 074numero 3 3289 1096.3333333333 11 4
-EOR s1 p B 041musica, 042musica 1 798 798 11 1
-EOR s1 p B 051belleza, 050belleza 1 1535 1535 11 2
-EOR s1 p B 064bonita, 063bonita 1 1076 1076 11 3
+EOR s1 p B 042musica 1 798 798 11 1
+EOR s1 p B 051belleza 1 1535 1535 11 2
+EOR s1 p B 064bonita 1 1076 1076 11 3
 EOR s1 p B 075numero 0 0 0 0 0
-EOR s1 n A 041musica, 042musica 1 798 798 11 1
-EOR s1 n A 050belleza 1 199 199 11 2
-EOR s1 n A 051belleza, 050belleza 1 1535 1535 11 2
-EOR s1 n A 063bonita 1 419 419 11 3
-EOR s1 n A 064bonita, 063bonita 1 1076 1076 11 3
+EOR s1 n A 041musica 1 798 798 11 1
+EOR s1 n A 050belleza 2 1734 867 11 2
+EOR s1 n A 063bonita 2 1495 747.5 11 3
 EOR s1 n A 074numero 3 3289 1096.3333333333 11 4
-EOR s1 n B 041musica, 042musica 1 798 798 11 1
-EOR s1 n B 051belleza, 050belleza 1 1535 1535 11 2
-EOR s1 n B 064bonita, 063bonita 1 1076 1076 11 3
+EOR s1 n B 042musica 1 798 798 11 1
+EOR s1 n B 051belleza 1 1535 1535 11 2
+EOR s1 n B 064bonita 1 1076 1076 11 3
 EOR s1 n B 075numero 0 0 0 0 0
-EOR s2 p A 039leer, 040leer 1 419 419 11 1
-EOR s2 p A 039leer 1 538 538 11 1
+EOR s2 p A 039leer 2 957 478.5 11 1
 EOR s2 p A 057esto 1 319 319 11 2
 EOR s2 p A 070pais 1 1096 1096 11 3
-EOR s2 p B 039leer, 040leer 1 419 419 11 1
+EOR s2 p B 040leer 1 419 419 11 1
 EOR s2 p B 058esto 0 0 0 0 0
 EOR s2 p B 071pais 0 0 0 0 0
 EOR s2 p C 059esto 0 0 0 0 0
-EOR s2 n A 039leer, 040leer 1 419 419 11 1
-EOR s2 n A 039leer 1 538 538 11 1
+EOR s2 n A 039leer 2 957 478.5 11 1
 EOR s2 n A 057esto 1 319 319 11 2
 EOR s2 n A 070pais 1 1096 1096 11 3
-EOR s2 n B 039leer, 040leer 1 419 419 11 1
+EOR s2 n B 040leer 1 419 419 11 1
 EOR s2 n B 058esto 0 0 0 0 0
 EOR s2 n B 071pais 0 0 0 0 0
 EOR s2 n C 059esto 0 0 0 0 0
-EOR s3 p A 043jugar 1 2033 2033 11 1
-EOR s3 p A 044jugar, 043jugar 1 638 638 11 1
-EOR s3 p A 047volante 1 977 977 11 1
-EOR s3 p A 048volante, 047volante 1 319 319 11 1
-EOR s3 p A 061toronja, 060toronja 2 2712 1356 11 3
-EOR s3 p B 044jugar, 043jugar 1 638 638 11 1
-EOR s3 p B 048volante, 047volante 1 319 319 11 1
-EOR s3 p B 061toronja, 060toronja 2 2712 1356 11 3
+EOR s3 p A 043jugar 2 2671 1335.5 11 1
+EOR s3 p A 047volante 2 1296 648 11 1
+EOR s3 p A 060toronja 2 2712 1356 11 3
+EOR s3 p B 044jugar 1 638 638 11 1
+EOR s3 p B 048volante 1 319 319 11 1
+EOR s3 p B 061toronja 2 2712 1356 11 3
 EOR s3 p C 049volante 0 0 0 0 0
 EOR s3 p C 062toronja 0 0 0 0 0
-EOR s3 n A 043jugar 1 2033 2033 11 1
-EOR s3 n A 044jugar, 043jugar 1 638 638 11 1
-EOR s3 n A 047volante 1 977 977 11 1
-EOR s3 n A 048volante, 047volante 1 319 319 11 1
-EOR s3 n A 061toronja, 060toronja 2 2712 1356 11 3
-EOR s3 n B 044jugar, 043jugar 1 638 638 11 1
-EOR s3 n B 048volante, 047volante 1 319 319 11 1
-EOR s3 n B 061toronja, 060toronja 2 2712 1356 11 3
+EOR s3 n A 043jugar 2 2671 1335.5 11 1
+EOR s3 n A 047volante 2 1296 648 11 1
+EOR s3 n A 060toronja 2 2712 1356 11 3
+EOR s3 n B 044jugar 1 638 638 11 1
+EOR s3 n B 048volante 1 319 319 11 1
+EOR s3 n B 061toronja 2 2712 1356 11 3
 EOR s3 n C 049volante 0 0 0 0 0
 EOR s3 n C 062toronja 0 0 0 0 0
 EOR s4 p A 055fabrica 2 1734 867 11 2
-EOR s4 p A 068madre 1 857 857 11 3
-EOR s4 p A 069madre, 068madre 1 299 299 11 3
+EOR s4 p A 068madre 2 1156 578 11 3
 EOR s4 p A 078palabra 1 1276 1276 11 4
 EOR s4 p B 056fabrica 0 0 0 0 0
-EOR s4 p B 069madre, 068madre 1 299 299 11 3
+EOR s4 p B 069madre 1 299 299 11 3
 EOR s4 p B 079palabra 0 0 0 0 0
 EOR s4 n A 055fabrica 2 1734 867 11 2
-EOR s4 n A 068madre 1 857 857 11 3
-EOR s4 n A 069madre, 068madre 1 299 299 11 3
+EOR s4 n A 068madre 2 1156 578 11 3
 EOR s4 n A 078palabra 1 1276 1276 11 4
 EOR s4 n B 056fabrica 0 0 0 0 0
-EOR s4 n B 069madre, 068madre 1 299 299 11 3
+EOR s4 n B 069madre 1 299 299 11 3
 EOR s4 n B 079palabra 0 0 0 0 0
-EOR s5 p A 053cobrando, 052cobrando 1 957 957 11 2
-EOR s5 p A 054cobrando, 052cobrando 1 379 379 11 2
-EOR s5 p A 066planta, 065planta 1 299 299 11 3
-EOR s5 p A 066planta, 067planta, 065planta 1 818 818 11 3
+EOR s5 p A 052cobrando 2 1336 668 11 2
+EOR s5 p A 065planta 2 1117 558.5 11 3
 EOR s5 p A 076cicatriz 2 1933 966.5 11 4
-EOR s5 p B 053cobrando, 052cobrando 1 957 957 11 2
-EOR s5 p B 066planta, 065planta 1 299 299 11 3
-EOR s5 p B 066planta, 067planta, 065planta 1 818 818 11 3
+EOR s5 p B 053cobrando 1 957 957 11 2
+EOR s5 p B 066planta 2 1117 558.5 11 3
 EOR s5 p B 077cicatriz 0 0 0 0 0
-EOR s5 p C 054cobrando, 052cobrando 1 379 379 11 2
-EOR s5 p C 066planta, 067planta, 065planta 1 818 818 11 3
-EOR s5 n A 053cobrando, 052cobrando 1 957 957 11 2
-EOR s5 n A 054cobrando, 052cobrando 1 379 379 11 2
-EOR s5 n A 066planta, 065planta 1 299 299 11 3
-EOR s5 n A 066planta, 067planta, 065planta 1 818 818 11 3
+EOR s5 p C 054cobrando 1 379 379 11 2
+EOR s5 p C 067planta 1 818 818 11 3
+EOR s5 n A 052cobrando 2 1336 668 11 2
+EOR s5 n A 065planta 2 1117 558.5 11 3
 EOR s5 n A 076cicatriz 2 1933 966.5 11 4
-EOR s5 n B 053cobrando, 052cobrando 1 957 957 11 2
-EOR s5 n B 066planta, 065planta 1 299 299 11 3
-EOR s5 n B 066planta, 067planta, 065planta 1 818 818 11 3
+EOR s5 n B 053cobrando 1 957 957 11 2
+EOR s5 n B 066planta 2 1117 558.5 11 3
 EOR s5 n B 077cicatriz 0 0 0 0 0
-EOR s5 n C 054cobrando, 052cobrando 1 379 379 11 2
-EOR s5 n C 066planta, 067planta, 065planta 1 818 818 11 3
-EOR s6 p A 045chile 1 299 299 11 1
-EOR s6 p A 046chile, 045chile 2 1416 708 11 1
-EOR s6 p A 072llorona 1 897 897 11 4
-EOR s6 p A 073llorona, 072llorona 2 777 388.5 11 4
-EOR s6 p B 046chile, 045chile 2 1416 708 11 1
-EOR s6 p B 073llorona, 072llorona 2 777 388.5 11 4
-EOR s6 n A 045chile 1 299 299 11 1
-EOR s6 n A 046chile, 045chile 2 1416 708 11 1
-EOR s6 n A 072llorona 1 897 897 11 4
-EOR s6 n A 073llorona, 072llorona 2 777 388.5 11 4
-EOR s6 n B 046chile, 045chile 2 1416 708 11 1
-EOR s6 n B 073llorona, 072llorona 2 777 388.5 11 4
-EOR s1 p A 093papa 1 179 179 13 2
-EOR s1 p A 094papa, 093papa 1 678 678 13 2
+EOR s5 n C 054cobrando 1 379 379 11 2
+EOR s5 n C 067planta 1 818 818 11 3
+EOR s6 p A 045chile 3 1715 571.66666666667 11 1
+EOR s6 p A 072llorona 3 1674 558 11 4
+EOR s6 p B 046chile 2 1416 708 11 1
+EOR s6 p B 073llorona 2 777 388.5 11 4
+EOR s6 n A 045chile 3 1715 571.66666666667 11 1
+EOR s6 n A 072llorona 3 1674 558 11 4
+EOR s6 n B 046chile 2 1416 708 11 1
+EOR s6 n B 073llorona 2 777 388.5 11 4
+EOR s1 p A 093papa 2 857 428.5 13 2
 EOR s1 p A 110rapido 1 1077 1077 13 3
 EOR s1 p A 116conejo 4 2013 503.25 13 4
-EOR s1 p B 094papa, 093papa 1 678 678 13 2
+EOR s1 p B 094papa 1 678 678 13 2
 EOR s1 p B 111rapido 0 0 0 0 0
 EOR s1 p B 117conejo 0 0 0 0 0
-EOR s1 n A 093papa 1 179 179 13 2
-EOR s1 n A 094papa, 093papa 1 678 678 13 2
+EOR s1 n A 093papa 2 857 428.5 13 2
 EOR s1 n A 110rapido 1 1077 1077 13 3
 EOR s1 n A 116conejo 4 2013 503.25 13 4
-EOR s1 n B 094papa, 093papa 1 678 678 13 2
+EOR s1 n B 094papa 1 678 678 13 2
 EOR s1 n B 111rapido 0 0 0 0 0
 EOR s1 n B 117conejo 0 0 0 0 0
-EOR s3 p A 080danza 1 279 279 13 1
-EOR s3 p A 081danza, 080danza 2 2751 1375.5 13 1
+EOR s3 p A 080danza 3 3030 1010 13 1
 EOR s3 p A 084señalar 0 0 0 0 0
-EOR s3 p A 099manzana 2 1455 727.5 13 3
-EOR s3 p A 100manzana, 101manzana, 099manzana 1 399 399 13 3
-EOR s3 p A 105carta, 104carta 1 798 798 13 3
-EOR s3 p A 107vestido 1 299 299 13 3
-EOR s3 p A 108vestido, 107vestido 1 1455 1455 13 3
-EOR s3 p A 112facil 1 179 179 13 4
-EOR s3 p A 113facil, 112facil 2 1156 578 13 4
-EOR s3 p B 081danza, 080danza 2 2751 1375.5 13 1
+EOR s3 p A 099manzana 3 1854 618 13 3
+EOR s3 p A 104carta 1 798 798 13 3
+EOR s3 p A 107vestido 2 1754 877 13 3
+EOR s3 p A 112facil 3 1335 445 13 4
+EOR s3 p B 081danza 2 2751 1375.5 13 1
 EOR s3 p B 085señalar 0 0 0 0 0
-EOR s3 p B 100manzana, 101manzana, 099manzana 1 399 399 13 3
-EOR s3 p B 105carta, 104carta 1 798 798 13 3
-EOR s3 p B 108vestido, 107vestido 1 1455 1455 13 3
-EOR s3 p B 113facil, 112facil 2 1156 578 13 4
-EOR s3 p C 100manzana, 101manzana, 099manzana 1 399 399 13 3
+EOR s3 p B 100manzana 1 399 399 13 3
+EOR s3 p B 105carta 1 798 798 13 3
+EOR s3 p B 108vestido 1 1455 1455 13 3
+EOR s3 p B 113facil 2 1156 578 13 4
+EOR s3 p C 101manzana 1 399 399 13 3
 EOR s3 p C 106carta 0 0 0 0 0
 EOR s3 p C 109vestido 0 0 0 0 0
-EOR s3 n A 080danza 1 279 279 13 1
-EOR s3 n A 081danza, 080danza 2 2751 1375.5 13 1
+EOR s3 n A 080danza 3 3030 1010 13 1
 EOR s3 n A 084señalar 0 0 0 0 0
-EOR s3 n A 099manzana 2 1455 727.5 13 3
-EOR s3 n A 100manzana, 101manzana, 099manzana 1 399 399 13 3
-EOR s3 n A 105carta, 104carta 1 798 798 13 3
-EOR s3 n A 107vestido 1 299 299 13 3
-EOR s3 n A 108vestido, 107vestido 1 1455 1455 13 3
-EOR s3 n A 112facil 1 179 179 13 4
-EOR s3 n A 113facil, 112facil 2 1156 578 13 4
-EOR s3 n B 081danza, 080danza 2 2751 1375.5 13 1
+EOR s3 n A 099manzana 3 1854 618 13 3
+EOR s3 n A 104carta 1 798 798 13 3
+EOR s3 n A 107vestido 2 1754 877 13 3
+EOR s3 n A 112facil 3 1335 445 13 4
+EOR s3 n B 081danza 2 2751 1375.5 13 1
 EOR s3 n B 085señalar 0 0 0 0 0
-EOR s3 n B 100manzana, 101manzana, 099manzana 1 399 399 13 3
-EOR s3 n B 105carta, 104carta 1 798 798 13 3
-EOR s3 n B 108vestido, 107vestido 1 1455 1455 13 3
-EOR s3 n B 113facil, 112facil 2 1156 578 13 4
-EOR s3 n C 100manzana, 101manzana, 099manzana 1 399 399 13 3
+EOR s3 n B 100manzana 1 399 399 13 3
+EOR s3 n B 105carta 1 798 798 13 3
+EOR s3 n B 108vestido 1 1455 1455 13 3
+EOR s3 n B 113facil 2 1156 578 13 4
+EOR s3 n C 101manzana 1 399 399 13 3
 EOR s3 n C 106carta 0 0 0 0 0
 EOR s3 n C 109vestido 0 0 0 0 0
 EOR s4 p A 095posible 2 1495 747.5 13 2
-EOR s4 p A 118padrino 2 1455 727.5 13 4
-EOR s4 p A 119padrino, 118padrino 2 1076 538 13 4
+EOR s4 p A 118padrino 4 2531 632.75 13 4
 EOR s4 p B 096posible 0 0 0 0 0
-EOR s4 p B 119padrino, 118padrino 2 1076 538 13 4
+EOR s4 p B 119padrino 2 1076 538 13 4
 EOR s4 n A 095posible 2 1495 747.5 13 2
-EOR s4 n A 118padrino 2 1455 727.5 13 4
-EOR s4 n A 119padrino, 118padrino 2 1076 538 13 4
+EOR s4 n A 118padrino 4 2531 632.75 13 4
 EOR s4 n B 096posible 0 0 0 0 0
-EOR s4 n B 119padrino, 118padrino 2 1076 538 13 4
-EOR s5 p A 087transito, 086transito 1 1635 1635 13 1
-EOR s5 p A 091palabras 1 1116 1116 13 2
-EOR s5 p A 092palabras, 091palabras 1 179 179 13 2
-EOR s5 p B 087transito, 086transito 1 1635 1635 13 1
-EOR s5 p B 092palabras, 091palabras 1 179 179 13 2
+EOR s4 n B 119padrino 2 1076 538 13 4
+EOR s5 p A 086transito 1 1635 1635 13 1
+EOR s5 p A 091palabras 2 1295 647.5 13 2
+EOR s5 p B 087transito 1 1635 1635 13 1
+EOR s5 p B 092palabras 1 179 179 13 2
 EOR s5 p C 088transito 0 0 0 0 0
-EOR s5 n A 087transito, 086transito 1 1635 1635 13 1
-EOR s5 n A 091palabras 1 1116 1116 13 2
-EOR s5 n A 092palabras, 091palabras 1 179 179 13 2
-EOR s5 n B 087transito, 086transito 1 1635 1635 13 1
-EOR s5 n B 092palabras, 091palabras 1 179 179 13 2
+EOR s5 n A 086transito 1 1635 1635 13 1
+EOR s5 n A 091palabras 2 1295 647.5 13 2
+EOR s5 n B 087transito 1 1635 1635 13 1
+EOR s5 n B 092palabras 1 179 179 13 2
 EOR s5 n C 088transito 0 0 0 0 0
 EOR s6 p A 082sigue 1 1834 1834 13 1
 EOR s6 p A 089guerra 0 0 0 0 0
 EOR s6 p A 097calle 1 1116 1116 13 2
-EOR s6 p A 102derecho 2 657 328.5 13 3
-EOR s6 p A 103derecho, 102derecho 1 418 418 13 3
-EOR s6 p A 115terreno, 114terreno 3 2313 771 13 4
+EOR s6 p A 102derecho 3 1075 358.33333333333 13 3
+EOR s6 p A 114terreno 3 2313 771 13 4
 EOR s6 p B 083sigue 0 0 0 0 0
-EOR s6 p B 090guerra, 089gruerra 1 1535 1535 13 2
+EOR s6 p B 090guerra 1 1535 1535 13 2
 EOR s6 p B 098calle 0 0 0 0 0
-EOR s6 p B 103derecho, 102derecho 1 418 418 13 3
-EOR s6 p B 115terreno, 114terreno 3 2313 771 13 4
+EOR s6 p B 103derecho 1 418 418 13 3
+EOR s6 p B 115terreno 3 2313 771 13 4
 EOR s6 n A 082sigue 1 1834 1834 13 1
 EOR s6 n A 089guerra 0 0 0 0 0
 EOR s6 n A 097calle 1 1116 1116 13 2
-EOR s6 n A 102derecho 2 657 328.5 13 3
-EOR s6 n A 103derecho, 102derecho 1 418 418 13 3
-EOR s6 n A 115terreno, 114terreno 3 2313 771 13 4
+EOR s6 n A 102derecho 3 1075 358.33333333333 13 3
+EOR s6 n A 114terreno 3 2313 771 13 4
 EOR s6 n B 083sigue 0 0 0 0 0
-EOR s6 n B 090guerra, 089gruerra 1 1535 1535 13 2
+EOR s6 n B 090guerra 1 1535 1535 13 2
 EOR s6 n B 098calle 0 0 0 0 0
-EOR s6 n B 103derecho, 102derecho 1 418 418 13 3
-EOR s6 n B 115terreno, 114terreno 3 2313 771 13 4
+EOR s6 n B 103derecho 1 418 418 13 3
+EOR s6 n B 115terreno 3 2313 771 13 4
 EOR s1 p A 136poco 4 2971 742.75 15 2
-EOR s1 p A 146dinero, 145dinero 1 1754 1754 15 3
+EOR s1 p A 145dinero 1 1754 1754 15 3
 EOR s1 p B 137poco 0 0 0 0 0
-EOR s1 p B 146dinero, 145dinero 1 1754 1754 15 3
+EOR s1 p B 146dinero 1 1754 1754 15 3
 EOR s1 n A 136poco 4 2971 742.75 15 2
-EOR s1 n A 146dinero, 145dinero 1 1754 1754 15 3
+EOR s1 n A 145dinero 1 1754 1754 15 3
 EOR s1 n B 137poco 0 0 0 0 0
-EOR s1 n B 146dinero, 145dinero 1 1754 1754 15 3
+EOR s1 n B 146dinero 1 1754 1754 15 3
 EOR s2 p A 123vivian 1 4805 4805 15 1
-EOR s2 p A 140alto 1 179 179 15 3
-EOR s2 p A 141alto, 142alto, 140alto 1 558 558 15 3
-EOR s2 p A 151vivo, 150vivo 1 757 757 15 4
+EOR s2 p A 140alto 2 737 368.5 15 3
+EOR s2 p A 150vivo 1 757 757 15 4
 EOR s2 p B 124vivian 0 0 0 0 0
-EOR s2 p B 141alto, 142alto, 140alto 1 558 558 15 3
-EOR s2 p B 151vivo, 150vivo 1 757 757 15 4
-EOR s2 p C 141alto, 142alto, 140alto 1 558 558 15 3
+EOR s2 p B 141alto 1 558 558 15 3
+EOR s2 p B 151vivo 1 757 757 15 4
+EOR s2 p C 142alto 1 558 558 15 3
 EOR s2 n A 123vivian 1 4805 4805 15 1
-EOR s2 n A 140alto 1 179 179 15 3
-EOR s2 n A 141alto, 142alto, 140alto 1 558 558 15 3
-EOR s2 n A 151vivo, 150vivo 1 757 757 15 4
+EOR s2 n A 140alto 2 737 368.5 15 3
+EOR s2 n A 150vivo 1 757 757 15 4
 EOR s2 n B 124vivian 0 0 0 0 0
-EOR s2 n B 141alto, 142alto, 140alto 1 558 558 15 3
-EOR s2 n B 151vivo, 150vivo 1 757 757 15 4
-EOR s2 n C 141alto, 142alto, 140alto 1 558 558 15 3
-EOR s3 p A 121pesca, 120pesca 1 1436 1436 15 1
-EOR s3 p A 134papel 1 917 917 15 2
-EOR s3 p A 135papel, 134papel 1 279 279 15 2
-EOR s3 p A 152camaron 1 1456 1456 15 4
-EOR s3 p A 153camaron, 152camaron 3 1156 385.33333333333 15 4
-EOR s3 p B 121pesca, 120pesca 1 1436 1436 15 1
-EOR s3 p B 135papel, 134papel 1 279 279 15 2
-EOR s3 p B 153camaron, 152camaron 3 1156 385.33333333333 15 4
+EOR s2 n B 141alto 1 558 558 15 3
+EOR s2 n B 151vivo 1 757 757 15 4
+EOR s2 n C 142alto 1 558 558 15 3
+EOR s3 p A 120pesca 1 1436 1436 15 1
+EOR s3 p A 134papel 2 1196 598 15 2
+EOR s3 p A 152camaron 4 2612 653 15 4
+EOR s3 p B 121pesca 1 1436 1436 15 1
+EOR s3 p B 135papel 1 279 279 15 2
+EOR s3 p B 153camaron 3 1156 385.33333333333 15 4
 EOR s3 p C 122pesca 0 0 0 0 0
-EOR s3 n A 121pesca, 120pesca 1 1436 1436 15 1
-EOR s3 n A 134papel 1 917 917 15 2
-EOR s3 n A 135papel, 134papel 1 279 279 15 2
-EOR s3 n A 152camaron 1 1456 1456 15 4
-EOR s3 n A 153camaron, 152camaron 3 1156 385.33333333333 15 4
-EOR s3 n B 121pesca, 120pesca 1 1436 1436 15 1
-EOR s3 n B 135papel, 134papel 1 279 279 15 2
-EOR s3 n B 153camaron, 152camaron 3 1156 385.33333333333 15 4
+EOR s3 n A 120pesca 1 1436 1436 15 1
+EOR s3 n A 134papel 2 1196 598 15 2
+EOR s3 n A 152camaron 4 2612 653 15 4
+EOR s3 n B 121pesca 1 1436 1436 15 1
+EOR s3 n B 135papel 1 279 279 15 2
+EOR s3 n B 153camaron 3 1156 385.33333333333 15 4
 EOR s3 n C 122pesca 0 0 0 0 0
-EOR s4 p A 130peligro 2 1775 887.5 15 2
-EOR s4 p A 131peligro, 130peligro 1 379 379 15 2
-EOR s4 p A 143trabajo 2 857 428.5 15 3
-EOR s4 p A 144trabajo, 143trabajo 2 498 249 15 3
-EOR s4 p B 131peligro, 130peligro 1 379 379 15 2
-EOR s4 p B 144trabajo, 143trabajo 2 498 249 15 3
-EOR s4 n A 130peligro 2 1775 887.5 15 2
-EOR s4 n A 131peligro, 130peligro 1 379 379 15 2
-EOR s4 n A 143trabajo 2 857 428.5 15 3
-EOR s4 n A 144trabajo, 143trabajo 2 498 249 15 3
-EOR s4 n B 131peligro, 130peligro 1 379 379 15 2
-EOR s4 n B 144trabajo, 143trabajo 2 498 249 15 3
-EOR s5 p A 127cubrirse 1 2632 2632 15 1
-EOR s5 p A 128cubrirse, 127cubrirse 1 857 857 15 1
-EOR s5 p A 148fresca, 147fresca 2 1336 668 15 3
-EOR s5 p A 156padres 2 1216 608 15 4
-EOR s5 p A 157padres, 156padres 1 837 837 17 1
-EOR s5 p B 128cubrirse, 127cubrirse 1 857 857 15 1
-EOR s5 p B 148fresca, 147fresca 2 1336 668 15 3
-EOR s5 p B 157padres, 156padres 1 837 837 17 1
+EOR s4 p A 130peligro 3 2154 718 15 2
+EOR s4 p A 143trabajo 4 1355 338.75 15 3
+EOR s4 p B 131peligro 1 379 379 15 2
+EOR s4 p B 144trabajo 2 498 249 15 3
+EOR s4 n A 130peligro 3 2154 718 15 2
+EOR s4 n A 143trabajo 4 1355 338.75 15 3
+EOR s4 n B 131peligro 1 379 379 15 2
+EOR s4 n B 144trabajo 2 498 249 15 3
+EOR s5 p A 127cubrirse 2 3489 1744.5 15 1
+EOR s5 p A 147fresca 2 1336 668 15 3
+EOR s5 p A 156padres 3 2053 684.33333333333 15 4
+EOR s5 p B 128cubrirse 1 857 857 15 1
+EOR s5 p B 148fresca 2 1336 668 15 3
+EOR s5 p B 157padres 1 837 837 17 1
 EOR s5 p C 129cubrirse 0 0 0 0 0
 EOR s5 p C 149fresca 0 0 0 0 0
-EOR s5 n A 127cubrirse 1 2632 2632 15 1
-EOR s5 n A 128cubrirse, 127cubrirse 1 857 857 15 1
-EOR s5 n A 148fresca, 147fresca 2 1336 668 15 3
-EOR s5 n A 156padres 2 1216 608 15 4
-EOR s5 n A 157padres, 156padres 1 837 837 17 1
-EOR s5 n B 128cubrirse, 127cubrirse 1 857 857 15 1
-EOR s5 n B 148fresca, 147fresca 2 1336 668 15 3
-EOR s5 n B 157padres, 156padres 1 837 837 17 1
+EOR s5 n A 127cubrirse 2 3489 1744.5 15 1
+EOR s5 n A 147fresca 2 1336 668 15 3
+EOR s5 n A 156padres 3 2053 684.33333333333 15 4
+EOR s5 n B 128cubrirse 1 857 857 15 1
+EOR s5 n B 148fresca 2 1336 668 15 3
+EOR s5 n B 157padres 1 837 837 17 1
 EOR s5 n C 129cubrirse 0 0 0 0 0
 EOR s5 n C 149fresca 0 0 0 0 0
 EOR s6 p A 125chaparro 2 2511 1255.5 15 1
-EOR s6 p A 132riqueza 1 459 459 15 2
-EOR s6 p A 133riqueza, 132riqueza 1 1236 1236 15 2
-EOR s6 p A 139chaleco, 138chaleco 2 2512 1256 15 2
-EOR s6 p A 154machete 1 1077 1077 15 4
-EOR s6 p A 155machete, 154machete 1 857 857 15 4
+EOR s6 p A 132riqueza 2 1695 847.5 15 2
+EOR s6 p A 138chaleco 2 2512 1256 15 2
+EOR s6 p A 154machete 2 1934 967 15 4
 EOR s6 p B 126chaparro 0 0 0 0 0
-EOR s6 p B 133riqueza, 132riqueza 1 1236 1236 15 2
-EOR s6 p B 139chaleco, 138chaleco 2 2512 1256 15 2
-EOR s6 p B 155machete, 154machete 1 857 857 15 4
+EOR s6 p B 133riqueza 1 1236 1236 15 2
+EOR s6 p B 139chaleco 2 2512 1256 15 2
+EOR s6 p B 155machete 1 857 857 15 4
 EOR s6 n A 125chaparro 2 2511 1255.5 15 1
-EOR s6 n A 132riqueza 1 459 459 15 2
-EOR s6 n A 133riqueza, 132riqueza 1 1236 1236 15 2
-EOR s6 n A 139chaleco, 138chaleco 2 2512 1256 15 2
-EOR s6 n A 154machete 1 1077 1077 15 4
-EOR s6 n A 155machete, 154machete 1 857 857 15 4
+EOR s6 n A 132riqueza 2 1695 847.5 15 2
+EOR s6 n A 138chaleco 2 2512 1256 15 2
+EOR s6 n A 154machete 2 1934 967 15 4
 EOR s6 n B 126chaparro 0 0 0 0 0
-EOR s6 n B 133riqueza, 132riqueza 1 1236 1236 15 2
-EOR s6 n B 139chaleco, 138chaleco 2 2512 1256 15 2
-EOR s6 n B 155machete, 154machete 1 857 857 15 4
+EOR s6 n B 133riqueza 1 1236 1236 15 2
+EOR s6 n B 139chaleco 2 2512 1256 15 2
+EOR s6 n B 155machete 1 857 857 15 4
 EOR s1 p A 165comida 1 1455 1455 17 1
 EOR s1 p A 183boca 2 1315 657.5 17 3
 EOR s1 p A 187mañana 0 0 0 0 0
@@ -406,434 +324,346 @@ EOR s1 n A 187mañana 0 0 0 0 0
 EOR s1 n B 166comida 0 0 0 0 0
 EOR s1 n B 184boca 0 0 0 0 0
 EOR s1 n B 188mañana 0 0 0 0 0
-EOR s2 p A 158estado 1 877 877 17 1
-EOR s2 p A 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 p A 173oscuro, 172oscuro 1 817 817 17 2
-EOR s2 p A 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
-EOR s2 p B 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 p B 173oscuro, 172oscuro 1 817 817 17 2
-EOR s2 p B 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
-EOR s2 p C 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 p C 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
-EOR s2 n A 158estado 1 877 877 17 1
-EOR s2 n A 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 n A 173oscuro, 172oscuro 1 817 817 17 2
-EOR s2 n A 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
-EOR s2 n B 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 n B 173oscuro, 172oscuro 1 817 817 17 2
-EOR s2 n B 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
-EOR s2 n C 159estado, 160estado, 158estado 1 1475 1475 17 1
-EOR s2 n C 173oscuro, 174oscuro, 172oscuro 1 339 339 17 2
+EOR s2 p A 158estado 2 2352 1176 17 1
+EOR s2 p A 172oscuro 2 1156 578 17 2
+EOR s2 p B 159estado 1 1475 1475 17 1
+EOR s2 p B 173oscuro 2 1156 578 17 2
+EOR s2 p C 160estado 1 1475 1475 17 1
+EOR s2 p C 174oscuro 1 339 339 17 2
+EOR s2 n A 158estado 2 2352 1176 17 1
+EOR s2 n A 172oscuro 2 1156 578 17 2
+EOR s2 n B 159estado 1 1475 1475 17 1
+EOR s2 n B 173oscuro 2 1156 578 17 2
+EOR s2 n C 160estado 1 1475 1475 17 1
+EOR s2 n C 174oscuro 1 339 339 17 2
 EOR s3 p A 189soñando 0 0 0 0 0
-EOR s3 p A 192fortuna 1 220 220 17 4
-EOR s3 p A 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
+EOR s3 p A 192fortuna 2 1536 768 17 4
 EOR s3 p B 190soñando 0 0 0 0 0
-EOR s3 p B 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
+EOR s3 p B 193fortuna 1 1316 1316 17 4
 EOR s3 p C 191soñando 0 0 0 0 0
-EOR s3 p C 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
+EOR s3 p C 194fortuna 1 1316 1316 17 4
 EOR s3 n A 189soñando 0 0 0 0 0
-EOR s3 n A 192fortuna 1 220 220 17 4
-EOR s3 n A 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
+EOR s3 n A 192fortuna 2 1536 768 17 4
 EOR s3 n B 190soñando 0 0 0 0 0
-EOR s3 n B 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
+EOR s3 n B 193fortuna 1 1316 1316 17 4
 EOR s3 n C 191soñando 0 0 0 0 0
-EOR s3 n C 193fortuna, 194fortuna, 192fortuna 1 1316 1316 17 4
-EOR s4 p A 161febrero 1 1714 1714 17 1
-EOR s4 p A 162febrero, 161febrero 1 419 419 17 1
-EOR s4 p A 168fruta, 167fruta 1 1774 1774 17 2
-EOR s4 p A 178siglo, 177siglo 3 1973 657.66666666667 17 3
+EOR s3 n C 194fortuna 1 1316 1316 17 4
+EOR s4 p A 161febrero 2 2133 1066.5 17 1
+EOR s4 p A 167fruta 1 1774 1774 17 2
+EOR s4 p A 177siglo 3 1973 657.66666666667 17 3
 EOR s4 p A 185clase 1 1096 1096 17 3
-EOR s4 p B 162febrero, 161febrero 1 419 419 17 1
-EOR s4 p B 168fruta, 167fruta 1 1774 1774 17 2
-EOR s4 p B 178siglo, 177siglo 3 1973 657.66666666667 17 3
+EOR s4 p B 162febrero 1 419 419 17 1
+EOR s4 p B 168fruta 1 1774 1774 17 2
+EOR s4 p B 178siglo 3 1973 657.66666666667 17 3
 EOR s4 p B 186clase 0 0 0 0 0
-EOR s4 n A 161febrero 1 1714 1714 17 1
-EOR s4 n A 162febrero, 161febrero 1 419 419 17 1
-EOR s4 n A 168fruta, 167fruta 1 1774 1774 17 2
-EOR s4 n A 178siglo, 177siglo 3 1973 657.66666666667 17 3
+EOR s4 n A 161febrero 2 2133 1066.5 17 1
+EOR s4 n A 167fruta 1 1774 1774 17 2
+EOR s4 n A 177siglo 3 1973 657.66666666667 17 3
 EOR s4 n A 185clase 1 1096 1096 17 3
-EOR s4 n B 162febrero, 161febrero 1 419 419 17 1
-EOR s4 n B 168fruta, 167fruta 1 1774 1774 17 2
-EOR s4 n B 178siglo, 177siglo 3 1973 657.66666666667 17 3
+EOR s4 n B 162febrero 1 419 419 17 1
+EOR s4 n B 168fruta 1 1774 1774 17 2
+EOR s4 n B 178siglo 3 1973 657.66666666667 17 3
 EOR s4 n B 186clase 0 0 0 0 0
 EOR s5 p A 163libros 1 997 997 17 1
-EOR s5 p A 169blanco 1 159 159 17 2
-EOR s5 p A 170blanco, 169blanco 1 558 558 17 2
-EOR s5 p A 170blanco, 171blanco, 169blanco 1 797 797 17 2
+EOR s5 p A 169blanco 3 1514 504.66666666667 17 2
 EOR s5 p A 181celebrar 3 2312 770.66666666667 17 3
 EOR s5 p B 164libros 0 0 0 0 0
-EOR s5 p B 170blanco, 169blanco 1 558 558 17 2
-EOR s5 p B 170blanco, 171blanco, 169blanco 1 797 797 17 2
+EOR s5 p B 170blanco 2 1355 677.5 17 2
 EOR s5 p B 182celebrar 0 0 0 0 0
-EOR s5 p C 170blanco, 171blanco, 169blanco 1 797 797 17 2
+EOR s5 p C 171blanco 1 797 797 17 2
 EOR s5 n A 163libros 1 997 997 17 1
-EOR s5 n A 169blanco 1 159 159 17 2
-EOR s5 n A 170blanco, 169blanco 1 558 558 17 2
-EOR s5 n A 170blanco, 171blanco, 169blanco 1 797 797 17 2
+EOR s5 n A 169blanco 3 1514 504.66666666667 17 2
 EOR s5 n A 181celebrar 3 2312 770.66666666667 17 3
 EOR s5 n B 164libros 0 0 0 0 0
-EOR s5 n B 170blanco, 169blanco 1 558 558 17 2
-EOR s5 n B 170blanco, 171blanco, 169blanco 1 797 797 17 2
+EOR s5 n B 170blanco 2 1355 677.5 17 2
 EOR s5 n B 182celebrar 0 0 0 0 0
-EOR s5 n C 170blanco, 171blanco, 169blanco 1 797 797 17 2
-EOR s6 p A 175querida 2 578 289 17 2
-EOR s6 p A 176querida, 175querida 4 2652 663 17 2
+EOR s5 n C 171blanco 1 797 797 17 2
+EOR s6 p A 175querida 6 3230 538.33333333333 17 2
 EOR s6 p A 179torre 3 1435 478.33333333333 17 3
-EOR s6 p A 196llama, 195llama 1 1675 1675 17 4
-EOR s6 p B 176querida, 175querida 4 2652 663 17 2
+EOR s6 p A 195llama 1 1675 1675 17 4
+EOR s6 p B 176querida 4 2652 663 17 2
 EOR s6 p B 180torre 0 0 0 0 0
-EOR s6 p B 196llama, 195llama 1 1675 1675 17 4
-EOR s6 n A 175querida 2 578 289 17 2
-EOR s6 n A 176querida, 175querida 4 2652 663 17 2
+EOR s6 p B 196llama 1 1675 1675 17 4
+EOR s6 n A 175querida 6 3230 538.33333333333 17 2
 EOR s6 n A 179torre 3 1435 478.33333333333 17 3
-EOR s6 n A 196llama, 195llama 1 1675 1675 17 4
-EOR s6 n B 176querida, 175querida 4 2652 663 17 2
+EOR s6 n A 195llama 1 1675 1675 17 4
+EOR s6 n B 176querida 4 2652 663 17 2
 EOR s6 n B 180torre 0 0 0 0 0
-EOR s6 n B 196llama, 195llama 1 1675 1675 17 4
+EOR s6 n B 196llama 1 1675 1675 17 4
 EOR s1 p A 202mosina 2 2134 1067 19 1
-EOR s1 p A 208dipone 1 159 159 19 2
-EOR s1 p A 209dipone, 208dipone 2 1993 996.5 19 2
+EOR s1 p A 208dipone 3 2152 717.33333333333 19 2
 EOR s1 p A 223numapo 0 0 0 0 0
 EOR s1 p B 203mosina 0 0 0 0 0
-EOR s1 p B 209dipone, 208dipone 2 1993 996.5 19 2
+EOR s1 p B 209dipone 2 1993 996.5 19 2
 EOR s1 p B 224numapo 0 0 0 0 0
 EOR s1 n A 202mosina 2 2134 1067 19 1
-EOR s1 n A 208dipone 1 159 159 19 2
-EOR s1 n A 209dipone, 208dipone 2 1993 996.5 19 2
+EOR s1 n A 208dipone 3 2152 717.33333333333 19 2
 EOR s1 n A 223numapo 0 0 0 0 0
 EOR s1 n B 203mosina 0 0 0 0 0
-EOR s1 n B 209dipone, 208dipone 2 1993 996.5 19 2
+EOR s1 n B 209dipone 2 1993 996.5 19 2
 EOR s1 n B 224numapo 0 0 0 0 0
-EOR s2 p A 200albe, 199albe 2 2651 1325.5 19 1
-EOR s2 p B 200albe, 199albe 2 2651 1325.5 19 1
+EOR s2 p A 199albe 2 2651 1325.5 19 1
+EOR s2 p B 200albe 2 2651 1325.5 19 1
 EOR s2 p C 201albe 0 0 0 0 0
-EOR s2 n A 200albe, 199albe 2 2651 1325.5 19 1
-EOR s2 n B 200albe, 199albe 2 2651 1325.5 19 1
+EOR s2 n A 199albe 2 2651 1325.5 19 1
+EOR s2 n B 200albe 2 2651 1325.5 19 1
 EOR s2 n C 201albe 0 0 0 0 0
 EOR s3 p A 204sepolar 3 3270 1090 19 1
-EOR s3 p A 210mecil 1 1256 1256 19 2
-EOR s3 p A 211mecil, 210mecil 1 738 738 19 2
+EOR s3 p A 210mecil 2 1994 997 19 2
 EOR s3 p A 214pesmo 2 977 488.5 19 2
-EOR s3 p A 221danlo, 220danlo 2 2392 1196 19 3
+EOR s3 p A 220danlo 2 2392 1196 19 3
 EOR s3 p A 225moñanda 0 0 0 0 0
 EOR s3 p B 205sepolar 0 0 0 0 0
-EOR s3 p B 211mecil, 210mecil 1 738 738 19 2
+EOR s3 p B 211mecil 1 738 738 19 2
 EOR s3 p B 215pesmo 0 0 0 0 0
-EOR s3 p B 221danlo, 220danlo 2 2392 1196 19 3
+EOR s3 p B 221danlo 2 2392 1196 19 3
 EOR s3 p B 226moñanda 0 0 0 0 0
 EOR s3 p C 216pesmo 0 0 0 0 0
 EOR s3 p C 222danlo 0 0 0 0 0
 EOR s3 p C 227moñanda 0 0 0 0 0
 EOR s3 n A 204sepolar 3 3270 1090 19 1
-EOR s3 n A 210mecil 1 1256 1256 19 2
-EOR s3 n A 211mecil, 210mecil 1 738 738 19 2
+EOR s3 n A 210mecil 2 1994 997 19 2
 EOR s3 n A 214pesmo 2 977 488.5 19 2
-EOR s3 n A 221danlo, 220danlo 2 2392 1196 19 3
+EOR s3 n A 220danlo 2 2392 1196 19 3
 EOR s3 n A 225moñanda 0 0 0 0 0
 EOR s3 n B 205sepolar 0 0 0 0 0
-EOR s3 n B 211mecil, 210mecil 1 738 738 19 2
+EOR s3 n B 211mecil 1 738 738 19 2
 EOR s3 n B 215pesmo 0 0 0 0 0
-EOR s3 n B 221danlo, 220danlo 2 2392 1196 19 3
+EOR s3 n B 221danlo 2 2392 1196 19 3
 EOR s3 n B 226moñanda 0 0 0 0 0
 EOR s3 n C 216pesmo 0 0 0 0 0
 EOR s3 n C 222danlo 0 0 0 0 0
 EOR s3 n C 227moñanda 0 0 0 0 0
-EOR s4 p A 198tubre, 197tubre 2 1974 987 19 1
+EOR s4 p A 197tubre 2 1974 987 19 1
 EOR s4 p A 212puyabra 1 4864 4864 19 2
 EOR s4 p A 230planida 1 1515 1515 19 4
-EOR s4 p B 198tubre, 197tubre 2 1974 987 19 1
+EOR s4 p B 198tubre 2 1974 987 19 1
 EOR s4 p B 213puyabra 0 0 0 0 0
 EOR s4 p B 231planida 0 0 0 0 0
-EOR s4 n A 198tubre, 197tubre 2 1974 987 19 1
+EOR s4 n A 197tubre 2 1974 987 19 1
 EOR s4 n A 212puyabra 1 4864 4864 19 2
 EOR s4 n A 230planida 1 1515 1515 19 4
-EOR s4 n B 198tubre, 197tubre 2 1974 987 19 1
+EOR s4 n B 198tubre 2 1974 987 19 1
 EOR s4 n B 213puyabra 0 0 0 0 0
 EOR s4 n B 231planida 0 0 0 0 0
-EOR s5 p A 217tranbite 2 2014 1007 19 3
-EOR s5 p A 218tranbite, 217tranbite 1 877 877 19 3
-EOR s5 p A 233planfo, 232planfo 1 957 957 19 4
-EOR s5 p A 233planfo, 234planfo, 232planfo 1 359 359 19 4
-EOR s5 p B 218tranbite, 217tranbite 1 877 877 19 3
-EOR s5 p B 233planfo, 232planfo 1 957 957 19 4
-EOR s5 p B 233planfo, 234planfo, 232planfo 1 359 359 19 4
+EOR s5 p A 217tranbite 3 2891 963.66666666667 19 3
+EOR s5 p A 232planfo 2 1316 658 19 4
+EOR s5 p B 218tranbite 1 877 877 19 3
+EOR s5 p B 233planfo 2 1316 658 19 4
 EOR s5 p C 219tranbite 0 0 0 0 0
-EOR s5 p C 233planfo, 234planfo, 232planfo 1 359 359 19 4
-EOR s5 n A 217tranbite 2 2014 1007 19 3
-EOR s5 n A 218tranbite, 217tranbite 1 877 877 19 3
-EOR s5 n A 233planfo, 232planfo 1 957 957 19 4
-EOR s5 n A 233planfo, 234planfo, 232planfo 1 359 359 19 4
-EOR s5 n B 218tranbite, 217tranbite 1 877 877 19 3
-EOR s5 n B 233planfo, 232planfo 1 957 957 19 4
-EOR s5 n B 233planfo, 234planfo, 232planfo 1 359 359 19 4
+EOR s5 p C 234planfo 1 359 359 19 4
+EOR s5 n A 217tranbite 3 2891 963.66666666667 19 3
+EOR s5 n A 232planfo 2 1316 658 19 4
+EOR s5 n B 218tranbite 1 877 877 19 3
+EOR s5 n B 233planfo 2 1316 658 19 4
 EOR s5 n C 219tranbite 0 0 0 0 0
-EOR s5 n C 233planfo, 234planfo, 232planfo 1 359 359 19 4
-EOR s6 p A 206quete 1 199 199 19 2
-EOR s6 p A 207quete, 206quete 2 1814 907 19 2
-EOR s6 p A 229llafa, 228llafa 1 1994 1994 19 4
-EOR s6 p A 235turrepo 1 2173 2173 19 4
-EOR s6 p A 236turrepo, 235turrepo 2 937 468.5 19 4
-EOR s6 p B 207quete, 206quete 2 1814 907 19 2
-EOR s6 p B 229llafa, 228llafa 1 1994 1994 19 4
-EOR s6 p B 236turrepo, 235turrepo 2 937 468.5 19 4
-EOR s6 n A 206quete 1 199 199 19 2
-EOR s6 n A 207quete, 206quete 2 1814 907 19 2
-EOR s6 n A 229llafa, 228llafa 1 1994 1994 19 4
-EOR s6 n A 235turrepo 1 2173 2173 19 4
-EOR s6 n A 236turrepo, 235turrepo 2 937 468.5 19 4
-EOR s6 n B 207quete, 206quete 2 1814 907 19 2
-EOR s6 n B 229llafa, 228llafa 1 1994 1994 19 4
-EOR s6 n B 236turrepo, 235turrepo 2 937 468.5 19 4
+EOR s5 n C 234planfo 1 359 359 19 4
+EOR s6 p A 206quete 3 2013 671 19 2
+EOR s6 p A 228llafa 1 1994 1994 19 4
+EOR s6 p A 235turrepo 3 3110 1036.6666666667 19 4
+EOR s6 p B 207quete 2 1814 907 19 2
+EOR s6 p B 229llafa 1 1994 1994 19 4
+EOR s6 p B 236turrepo 2 937 468.5 19 4
+EOR s6 n A 206quete 3 2013 671 19 2
+EOR s6 n A 228llafa 1 1994 1994 19 4
+EOR s6 n A 235turrepo 3 3110 1036.6666666667 19 4
+EOR s6 n B 207quete 2 1814 907 19 2
+EOR s6 n B 229llafa 1 1994 1994 19 4
+EOR s6 n B 236turrepo 2 937 468.5 19 4
 EOR s1 p A 237muca 2 1415 707.5 21 1
 EOR s1 p A 257ropida 1 1236 1236 21 2
-EOR s1 p A 273pape 1 199 199 21 4
-EOR s1 p A 274pape, 273pape 1 1755 1755 21 4
+EOR s1 p A 273pape 2 1954 977 21 4
 EOR s1 p B 238muca 0 0 0 0 0
 EOR s1 p B 258ropida 0 0 0 0 0
-EOR s1 p B 274pape, 273pape 1 1755 1755 21 4
+EOR s1 p B 274pape 1 1755 1755 21 4
 EOR s1 n A 237muca 2 1415 707.5 21 1
 EOR s1 n A 257ropida 1 1236 1236 21 2
-EOR s1 n A 273pape 1 199 199 21 4
-EOR s1 n A 274pape, 273pape 1 1755 1755 21 4
+EOR s1 n A 273pape 2 1954 977 21 4
 EOR s1 n B 238muca 0 0 0 0 0
 EOR s1 n B 258ropida 0 0 0 0 0
-EOR s1 n B 274pape, 273pape 1 1755 1755 21 4
-EOR s2 p A 248arfo, 246arfo 1 1196 1196 21 2
+EOR s1 n B 274pape 1 1755 1755 21 4
+EOR s2 p A 246arfo 1 1196 1196 21 2
 EOR s2 p A 252taer 3 3369 1123 21 2
 EOR s2 p A 264tois 1 2073 2073 21 3
-EOR s2 p A 276esno, 275esno 2 1136 568 21 4
+EOR s2 p A 275esno 2 1136 568 21 4
 EOR s2 p B 247arfo 0 0 0 0 0
 EOR s2 p B 253taer 0 0 0 0 0
 EOR s2 p B 265tois 0 0 0 0 0
-EOR s2 p B 276esno, 275esno 2 1136 568 21 4
-EOR s2 p C 248arfo, 246arfo 1 1196 1196 21 2
+EOR s2 p B 276esno 2 1136 568 21 4
+EOR s2 p C 248arfo 1 1196 1196 21 2
 EOR s2 p C 277esno 0 0 0 0 0
-EOR s2 n A 248arfo, 246arfo 1 1196 1196 21 2
+EOR s2 n A 246arfo 1 1196 1196 21 2
 EOR s2 n A 252taer 3 3369 1123 21 2
 EOR s2 n A 264tois 1 2073 2073 21 3
-EOR s2 n A 276esno, 275esno 2 1136 568 21 4
+EOR s2 n A 275esno 2 1136 568 21 4
 EOR s2 n B 247arfo 0 0 0 0 0
 EOR s2 n B 253taer 0 0 0 0 0
 EOR s2 n B 265tois 0 0 0 0 0
-EOR s2 n B 276esno, 275esno 2 1136 568 21 4
-EOR s2 n C 248arfo, 246arfo 1 1196 1196 21 2
+EOR s2 n B 276esno 2 1136 568 21 4
+EOR s2 n C 248arfo 1 1196 1196 21 2
 EOR s2 n C 277esno 0 0 0 0 0
 EOR s3 p A 243taronla 0 0 0 0 0
-EOR s3 p A 255carpe, 254carpe 3 3569 1189.6666666667 21 2
+EOR s3 p A 254carpe 3 3569 1189.6666666667 21 2
 EOR s3 p A 266pilanto 0 0 0 0 0
 EOR s3 p B 244taronla 0 0 0 0 0
-EOR s3 p B 255carpe, 254carpe 3 3569 1189.6666666667 21 2
-EOR s3 p B 267pilanto, 266pilantro 1 459 459 21 3
-EOR s3 p B 267pilanto, 268pilanto, 266pilantro 1 418 418 21 3
+EOR s3 p B 255carpe 3 3569 1189.6666666667 21 2
+EOR s3 p B 267pilanto 2 877 438.5 21 3
 EOR s3 p C 245taronla 0 0 0 0 0
 EOR s3 p C 256carpe 0 0 0 0 0
-EOR s3 p C 267pilanto, 268pilanto, 266pilantro 1 418 418 21 3
+EOR s3 p C 268pilanto 1 418 418 21 3
 EOR s3 n A 243taronla 0 0 0 0 0
-EOR s3 n A 255carpe, 254carpe 3 3569 1189.6666666667 21 2
+EOR s3 n A 254carpe 3 3569 1189.6666666667 21 2
 EOR s3 n A 266pilanto 0 0 0 0 0
 EOR s3 n B 244taronla 0 0 0 0 0
-EOR s3 n B 255carpe, 254carpe 3 3569 1189.6666666667 21 2
-EOR s3 n B 267pilanto, 266pilantro 1 459 459 21 3
-EOR s3 n B 267pilanto, 268pilanto, 266pilantro 1 418 418 21 3
+EOR s3 n B 255carpe 3 3569 1189.6666666667 21 2
+EOR s3 n B 267pilanto 2 877 438.5 21 3
 EOR s3 n C 245taronla 0 0 0 0 0
 EOR s3 n C 256carpe 0 0 0 0 0
-EOR s3 n C 267pilanto, 268pilanto, 266pilantro 1 418 418 21 3
-EOR s4 p A 239pribera 3 857 285.66666666667 21 1
-EOR s4 p A 240pribera, 239pribera 1 1057 1057 21 1
-EOR s4 p A 269tracaja 1 339 339 21 3
-EOR s4 p A 270tracaja, 269tracaja 3 2792 930.66666666667 21 3
-EOR s4 p B 240pribera, 239pribera 1 1057 1057 21 1
-EOR s4 p B 270tracaja, 269tracaja 3 2792 930.66666666667 21 3
-EOR s4 n A 239pribera 3 857 285.66666666667 21 1
-EOR s4 n A 240pribera, 239pribera 1 1057 1057 21 1
-EOR s4 n A 269tracaja 1 339 339 21 3
-EOR s4 n A 270tracaja, 269tracaja 3 2792 930.66666666667 21 3
-EOR s4 n B 240pribera, 239pribera 1 1057 1057 21 1
-EOR s4 n B 270tracaja, 269tracaja 3 2792 930.66666666667 21 3
-EOR s5 p A 249plasmica 1 778 778 21 2
-EOR s5 p A 250plasmica, 249plasmica 1 179 179 21 2
-EOR s5 p A 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
-EOR s5 p A 261blanje 1 279 279 21 3
-EOR s5 p A 262blanje, 261blanje 1 1256 1256 21 3
-EOR s5 p A 278prinfeso 2 1475 737.5 21 4
-EOR s5 p A 279prinfeso, 278prinfeso 2 1754 877 21 4
-EOR s5 p B 250plasmica, 249plasmica 1 179 179 21 2
-EOR s5 p B 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
-EOR s5 p B 262blanje, 261blanje 1 1256 1256 21 3
-EOR s5 p B 279prinfeso, 278prinfeso 2 1754 877 21 4
-EOR s5 p C 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
+EOR s3 n C 268pilanto 1 418 418 21 3
+EOR s4 p A 239pribera 4 1914 478.5 21 1
+EOR s4 p A 269tracaja 4 3131 782.75 21 3
+EOR s4 p B 240pribera 1 1057 1057 21 1
+EOR s4 p B 270tracaja 3 2792 930.66666666667 21 3
+EOR s4 n A 239pribera 4 1914 478.5 21 1
+EOR s4 n A 269tracaja 4 3131 782.75 21 3
+EOR s4 n B 240pribera 1 1057 1057 21 1
+EOR s4 n B 270tracaja 3 2792 930.66666666667 21 3
+EOR s5 p A 249plasmica 3 2053 684.33333333333 21 2
+EOR s5 p A 261blanje 2 1535 767.5 21 3
+EOR s5 p A 278prinfeso 4 3229 807.25 21 4
+EOR s5 p B 250plasmica 2 1275 637.5 21 2
+EOR s5 p B 262blanje 1 1256 1256 21 3
+EOR s5 p B 279prinfeso 2 1754 877 21 4
+EOR s5 p C 251plasmica 1 1096 1096 21 2
 EOR s5 p C 263blanje 0 0 0 0 0
 EOR s5 p C 280prinfeso 0 0 0 0 0
-EOR s5 n A 249plasmica 1 778 778 21 2
-EOR s5 n A 250plasmica, 249plasmica 1 179 179 21 2
-EOR s5 n A 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
-EOR s5 n A 261blanje 1 279 279 21 3
-EOR s5 n A 262blanje, 261blanje 1 1256 1256 21 3
-EOR s5 n A 278prinfeso 2 1475 737.5 21 4
-EOR s5 n A 279prinfeso, 278prinfeso 2 1754 877 21 4
-EOR s5 n B 250plasmica, 249plasmica 1 179 179 21 2
-EOR s5 n B 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
-EOR s5 n B 262blanje, 261blanje 1 1256 1256 21 3
-EOR s5 n B 279prinfeso, 278prinfeso 2 1754 877 21 4
-EOR s5 n C 250plasmica, 251plasmica, 249plasmica 1 1096 1096 21 2
+EOR s5 n A 249plasmica 3 2053 684.33333333333 21 2
+EOR s5 n A 261blanje 2 1535 767.5 21 3
+EOR s5 n A 278prinfeso 4 3229 807.25 21 4
+EOR s5 n B 250plasmica 2 1275 637.5 21 2
+EOR s5 n B 262blanje 1 1256 1256 21 3
+EOR s5 n B 279prinfeso 2 1754 877 21 4
+EOR s5 n C 251plasmica 1 1096 1096 21 2
 EOR s5 n C 263blanje 0 0 0 0 0
 EOR s5 n C 280prinfeso 0 0 0 0 0
 EOR s6 p A 241balella 1 2492 2492 21 1
-EOR s6 p A 259guerre 2 1156 578 21 3
-EOR s6 p A 260guerre, 259guerre 1 2073 2073 21 3
+EOR s6 p A 259guerre 3 3229 1076.3333333333 21 3
 EOR s6 p A 271tolle 2 2033 1016.5 21 4
 EOR s6 p B 242balella 0 0 0 0 0
-EOR s6 p B 260guerre, 259guerre 1 2073 2073 21 3
+EOR s6 p B 260guerre 1 2073 2073 21 3
 EOR s6 p B 272tolle 0 0 0 0 0
 EOR s6 n A 241balella 1 2492 2492 21 1
-EOR s6 n A 259guerre 2 1156 578 21 3
-EOR s6 n A 260guerre, 259guerre 1 2073 2073 21 3
+EOR s6 n A 259guerre 3 3229 1076.3333333333 21 3
 EOR s6 n A 271tolle 2 2033 1016.5 21 4
 EOR s6 n B 242balella 0 0 0 0 0
-EOR s6 n B 260guerre, 259guerre 1 2073 2073 21 3
+EOR s6 n B 260guerre 1 2073 2073 21 3
 EOR s6 n B 272tolle 0 0 0 0 0
-EOR s1 p A 288camido 2 1395 697.5 23 1
-EOR s1 p A 289camido, 288camido 1 459 459 23 1
-EOR s1 p A 297vipo, 296vipo 1 997 997 23 2
-EOR s1 p A 317lusa, 316lusa 1 1156 1156 23 4
-EOR s1 p B 289camido, 288camido 1 459 459 23 1
-EOR s1 p B 297vipo, 296vipo 1 997 997 23 2
-EOR s1 p B 317lusa, 316lusa 1 1156 1156 23 4
-EOR s1 n A 288camido 2 1395 697.5 23 1
-EOR s1 n A 289camido, 288camido 1 459 459 23 1
-EOR s1 n A 297vipo, 296vipo 1 997 997 23 2
-EOR s1 n A 317lusa, 316lusa 1 1156 1156 23 4
-EOR s1 n B 289camido, 288camido 1 459 459 23 1
-EOR s1 n B 297vipo, 296vipo 1 997 997 23 2
-EOR s1 n B 317lusa, 316lusa 1 1156 1156 23 4
-EOR s2 p A 307oscafo, 306oscafo 1 259 259 23 3
-EOR s2 p A 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 p A 311esmade 1 219 219 23 4
-EOR s2 p A 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
-EOR s2 p B 307oscafo, 306oscafo 1 259 259 23 3
-EOR s2 p B 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 p B 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
-EOR s2 p C 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 p C 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
-EOR s2 n A 307oscafo, 306oscafo 1 259 259 23 3
-EOR s2 n A 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 n A 311esmade 1 219 219 23 4
-EOR s2 n A 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
-EOR s2 n B 307oscafo, 306oscafo 1 259 259 23 3
-EOR s2 n B 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 n B 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
-EOR s2 n C 307oscafo, 308oscafo, 306oscafo 1 1356 1356 23 3
-EOR s2 n C 312esmade, 313esmade, 311esmade 1 2412 2412 23 4
+EOR s1 p A 288camido 3 1854 618 23 1
+EOR s1 p A 296vipo 1 997 997 23 2
+EOR s1 p A 316lusa 1 1156 1156 23 4
+EOR s1 p B 289camido 1 459 459 23 1
+EOR s1 p B 297vipo 1 997 997 23 2
+EOR s1 p B 317lusa 1 1156 1156 23 4
+EOR s1 n A 288camido 3 1854 618 23 1
+EOR s1 n A 296vipo 1 997 997 23 2
+EOR s1 n A 316lusa 1 1156 1156 23 4
+EOR s1 n B 289camido 1 459 459 23 1
+EOR s1 n B 297vipo 1 997 997 23 2
+EOR s1 n B 317lusa 1 1156 1156 23 4
+EOR s2 p A 306oscafo 2 1615 807.5 23 3
+EOR s2 p A 311esmade 2 2631 1315.5 23 4
+EOR s2 p B 307oscafo 2 1615 807.5 23 3
+EOR s2 p B 312esmade 1 2412 2412 23 4
+EOR s2 p C 308oscafo 1 1356 1356 23 3
+EOR s2 p C 313esmade 1 2412 2412 23 4
+EOR s2 n A 306oscafo 2 1615 807.5 23 3
+EOR s2 n A 311esmade 2 2631 1315.5 23 4
+EOR s2 n B 307oscafo 2 1615 807.5 23 3
+EOR s2 n B 312esmade 1 2412 2412 23 4
+EOR s2 n C 308oscafo 1 1356 1356 23 3
+EOR s2 n C 313esmade 1 2412 2412 23 4
 EOR s3 p A 294patinos 2 1974 987 23 2
-EOR s3 p A 302logar 2 499 249.5 23 3
-EOR s3 p A 303logar, 302logar 2 1415 707.5 23 3
+EOR s3 p A 302logar 4 1914 478.5 23 3
 EOR s3 p B 295patinos 0 0 0 0 0
-EOR s3 p B 303logar, 302logar 2 1415 707.5 23 3
+EOR s3 p B 303logar 2 1415 707.5 23 3
 EOR s3 n A 294patinos 2 1974 987 23 2
-EOR s3 n A 302logar 2 499 249.5 23 3
-EOR s3 n A 303logar, 302logar 2 1415 707.5 23 3
+EOR s3 n A 302logar 4 1914 478.5 23 3
 EOR s3 n B 295patinos 0 0 0 0 0
-EOR s3 n B 303logar, 302logar 2 1415 707.5 23 3
-EOR s4 p A 284clare, 283clare 1 1416 1416 23 1
-EOR s4 p A 318tabrila 2 758 379 23 4
-EOR s4 p A 319tabrila, 318tabrila 2 2492 1246 23 4
-EOR s4 p B 284clare, 283clare 1 1416 1416 23 1
-EOR s4 p B 319tabrila, 318tabrila 2 2492 1246 23 4
-EOR s4 n A 284clare, 283clare 1 1416 1416 23 1
-EOR s4 n A 318tabrila 2 758 379 23 4
-EOR s4 n A 319tabrila, 318tabrila 2 2492 1246 23 4
-EOR s4 n B 284clare, 283clare 1 1416 1416 23 1
-EOR s4 n B 319tabrila, 318tabrila 2 2492 1246 23 4
-EOR s5 p A 286fresdo, 285fresdo 1 777 777 23 1
-EOR s5 p A 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s5 p A 290pefrir 3 2313 771 23 1
-EOR s5 p A 291pefrir, 290pefrir 1 140 140 23 1
-EOR s5 p A 304telubrar 3 3051 1017 23 3
-EOR s5 p A 305telubrar, 304telubrar 2 738 369 23 3
+EOR s3 n B 303logar 2 1415 707.5 23 3
+EOR s4 p A 283clare 1 1416 1416 23 1
+EOR s4 p A 318tabrila 4 3250 812.5 23 4
+EOR s4 p B 284clare 1 1416 1416 23 1
+EOR s4 p B 319tabrila 2 2492 1246 23 4
+EOR s4 n A 283clare 1 1416 1416 23 1
+EOR s4 n A 318tabrila 4 3250 812.5 23 4
+EOR s4 n B 284clare 1 1416 1416 23 1
+EOR s4 n B 319tabrila 2 2492 1246 23 4
+EOR s5 p A 285fresdo 2 1734 867 23 1
+EOR s5 p A 290pefrir 4 2453 613.25 23 1
+EOR s5 p A 304telubrar 5 3789 757.8 23 3
 EOR s5 p A 314nebros 2 1535 767.5 23 4
-EOR s5 p B 286fresdo, 285fresdo 1 777 777 23 1
-EOR s5 p B 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s5 p B 291pefrir, 290pefrir 1 140 140 23 1
-EOR s5 p B 305telubrar, 304telubrar 2 738 369 23 3
+EOR s5 p B 286fresdo 2 1734 867 23 1
+EOR s5 p B 291pefrir 1 140 140 23 1
+EOR s5 p B 305telubrar 2 738 369 23 3
 EOR s5 p B 315nebros 0 0 0 0 0
-EOR s5 p C 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s5 n A 286fresdo, 285fresdo 1 777 777 23 1
-EOR s5 n A 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s5 n A 290pefrir 3 2313 771 23 1
-EOR s5 n A 291pefrir, 290pefrir 1 140 140 23 1
-EOR s5 n A 304telubrar 3 3051 1017 23 3
-EOR s5 n A 305telubrar, 304telubrar 2 738 369 23 3
+EOR s5 p C 287fresdo 1 957 957 23 1
+EOR s5 n A 285fresdo 2 1734 867 23 1
+EOR s5 n A 290pefrir 4 2453 613.25 23 1
+EOR s5 n A 304telubrar 5 3789 757.8 23 3
 EOR s5 n A 314nebros 2 1535 767.5 23 4
-EOR s5 n B 286fresdo, 285fresdo 1 777 777 23 1
-EOR s5 n B 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s5 n B 291pefrir, 290pefrir 1 140 140 23 1
-EOR s5 n B 305telubrar, 304telubrar 2 738 369 23 3
+EOR s5 n B 286fresdo 2 1734 867 23 1
+EOR s5 n B 291pefrir 1 140 140 23 1
+EOR s5 n B 305telubrar 2 738 369 23 3
 EOR s5 n B 315nebros 0 0 0 0 0
-EOR s5 n C 286fresdo, 287fresdo, 285fresdo 1 957 957 23 1
-EOR s6 p A 281parre 1 160 160 23 1
-EOR s6 p A 282parre, 281parre 2 1216 608 23 1
-EOR s6 p A 292chapeca 1 2352 2352 23 2
-EOR s6 p A 293chapeca, 292chapeca 1 777 777 23 2
+EOR s5 n C 287fresdo 1 957 957 23 1
+EOR s6 p A 281parre 3 1376 458.66666666667 23 1
+EOR s6 p A 292chapeca 2 3129 1564.5 23 2
 EOR s6 p A 298tocha 1 2312 2312 23 2
 EOR s6 p A 300mochede 1 1994 1994 23 2
-EOR s6 p A 310siqueza, 309siqueze 1 1774 1774 23 3
-EOR s6 p B 282parre, 281parre 2 1216 608 23 1
-EOR s6 p B 293chapeca, 292chapeca 1 777 777 23 2
+EOR s6 p A 309siqueze 1 1774 1774 23 3
+EOR s6 p B 282parre 2 1216 608 23 1
+EOR s6 p B 293chapeca 1 777 777 23 2
 EOR s6 p B 299tocha 0 0 0 0 0
 EOR s6 p B 301mochede 0 0 0 0 0
 EOR s6 p B 310siqueze 0 0 0 0 0
-EOR s6 n A 281parre 1 160 160 23 1
-EOR s6 n A 282parre, 281parre 2 1216 608 23 1
-EOR s6 n A 292chapeca 1 2352 2352 23 2
-EOR s6 n A 293chapeca, 292chapeca 1 777 777 23 2
+EOR s6 n A 281parre 3 1376 458.66666666667 23 1
+EOR s6 n A 292chapeca 2 3129 1564.5 23 2
 EOR s6 n A 298tocha 1 2312 2312 23 2
 EOR s6 n A 300mochede 1 1994 1994 23 2
-EOR s6 n A 310siqueza, 309siqueze 1 1774 1774 23 3
-EOR s6 n B 282parre, 281parre 2 1216 608 23 1
-EOR s6 n B 293chapeca, 292chapeca 1 777 777 23 2
+EOR s6 n A 309siqueze 1 1774 1774 23 3
+EOR s6 n B 282parre 2 1216 608 23 1
+EOR s6 n B 293chapeca 1 777 777 23 2
 EOR s6 n B 299tocha 0 0 0 0 0
 EOR s6 n B 301mochede 0 0 0 0 0
 EOR s6 n B 310siqueze 0 0 0 0 0
 EOR s1 p A 323canojo 2 1594 797 25 1
-EOR s1 p A 334tena 2 1455 727.5 25 2
-EOR s1 p A 335tena, 334tena 1 219 219 25 2
+EOR s1 p A 334tena 3 1674 558 25 2
 EOR s1 p B 324canojo 0 0 0 0 0
-EOR s1 p B 335tena, 334tena 1 219 219 25 2
+EOR s1 p B 335tena 1 219 219 25 2
 EOR s1 n A 323canojo 2 1594 797 25 1
-EOR s1 n A 334tena 2 1455 727.5 25 2
-EOR s1 n A 335tena, 334tena 1 219 219 25 2
+EOR s1 n A 334tena 3 1674 558 25 2
 EOR s1 n B 324canojo 0 0 0 0 0
-EOR s1 n B 335tena, 334tena 1 219 219 25 2
-EOR s4 p A 326brune, 325brune 1 1675 1675 25 1
-EOR s4 p A 332muglo 3 2253 751 25 2
-EOR s4 p A 333muglo, 332muglo 1 498 498 25 2
-EOR s4 p B 326brune, 325brune 1 1675 1675 25 1
-EOR s4 p B 333muglo, 332muglo 1 498 498 25 2
-EOR s4 n A 326brune, 325brune 1 1675 1675 25 1
-EOR s4 n A 332muglo 3 2253 751 25 2
-EOR s4 n A 333muglo, 332muglo 1 498 498 25 2
-EOR s4 n B 326brune, 325brune 1 1675 1675 25 1
-EOR s4 n B 333muglo, 332muglo 1 498 498 25 2
-EOR s5 p A 320nubrirso 1 160 160 25 1
-EOR s5 p A 321nubrirso, 320nubrirso 2 1993 996.5 25 1
-EOR s5 p A 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 p A 329cabrando 2 1236 618 25 2
-EOR s5 p A 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
-EOR s5 p B 321nubrirso, 320nubrirso 2 1993 996.5 25 1
-EOR s5 p B 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 p B 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
-EOR s5 p C 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 p C 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
-EOR s5 n A 320nubrirso 1 160 160 25 1
-EOR s5 n A 321nubrirso, 320nubrirso 2 1993 996.5 25 1
-EOR s5 n A 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 n A 329cabrando 2 1236 618 25 2
-EOR s5 n A 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
-EOR s5 n B 321nubrirso, 320nubrirso 2 1993 996.5 25 1
-EOR s5 n B 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 n B 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
-EOR s5 n C 321nubrirso, 322nubrirso, 320nubrirso 1 498 498 25 1
-EOR s5 n C 330cabrando, 331cabrando, 329cabrando 1 1296 1296 25 2
+EOR s1 n B 335tena 1 219 219 25 2
+EOR s4 p A 325brune 1 1675 1675 25 1
+EOR s4 p A 332muglo 4 2751 687.75 25 2
+EOR s4 p B 326brune 1 1675 1675 25 1
+EOR s4 p B 333muglo 1 498 498 25 2
+EOR s4 n A 325brune 1 1675 1675 25 1
+EOR s4 n A 332muglo 4 2751 687.75 25 2
+EOR s4 n B 326brune 1 1675 1675 25 1
+EOR s4 n B 333muglo 1 498 498 25 2
+EOR s5 p A 320nubrirso 4 2651 662.75 25 1
+EOR s5 p A 329cabrando 3 2532 844 25 2
+EOR s5 p B 321nubrirso 3 2491 830.33333333333 25 1
+EOR s5 p B 330cabrando 1 1296 1296 25 2
+EOR s5 p C 322nubrirso 1 498 498 25 1
+EOR s5 p C 331cabrando 1 1296 1296 25 2
+EOR s5 n A 320nubrirso 4 2651 662.75 25 1
+EOR s5 n A 329cabrando 3 2532 844 25 2
+EOR s5 n B 321nubrirso 3 2491 830.33333333333 25 1
+EOR s5 n B 330cabrando 1 1296 1296 25 2
+EOR s5 n C 322nubrirso 1 498 498 25 1
+EOR s5 n C 331cabrando 1 1296 1296 25 2
 EOR s6 p A 327fague 1 1017 1017 25 1
 EOR s6 p B 328fague 0 0 0 0 0
 EOR s6 n A 327fague 1 1017 1017 25 1
