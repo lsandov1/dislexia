@@ -1,7 +1,7 @@
 #!/usr/bin/awk -f
 #
 # Leonardo Sandoval
-d# Project: Dislexia/Instituto de Neurociencias/UdG
+# Project: Dislexia/Instituto de Neurociencias/UdG
 #
 # Example:
 # $ echo 001Ap9s5d3L8c7t0princesa | awk -f $0.awk
