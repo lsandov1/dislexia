@@ -12,7 +12,7 @@ BEGIN {
 	DC7="c[1-7]"        # Criterio: Complejidad léxico silábica del Dr. Leal
 	DC8="(t|b)"         # Criterio: Número de sílabas que tiene la palabra en
 	                    #           la que está la AOI
-	DC9="[0-3]"         #Criterio: Lugar que ocupa la sílaba meta en la palabra
+	DC9="([0-3]|-)"         #Criterio: Lugar que ocupa la sílaba meta en la palabra
 
 	# Relevant TOBBI fields names
 	FIX_AOI=37
