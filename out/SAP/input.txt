@@ -985,7 +985,7 @@ awk -f select-aoi-by-criteria.awk C3=13 C4=s2 C2=n C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=p C1=A aoi.txt
 080Ap13s3d8L5c6b0danza
-084Ap13s3d8L7c3t0senalar
+084Ap13s3d8L7c3t0se??alar
 099Ap13s3d6L7c6t0manzana
 104Ap13s3d4L5c6b0carta
 107Ap13s3d6L7c6t0vestido
@@ -994,7 +994,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=080danza data/SAP.tsv | uniq | sort -n
 080danza:527:718
 datamash -t : -g 1 count 2 sum 3 mean 3
 080danza:1:718:718
-awk -f select-user-aoi-rows.awk -v AOIS=084senalar data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=084se??alar data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=099manzana data/SAP.tsv | uniq | sort -n
 099manzana:543:279
@@ -1018,7 +1018,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 112facil:2:579:289.5
 awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=p C1=B aoi.txt
 081Bp13s3d8L5c6b2danza
-085Bp13s3d8L7c3t1senalar
+085Bp13s3d8L7c3t1se??alar
 100Bp13s3d6L7c6t3manzana
 105Bp13s3d4L5c6b2carta
 108Bp13s3d6L7c6t3vestido
@@ -1027,7 +1027,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=081danza data/SAP.tsv | uniq | sort -n
 081danza:527:718
 datamash -t : -g 1 count 2 sum 3 mean 3
 081danza:1:718:718
-awk -f select-user-aoi-rows.awk -v AOIS=085senalar data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=085se??alar data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=100manzana data/SAP.tsv | uniq | sort -n
 100manzana:544:459
@@ -1054,7 +1054,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=109vestido data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=n C1=A aoi.txt
 080Ap13s3d8L5c6b0danza
-084Ap13s3d8L7c3t0senalar
+084Ap13s3d8L7c3t0se??alar
 099Ap13s3d6L7c6t0manzana
 104Ap13s3d4L5c6b0carta
 107Ap13s3d6L7c6t0vestido
@@ -1063,7 +1063,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=080danza data/SAP.tsv | uniq | sort -n
 080danza:527:718
 datamash -t : -g 1 count 2 sum 3 mean 3
 080danza:1:718:718
-awk -f select-user-aoi-rows.awk -v AOIS=084senalar data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=084se??alar data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=099manzana data/SAP.tsv | uniq | sort -n
 099manzana:543:279
@@ -1087,7 +1087,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 112facil:2:579:289.5
 awk -f select-aoi-by-criteria.awk C3=13 C4=s3 C2=n C1=B aoi.txt
 081Bp13s3d8L5c6b2danza
-085Bp13s3d8L7c3t1senalar
+085Bp13s3d8L7c3t1se??alar
 100Bp13s3d6L7c6t3manzana
 105Bp13s3d4L5c6b2carta
 108Bp13s3d6L7c6t3vestido
@@ -1096,7 +1096,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=081danza data/SAP.tsv | uniq | sort -n
 081danza:527:718
 datamash -t : -g 1 count 2 sum 3 mean 3
 081danza:1:718:718
-awk -f select-user-aoi-rows.awk -v AOIS=085senalar data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=085se??alar data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=100manzana data/SAP.tsv | uniq | sort -n
 100manzana:544:459
@@ -1223,7 +1223,7 @@ datamash -t : -g 1 count 2 sum 3 mean 3
 088transito:1:239:239
 awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=p C1=A aoi.txt
 082Ap13s6dxL4c4b0sigue
-089Ap13s6dxL6c4b0guerra
+089Ap13s6dxL6c4b0gruerra
 097Ap13s6d8L5c4b0calle
 102Ap13s6dxL7c4t0derecho
 114Ap13s6dxL7c4t0terreno
@@ -1231,8 +1231,11 @@ awk -f select-user-aoi-rows.awk -v AOIS=082sigue data/SAP.tsv | uniq | sort -n
 082sigue:528:598
 datamash -t : -g 1 count 2 sum 3 mean 3
 082sigue:1:598:598
-awk -f select-user-aoi-rows.awk -v AOIS=089guerra data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=089gruerra data/SAP.tsv | uniq | sort -n
+089gruerra:534:199
+089gruerra:535:458
+datamash -t : -g 1 count 2 sum 3 mean 3
+089gruerra:2:657:328.5
 awk -f select-user-aoi-rows.awk -v AOIS=097calle data/SAP.tsv | uniq | sort -n
 097calle:542:319
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -1268,7 +1271,7 @@ awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=13 C4=s6 C2=n C1=A aoi.txt
 082Ap13s6dxL4c4b0sigue
-089Ap13s6dxL6c4b0guerra
+089Ap13s6dxL6c4b0gruerra
 097Ap13s6d8L5c4b0calle
 102Ap13s6dxL7c4t0derecho
 114Ap13s6dxL7c4t0terreno
@@ -1276,8 +1279,11 @@ awk -f select-user-aoi-rows.awk -v AOIS=082sigue data/SAP.tsv | uniq | sort -n
 082sigue:528:598
 datamash -t : -g 1 count 2 sum 3 mean 3
 082sigue:1:598:598
-awk -f select-user-aoi-rows.awk -v AOIS=089guerra data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=089gruerra data/SAP.tsv | uniq | sort -n
+089gruerra:534:199
+089gruerra:535:458
+datamash -t : -g 1 count 2 sum 3 mean 3
+089gruerra:2:657:328.5
 awk -f select-user-aoi-rows.awk -v AOIS=097calle data/SAP.tsv | uniq | sort -n
 097calle:542:319
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -1744,7 +1750,7 @@ awk -f select-aoi-by-criteria.awk C3=15 C4=s6 C2=n C1=C aoi.txt
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=A aoi.txt
 165Ap17s1d8L6c4t0comida
 183Ap17s1d8L4c4b0boca
-187Ap17s1d8L6c4t0manana
+187Ap17s1d8L6c4t0ma??ana
 awk -f select-user-aoi-rows.awk -v AOIS=165comida data/SAP.tsv | uniq | sort -n
 165comida:637:738
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -1754,24 +1760,24 @@ awk -f select-user-aoi-rows.awk -v AOIS=183boca data/SAP.tsv | uniq | sort -n
 183boca:657:120
 datamash -t : -g 1 count 2 sum 3 mean 3
 183boca:2:598:299
-awk -f select-user-aoi-rows.awk -v AOIS=187manana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=187ma??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=B aoi.txt
 166Bp17s1d8L6c4t2comida
 184Bp17s1d8L4c4b1boca
-188Bp17s1d8L6c4t1manana
+188Bp17s1d8L6c4t1ma??ana
 awk -f select-user-aoi-rows.awk -v AOIS=166comida data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=184boca data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=188manana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=188ma??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=A aoi.txt
 165Ap17s1d8L6c4t0comida
 183Ap17s1d8L4c4b0boca
-187Ap17s1d8L6c4t0manana
+187Ap17s1d8L6c4t0ma??ana
 awk -f select-user-aoi-rows.awk -v AOIS=165comida data/SAP.tsv | uniq | sort -n
 165comida:637:738
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -1781,17 +1787,17 @@ awk -f select-user-aoi-rows.awk -v AOIS=183boca data/SAP.tsv | uniq | sort -n
 183boca:657:120
 datamash -t : -g 1 count 2 sum 3 mean 3
 183boca:2:598:299
-awk -f select-user-aoi-rows.awk -v AOIS=187manana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=187ma??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=B aoi.txt
 166Bp17s1d8L6c4t2comida
 184Bp17s1d8L4c4b1boca
-188Bp17s1d8L6c4t1manana
+188Bp17s1d8L6c4t1ma??ana
 awk -f select-user-aoi-rows.awk -v AOIS=166comida data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=184boca data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=188manana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=188ma??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=17 C4=s1 C2=n C1=C aoi.txt
 
@@ -1868,9 +1874,9 @@ awk -f select-user-aoi-rows.awk -v AOIS=174oscuro data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 174oscuro:1:279:279
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=A aoi.txt
-189Ap17s3d6L7c6t0sonando
+189Ap17s3d6L7c6t0so??ando
 192Ap17s3d6L7c6t0fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=189sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=189so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=192fortuna data/SAP.tsv | uniq | sort -n
 192fortuna:671:140
@@ -1878,9 +1884,9 @@ awk -f select-user-aoi-rows.awk -v AOIS=192fortuna data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 192fortuna:2:718:359
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=B aoi.txt
-190Bp17s3d6L7c6t2sonando
+190Bp17s3d6L7c6t2so??ando
 193Bp17s3d6L7c6t3fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=190sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=190so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=193fortuna data/SAP.tsv | uniq | sort -n
 193fortuna:671:140
@@ -1888,18 +1894,18 @@ awk -f select-user-aoi-rows.awk -v AOIS=193fortuna data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 193fortuna:2:718:359
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=p C1=C aoi.txt
-191Cp17s3d6L7c6t0sonando
+191Cp17s3d6L7c6t0so??ando
 194Cp17s3d6L7c6t0fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=191sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=191so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=194fortuna data/SAP.tsv | uniq | sort -n
 194fortuna:671:140
 datamash -t : -g 1 count 2 sum 3 mean 3
 194fortuna:1:140:140
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=A aoi.txt
-189Ap17s3d6L7c6t0sonando
+189Ap17s3d6L7c6t0so??ando
 192Ap17s3d6L7c6t0fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=189sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=189so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=192fortuna data/SAP.tsv | uniq | sort -n
 192fortuna:671:140
@@ -1907,9 +1913,9 @@ awk -f select-user-aoi-rows.awk -v AOIS=192fortuna data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 192fortuna:2:718:359
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=B aoi.txt
-190Bp17s3d6L7c6t2sonando
+190Bp17s3d6L7c6t2so??ando
 193Bp17s3d6L7c6t3fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=190sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=190so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=193fortuna data/SAP.tsv | uniq | sort -n
 193fortuna:671:140
@@ -1917,9 +1923,9 @@ awk -f select-user-aoi-rows.awk -v AOIS=193fortuna data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 193fortuna:2:718:359
 awk -f select-aoi-by-criteria.awk C3=17 C4=s3 C2=n C1=C aoi.txt
-191Cp17s3d6L7c6t0sonando
+191Cp17s3d6L7c6t0so??ando
 194Cp17s3d6L7c6t0fortuna
-awk -f select-user-aoi-rows.awk -v AOIS=191sonando data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=191so??ando data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=194fortuna data/SAP.tsv | uniq | sort -n
 194fortuna:671:140
@@ -2152,7 +2158,7 @@ awk -f select-aoi-by-criteria.awk C3=17 C4=s6 C2=n C1=C aoi.txt
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=A aoi.txt
 202An19s1d8L6c4t0mosina
 208An19s1d8L6c4t0dipone
-223An19s1d8L6c4t0numapo
+223An19s1d8L6c4t0númapo
 awk -f select-user-aoi-rows.awk -v AOIS=202mosina data/SAP.tsv | uniq | sort -n
 202mosina:684:1515
 202mosina:685:418
@@ -2163,12 +2169,12 @@ awk -f select-user-aoi-rows.awk -v AOIS=208dipone data/SAP.tsv | uniq | sort -n
 208dipone:692:1017
 datamash -t : -g 1 count 2 sum 3 mean 3
 208dipone:1:1017:1017
-awk -f select-user-aoi-rows.awk -v AOIS=223numapo data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=223númapo data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=B aoi.txt
 203Bn19s1d8L6c4t2mosina
 209Bn19s1d8L6c4t3dipone
-224Bn19s1d8L6c4t3numapo
+224Bn19s1d8L6c4t3númapo
 awk -f select-user-aoi-rows.awk -v AOIS=203mosina data/SAP.tsv | uniq | sort -n
 203mosina:686:180
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -2177,14 +2183,14 @@ awk -f select-user-aoi-rows.awk -v AOIS=209dipone data/SAP.tsv | uniq | sort -n
 209dipone:692:1017
 datamash -t : -g 1 count 2 sum 3 mean 3
 209dipone:1:1017:1017
-awk -f select-user-aoi-rows.awk -v AOIS=224numapo data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=224númapo data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=A aoi.txt
 202An19s1d8L6c4t0mosina
 208An19s1d8L6c4t0dipone
-223An19s1d8L6c4t0numapo
+223An19s1d8L6c4t0númapo
 awk -f select-user-aoi-rows.awk -v AOIS=202mosina data/SAP.tsv | uniq | sort -n
 202mosina:684:1515
 202mosina:685:418
@@ -2195,12 +2201,12 @@ awk -f select-user-aoi-rows.awk -v AOIS=208dipone data/SAP.tsv | uniq | sort -n
 208dipone:692:1017
 datamash -t : -g 1 count 2 sum 3 mean 3
 208dipone:1:1017:1017
-awk -f select-user-aoi-rows.awk -v AOIS=223numapo data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=223númapo data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=B aoi.txt
 203Bn19s1d8L6c4t2mosina
 209Bn19s1d8L6c4t3dipone
-224Bn19s1d8L6c4t3numapo
+224Bn19s1d8L6c4t3númapo
 awk -f select-user-aoi-rows.awk -v AOIS=203mosina data/SAP.tsv | uniq | sort -n
 203mosina:686:180
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -2209,7 +2215,7 @@ awk -f select-user-aoi-rows.awk -v AOIS=209dipone data/SAP.tsv | uniq | sort -n
 209dipone:692:1017
 datamash -t : -g 1 count 2 sum 3 mean 3
 209dipone:1:1017:1017
-awk -f select-user-aoi-rows.awk -v AOIS=224numapo data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=224númapo data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=19 C4=s1 C2=n C1=C aoi.txt
 
@@ -2748,24 +2754,33 @@ awk -f select-user-aoi-rows.awk -v AOIS=248arfo data/SAP.tsv | uniq | sort -n
 awk -f select-user-aoi-rows.awk -v AOIS=277esno data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=A aoi.txt
-243An21s3d6L7c6t0taronla
+243An21s3d6L7c6t0toronla
 254An21s3d4L5c6b0carpe
-266An21s3d6L7c6t0pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=243taronla data/SAP.tsv | uniq | sort -n
-
+266An21s3d6L7c6t0pilantro
+awk -f select-user-aoi-rows.awk -v AOIS=243toronla data/SAP.tsv | uniq | sort -n
+243toronla:752:1117
+243toronla:753:1057
+datamash -t : -g 1 count 2 sum 3 mean 3
+243toronla:2:2174:1087
 awk -f select-user-aoi-rows.awk -v AOIS=254carpe data/SAP.tsv | uniq | sort -n
 254carpe:761:997
 254carpe:762:259
 datamash -t : -g 1 count 2 sum 3 mean 3
 254carpe:2:1256:628
-awk -f select-user-aoi-rows.awk -v AOIS=266pilanto data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=266pilantro data/SAP.tsv | uniq | sort -n
+266pilantro:760:219
+266pilantro:775:937
+266pilantro:776:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+266pilantro:3:1575:525
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=B aoi.txt
-244Bn21s3d6L7c6t2taronla
+244Bn21s3d6L7c6t2toronla
 255Bn21s3d4L5c6b2carpe
 267Bn21s3d6L7c6t2pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=244taronla data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=244toronla data/SAP.tsv | uniq | sort -n
+244toronla:753:1057
+datamash -t : -g 1 count 2 sum 3 mean 3
+244toronla:1:1057:1057
 awk -f select-user-aoi-rows.awk -v AOIS=255carpe data/SAP.tsv | uniq | sort -n
 255carpe:762:259
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -2775,34 +2790,43 @@ awk -f select-user-aoi-rows.awk -v AOIS=267pilanto data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 267pilanto:1:419:419
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=p C1=C aoi.txt
-245Cn21s3d6L7c6t0taronla
+245Cn21s3d6L7c6t0toronla
 256Cn21s3d4L5c6b0carpe
 268Cn21s3d6L7c6t0pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=245taronla data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=245toronla data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=256carpe data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=268pilanto data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=A aoi.txt
-243An21s3d6L7c6t0taronla
+243An21s3d6L7c6t0toronla
 254An21s3d4L5c6b0carpe
-266An21s3d6L7c6t0pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=243taronla data/SAP.tsv | uniq | sort -n
-
+266An21s3d6L7c6t0pilantro
+awk -f select-user-aoi-rows.awk -v AOIS=243toronla data/SAP.tsv | uniq | sort -n
+243toronla:752:1117
+243toronla:753:1057
+datamash -t : -g 1 count 2 sum 3 mean 3
+243toronla:2:2174:1087
 awk -f select-user-aoi-rows.awk -v AOIS=254carpe data/SAP.tsv | uniq | sort -n
 254carpe:761:997
 254carpe:762:259
 datamash -t : -g 1 count 2 sum 3 mean 3
 254carpe:2:1256:628
-awk -f select-user-aoi-rows.awk -v AOIS=266pilanto data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=266pilantro data/SAP.tsv | uniq | sort -n
+266pilantro:760:219
+266pilantro:775:937
+266pilantro:776:419
+datamash -t : -g 1 count 2 sum 3 mean 3
+266pilantro:3:1575:525
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=B aoi.txt
-244Bn21s3d6L7c6t2taronla
+244Bn21s3d6L7c6t2toronla
 255Bn21s3d4L5c6b2carpe
 267Bn21s3d6L7c6t2pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=244taronla data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=244toronla data/SAP.tsv | uniq | sort -n
+244toronla:753:1057
+datamash -t : -g 1 count 2 sum 3 mean 3
+244toronla:1:1057:1057
 awk -f select-user-aoi-rows.awk -v AOIS=255carpe data/SAP.tsv | uniq | sort -n
 255carpe:762:259
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -2812,10 +2836,10 @@ awk -f select-user-aoi-rows.awk -v AOIS=267pilanto data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 267pilanto:1:419:419
 awk -f select-aoi-by-criteria.awk C3=21 C4=s3 C2=n C1=C aoi.txt
-245Cn21s3d6L7c6t0taronla
+245Cn21s3d6L7c6t0toronla
 256Cn21s3d4L5c6b0carpe
 268Cn21s3d6L7c6t0pilanto
-awk -f select-user-aoi-rows.awk -v AOIS=245taronla data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=245toronla data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=256carpe data/SAP.tsv | uniq | sort -n
 
@@ -3456,7 +3480,7 @@ awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=p C1=B aoi.txt
 293Bn23s6dxL7c4t3chapeca
 299Bn23s6dxL5c4b1tocha
 301Bn23s6dxL7c4t2mochede
-310Bn23s6dxL7c4t2siqueze
+310Bn23s6dxL7c4t2siqueza
 awk -f select-user-aoi-rows.awk -v AOIS=282parre data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=293chapeca data/SAP.tsv | uniq | sort -n
@@ -3472,8 +3496,12 @@ awk -f select-user-aoi-rows.awk -v AOIS=301mochede data/SAP.tsv | uniq | sort -n
 301mochede:831:299
 datamash -t : -g 1 count 2 sum 3 mean 3
 301mochede:1:299:299
-awk -f select-user-aoi-rows.awk -v AOIS=310siqueze data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=310siqueza data/SAP.tsv | uniq | sort -n
+310siqueza:828:179
+310siqueza:829:199
+310siqueza:843:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+310siqueza:3:717:239
 awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=A aoi.txt
@@ -3519,7 +3547,7 @@ awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=B aoi.txt
 293Bn23s6dxL7c4t3chapeca
 299Bn23s6dxL5c4b1tocha
 301Bn23s6dxL7c4t2mochede
-310Bn23s6dxL7c4t2siqueze
+310Bn23s6dxL7c4t2siqueza
 awk -f select-user-aoi-rows.awk -v AOIS=282parre data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=293chapeca data/SAP.tsv | uniq | sort -n
@@ -3535,14 +3563,18 @@ awk -f select-user-aoi-rows.awk -v AOIS=301mochede data/SAP.tsv | uniq | sort -n
 301mochede:831:299
 datamash -t : -g 1 count 2 sum 3 mean 3
 301mochede:1:299:299
-awk -f select-user-aoi-rows.awk -v AOIS=310siqueze data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=310siqueza data/SAP.tsv | uniq | sort -n
+310siqueza:828:179
+310siqueza:829:199
+310siqueza:843:339
+datamash -t : -g 1 count 2 sum 3 mean 3
+310siqueza:3:717:239
 awk -f select-aoi-by-criteria.awk C3=23 C4=s6 C2=n C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=A aoi.txt
 323An25s1d8L6c4t0canojo
 334An25s1d8L4c4b0tena
-344An25s1d8L6c4t0denana
+344An25s1d8L6c4t0de??ana
 awk -f select-user-aoi-rows.awk -v AOIS=323canojo data/SAP.tsv | uniq | sort -n
 323canojo:870:1416
 323canojo:871:179
@@ -3552,24 +3584,24 @@ awk -f select-user-aoi-rows.awk -v AOIS=334tena data/SAP.tsv | uniq | sort -n
 334tena:891:2333
 datamash -t : -g 1 count 2 sum 3 mean 3
 334tena:1:2333:2333
-awk -f select-user-aoi-rows.awk -v AOIS=344denana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=344de??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=B aoi.txt
 324Bn25s1d8L6c4t1canojo
 335Bn25s1d8L4c4b1tena
-345Bn25s1d8L6c4t1denana
+345Bn25s1d8L6c4t1de??ana
 awk -f select-user-aoi-rows.awk -v AOIS=324canojo data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=335tena data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=345denana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=345de??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=A aoi.txt
 323An25s1d8L6c4t0canojo
 334An25s1d8L4c4b0tena
-344An25s1d8L6c4t0denana
+344An25s1d8L6c4t0de??ana
 awk -f select-user-aoi-rows.awk -v AOIS=323canojo data/SAP.tsv | uniq | sort -n
 323canojo:870:1416
 323canojo:871:179
@@ -3579,17 +3611,17 @@ awk -f select-user-aoi-rows.awk -v AOIS=334tena data/SAP.tsv | uniq | sort -n
 334tena:891:2333
 datamash -t : -g 1 count 2 sum 3 mean 3
 334tena:1:2333:2333
-awk -f select-user-aoi-rows.awk -v AOIS=344denana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=344de??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=B aoi.txt
 324Bn25s1d8L6c4t1canojo
 335Bn25s1d8L4c4b1tena
-345Bn25s1d8L6c4t1denana
+345Bn25s1d8L6c4t1de??ana
 awk -f select-user-aoi-rows.awk -v AOIS=324canojo data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=335tena data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=345denana data/SAP.tsv | uniq | sort -n
+awk -f select-user-aoi-rows.awk -v AOIS=345de??ana data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s1 C2=n C1=C aoi.txt
 
@@ -3643,7 +3675,7 @@ awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=A aoi.txt
 325An25s4d4L5c1b0brune
 332An25s4d4L5c1b0muglo
 336An25s4d6L7c1t0lasible
-350An25s4d6L7c1t0pabigro
+350An25s4d6L7c1t0pabrigo
 354An25s4d6L7c1t0cebrera
 awk -f select-user-aoi-rows.awk -v AOIS=325brune data/SAP.tsv | uniq | sort -n
 325brune:872:518
@@ -3665,8 +3697,15 @@ awk -f select-user-aoi-rows.awk -v AOIS=336lasible data/SAP.tsv | uniq | sort -n
 336lasible:893:519
 datamash -t : -g 1 count 2 sum 3 mean 3
 336lasible:2:997:498.5
-awk -f select-user-aoi-rows.awk -v AOIS=350pabigro data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=350pabrigo data/SAP.tsv | uniq | sort -n
+350pabrigo:909:119
+350pabrigo:910:140
+350pabrigo:911:299
+350pabrigo:912:100
+350pabrigo:913:558
+350pabrigo:914:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+350pabrigo:6:1475:245.83333333333
 awk -f select-user-aoi-rows.awk -v AOIS=354cebrera data/SAP.tsv | uniq | sort -n
 354cebrera:919:718
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -3675,7 +3714,7 @@ awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=B aoi.txt
 326Bn25s4d4L5c1b2brune
 333Bn25s4d4L5c1b1muglo
 337Bn25s4d6L7c1t1lasible
-351Bn25s4d6L7c1t1pabigro
+351Bn25s4d6L7c1t1pabrigo
 355Bn25s4d6L7c1t2cebrera
 awk -f select-user-aoi-rows.awk -v AOIS=326brune data/SAP.tsv | uniq | sort -n
 326brune:873:179
@@ -3686,8 +3725,10 @@ awk -f select-user-aoi-rows.awk -v AOIS=333muglo data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=337lasible data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=351pabigro data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=351pabrigo data/SAP.tsv | uniq | sort -n
+351pabrigo:914:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+351pabrigo:1:259:259
 awk -f select-user-aoi-rows.awk -v AOIS=355cebrera data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=p C1=C aoi.txt
@@ -3696,7 +3737,7 @@ awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=A aoi.txt
 325An25s4d4L5c1b0brune
 332An25s4d4L5c1b0muglo
 336An25s4d6L7c1t0lasible
-350An25s4d6L7c1t0pabigro
+350An25s4d6L7c1t0pabrigo
 354An25s4d6L7c1t0cebrera
 awk -f select-user-aoi-rows.awk -v AOIS=325brune data/SAP.tsv | uniq | sort -n
 325brune:872:518
@@ -3718,8 +3759,15 @@ awk -f select-user-aoi-rows.awk -v AOIS=336lasible data/SAP.tsv | uniq | sort -n
 336lasible:893:519
 datamash -t : -g 1 count 2 sum 3 mean 3
 336lasible:2:997:498.5
-awk -f select-user-aoi-rows.awk -v AOIS=350pabigro data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=350pabrigo data/SAP.tsv | uniq | sort -n
+350pabrigo:909:119
+350pabrigo:910:140
+350pabrigo:911:299
+350pabrigo:912:100
+350pabrigo:913:558
+350pabrigo:914:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+350pabrigo:6:1475:245.83333333333
 awk -f select-user-aoi-rows.awk -v AOIS=354cebrera data/SAP.tsv | uniq | sort -n
 354cebrera:919:718
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -3728,7 +3776,7 @@ awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=B aoi.txt
 326Bn25s4d4L5c1b2brune
 333Bn25s4d4L5c1b1muglo
 337Bn25s4d6L7c1t1lasible
-351Bn25s4d6L7c1t1pabigro
+351Bn25s4d6L7c1t1pabrigo
 355Bn25s4d6L7c1t2cebrera
 awk -f select-user-aoi-rows.awk -v AOIS=326brune data/SAP.tsv | uniq | sort -n
 326brune:873:179
@@ -3739,8 +3787,10 @@ awk -f select-user-aoi-rows.awk -v AOIS=333muglo data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=337lasible data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=351pabigro data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=351pabrigo data/SAP.tsv | uniq | sort -n
+351pabrigo:914:259
+datamash -t : -g 1 count 2 sum 3 mean 3
+351pabrigo:1:259:259
 awk -f select-user-aoi-rows.awk -v AOIS=355cebrera data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s4 C2=n C1=C aoi.txt
@@ -3861,7 +3911,7 @@ awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=A aoi.txt
 327An25s6dxL5c4b0fague
 342An25s6dxL7c4t0peracho
 348An25s6dxL7c4t0quemido
-352An25s6dxL7c4t0llamone
+352An25s6dxL7c4t0llomone
 awk -f select-user-aoi-rows.awk -v AOIS=327fague data/SAP.tsv | uniq | sort -n
 327fague:875:239
 327fague:878:758
@@ -3874,28 +3924,34 @@ awk -f select-user-aoi-rows.awk -v AOIS=342peracho data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=348quemido data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=352llamone data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=352llomone data/SAP.tsv | uniq | sort -n
+352llomone:915:598
+352llomone:916:1177
+352llomone:917:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+352llomone:3:2014:671.33333333333
 awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=B aoi.txt
 328Bn25s6dxL5c4b1fague
 343Bn25s6dxL7c4t1peracho
 349Bn25s6dxL7c4t3quemido
-353Bn25s6dxL7c4t3llamone
+353Bn25s6dxL7c4t3llomone
 awk -f select-user-aoi-rows.awk -v AOIS=328fague data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=343peracho data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=349quemido data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=353llamone data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=353llomone data/SAP.tsv | uniq | sort -n
+353llomone:916:1177
+datamash -t : -g 1 count 2 sum 3 mean 3
+353llomone:1:1177:1177
 awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=p C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=A aoi.txt
 327An25s6dxL5c4b0fague
 342An25s6dxL7c4t0peracho
 348An25s6dxL7c4t0quemido
-352An25s6dxL7c4t0llamone
+352An25s6dxL7c4t0llomone
 awk -f select-user-aoi-rows.awk -v AOIS=327fague data/SAP.tsv | uniq | sort -n
 327fague:875:239
 327fague:878:758
@@ -3908,21 +3964,27 @@ awk -f select-user-aoi-rows.awk -v AOIS=342peracho data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=348quemido data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=352llamone data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=352llomone data/SAP.tsv | uniq | sort -n
+352llomone:915:598
+352llomone:916:1177
+352llomone:917:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+352llomone:3:2014:671.33333333333
 awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=B aoi.txt
 328Bn25s6dxL5c4b1fague
 343Bn25s6dxL7c4t1peracho
 349Bn25s6dxL7c4t3quemido
-353Bn25s6dxL7c4t3llamone
+353Bn25s6dxL7c4t3llomone
 awk -f select-user-aoi-rows.awk -v AOIS=328fague data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=343peracho data/SAP.tsv | uniq | sort -n
 
 awk -f select-user-aoi-rows.awk -v AOIS=349quemido data/SAP.tsv | uniq | sort -n
 
-awk -f select-user-aoi-rows.awk -v AOIS=353llamone data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=353llomone data/SAP.tsv | uniq | sort -n
+353llomone:916:1177
+datamash -t : -g 1 count 2 sum 3 mean 3
+353llomone:1:1177:1177
 awk -f select-aoi-by-criteria.awk C3=25 C4=s6 C2=n C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=p C1=A aoi.txt
@@ -3974,10 +4036,16 @@ awk -f select-user-aoi-rows.awk -v AOIS=389noco data/SAP.tsv | uniq | sort -n
 awk -f select-aoi-by-criteria.awk C3=27 C4=s1 C2=n C1=C aoi.txt
 
 awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=p C1=A aoi.txt
-378An27s2d5L6c6t0esfobo
+378An27s2d5L6c6t0esbofo
 390An27s2d8L4c4b0teiz
-awk -f select-user-aoi-rows.awk -v AOIS=378esfobo data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=378esbofo data/SAP.tsv | uniq | sort -n
+378esbofo:964:140
+378esbofo:965:798
+378esbofo:986:339
+378esbofo:987:140
+378esbofo:988:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+378esbofo:5:1656:331.2
 awk -f select-user-aoi-rows.awk -v AOIS=390teiz data/SAP.tsv | uniq | sort -n
 390teiz:990:897
 390teiz:991:399
@@ -4002,10 +4070,16 @@ awk -f select-user-aoi-rows.awk -v AOIS=380esfobo data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 380esfobo:1:140:140
 awk -f select-aoi-by-criteria.awk C3=27 C4=s2 C2=n C1=A aoi.txt
-378An27s2d5L6c6t0esfobo
+378An27s2d5L6c6t0esbofo
 390An27s2d8L4c4b0teiz
-awk -f select-user-aoi-rows.awk -v AOIS=378esfobo data/SAP.tsv | uniq | sort -n
-
+awk -f select-user-aoi-rows.awk -v AOIS=378esbofo data/SAP.tsv | uniq | sort -n
+378esbofo:964:140
+378esbofo:965:798
+378esbofo:986:339
+378esbofo:987:140
+378esbofo:988:239
+datamash -t : -g 1 count 2 sum 3 mean 3
+378esbofo:5:1656:331.2
 awk -f select-user-aoi-rows.awk -v AOIS=390teiz data/SAP.tsv | uniq | sort -n
 390teiz:990:897
 390teiz:991:399
@@ -4172,8 +4246,6 @@ awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=p C1=B aoi.txt
 357Bn27s4d4L5c1b2fruno
 377Bn27s4d6L7c1t2ladrine
 393Bn27s4d4L5c1b1dodre
-394Bn27s4d4L5c1b0texto
-395Bn27s4d4L5c1b0seguimiento
 awk -f select-user-aoi-rows.awk -v AOIS=357fruno data/SAP.tsv | uniq | sort -n
 357fruno:948:1057
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -4187,8 +4259,6 @@ awk -f select-user-aoi-rows.awk -v AOIS=377ladrine data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 377ladrine:5:1136:227.2
 awk -f select-user-aoi-rows.awk -v AOIS=393dodre data/SAP.tsv | uniq | sort -n
-
-awk -f select-user-aoi-rows.awk -v AOIS=395seguimiento data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=p C1=C aoi.txt
 
@@ -4227,8 +4297,6 @@ awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=n C1=B aoi.txt
 357Bn27s4d4L5c1b2fruno
 377Bn27s4d6L7c1t2ladrine
 393Bn27s4d4L5c1b1dodre
-394Bn27s4d4L5c1b0texto
-395Bn27s4d4L5c1b0seguimiento
 awk -f select-user-aoi-rows.awk -v AOIS=357fruno data/SAP.tsv | uniq | sort -n
 357fruno:948:1057
 datamash -t : -g 1 count 2 sum 3 mean 3
@@ -4242,8 +4310,6 @@ awk -f select-user-aoi-rows.awk -v AOIS=377ladrine data/SAP.tsv | uniq | sort -n
 datamash -t : -g 1 count 2 sum 3 mean 3
 377ladrine:5:1136:227.2
 awk -f select-user-aoi-rows.awk -v AOIS=393dodre data/SAP.tsv | uniq | sort -n
-
-awk -f select-user-aoi-rows.awk -v AOIS=395seguimiento data/SAP.tsv | uniq | sort -n
 
 awk -f select-aoi-by-criteria.awk C3=27 C4=s4 C2=n C1=C aoi.txt
 
